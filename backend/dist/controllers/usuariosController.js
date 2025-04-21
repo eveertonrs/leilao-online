@@ -10,6 +10,7 @@ exports.updateUsuario = updateUsuario;
 exports.deleteUsuario = deleteUsuario;
 const db_1 = __importDefault(require("../config/db"));
 const bcryptjs_1 = __importDefault(require("bcryptjs"));
+const tiposValidos = ['admin', 'usuario'];
 async function getUsuarios(req, res) {
     try {
         const result = await (await db_1.default).request().query(`
@@ -46,13 +47,18 @@ async function createUsuario(req, res) {
         res.status(400).json({ mensagem: 'Campos obrigatórios: nome, email, senha' });
         return;
     }
+    const tipoFinal = tipo || 'usuario';
+    if (!tiposValidos.includes(tipoFinal)) {
+        res.status(400).json({ mensagem: 'Tipo de usuário inválido. Use "admin" ou "usuario".' });
+        return;
+    }
     try {
         const senha_hash = await bcryptjs_1.default.hash(senha, 10);
         await (await db_1.default).request()
             .input('nome', nome)
             .input('email', email)
             .input('senha_hash', senha_hash)
-            .input('tipo', tipo || 'usuario')
+            .input('tipo', tipoFinal)
             .query(`
         INSERT INTO usuarios (nome, email, senha_hash, tipo, data_cadastro)
         VALUES (@nome, @email, @senha_hash, @tipo, GETDATE())
@@ -66,12 +72,18 @@ async function createUsuario(req, res) {
 async function updateUsuario(req, res) {
     const { id } = req.params;
     const { nome, email, senha, tipo } = req.body;
+    if (tipo && !tiposValidos.includes(tipo)) {
+        res.status(400).json({ mensagem: 'Tipo de usuário inválido. Use "admin" ou "usuario".' });
+        return;
+    }
     try {
         const request = (await db_1.default).request()
             .input('id', Number(id))
             .input('nome', nome)
-            .input('email', email)
-            .input('tipo', tipo);
+            .input('email', email);
+        if (tipo) {
+            request.input('tipo', tipo);
+        }
         if (senha) {
             const senha_hash = await bcryptjs_1.default.hash(senha, 10);
             request.input('senha_hash', senha_hash);
@@ -79,8 +91,8 @@ async function updateUsuario(req, res) {
         await request.query(`
       UPDATE usuarios
       SET nome = @nome,
-          email = @email,
-          tipo = @tipo
+          email = @email
+          ${tipo ? ', tipo = @tipo' : ''}
           ${senha ? ', senha_hash = @senha_hash' : ''}
       WHERE id = @id
     `);
