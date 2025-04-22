@@ -2,6 +2,11 @@
 import { Request, Response } from 'express';
 import pool from '../config/db';
 
+// ✅ Função auxiliar para formatar datas para SQL
+function formatDateToSQL(dateStr: string): string {
+  return new Date(dateStr).toISOString().replace('T', ' ').slice(0, 19);
+}
+
 export async function getEventos(req: Request, res: Response) {
   try {
     const result = await (await pool).request().query('SELECT * FROM eventos');
@@ -31,61 +36,43 @@ export async function getEvento(req: Request, res: Response): Promise<void> {
   }
 }
 
-
 export async function createEvento(req: Request, res: Response): Promise<void> {
   const { nome, data_inicio, data_fim, descricao } = req.body;
+  const foto_capa = req.file?.filename || null;
 
-  if (!nome || !data_inicio || !data_fim) {
-    res.status(400).json({
-      mensagem: 'Campos obrigatórios: nome, data_inicio, data_fim',
-    });
-    return;
-  }
-
-  const inicio = new Date(data_inicio);
-  const fim = new Date(data_fim);
-
-  if (isNaN(inicio.getTime()) || isNaN(fim.getTime())) {
-    res.status(400).json({
-      mensagem: 'Datas inválidas. Use o formato ISO ou uma data válida.',
-    });
-    return;
-  }
-
-  if (inicio >= fim) {
-    res.status(400).json({
-      mensagem: 'A data de início deve ser anterior à data de fim',
-    });
-    return;
-  }
+  // ✅ Converte datas para formato aceito pelo SQL Server
+  const dataInicioSQL = formatDateToSQL(data_inicio);
+  const dataFimSQL = formatDateToSQL(data_fim);
 
   try {
-    const request = (await pool).request();
+    console.log('BODY:', req.body);
+    console.log('FILE:', req.file);
 
+    const request = (await pool).request();
     await request
       .input('nome', nome)
-      .input('data_inicio', data_inicio)
-      .input('data_fim', data_fim)
+      .input('data_inicio', dataInicioSQL)
+      .input('data_fim', dataFimSQL)
       .input('descricao', descricao || null)
+      .input('foto_capa', foto_capa)
       .query(`
-        INSERT INTO eventos (nome, data_inicio, data_fim, descricao)
-        VALUES (@nome, @data_inicio, @data_fim, @descricao)
+        INSERT INTO eventos (nome, data_inicio, data_fim, descricao, foto_capa)
+        VALUES (@nome, @data_inicio, @data_fim, @descricao, @foto_capa)
       `);
 
     res.status(201).json({ mensagem: 'Evento criado com sucesso' });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Erro ao criar evento:', error);
-    res.status(500).json({
-      mensagem: 'Erro interno ao criar evento',
-      detalhe: error.message,
-    });
+    res.status(500).json({ mensagem: 'Erro ao criar evento' });
   }
 }
-
 
 export async function updateEvento(req: Request, res: Response): Promise<void> {
   const { id } = req.params;
   const { nome, data_inicio, data_fim, descricao } = req.body;
+
+  const dataInicioSQL = formatDateToSQL(data_inicio);
+  const dataFimSQL = formatDateToSQL(data_fim);
 
   try {
     const request = (await pool).request();
@@ -93,8 +80,8 @@ export async function updateEvento(req: Request, res: Response): Promise<void> {
     await request
       .input('id', Number(id))
       .input('nome', nome)
-      .input('data_inicio', data_inicio)
-      .input('data_fim', data_fim)
+      .input('data_inicio', dataInicioSQL)
+      .input('data_fim', dataFimSQL)
       .input('descricao', descricao || null)
       .query(`
         UPDATE eventos
@@ -111,7 +98,6 @@ export async function updateEvento(req: Request, res: Response): Promise<void> {
     res.status(500).json({ mensagem: 'Erro interno ao atualizar evento' });
   }
 }
-
 
 export async function deleteEvento(req: Request, res: Response): Promise<void> {
   const { id } = req.params;

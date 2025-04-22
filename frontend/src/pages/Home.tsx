@@ -1,29 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import { Container,  Typography, Card, CardMedia, CardContent } from '@mui/material';
-import Grid from '@mui/material/Grid'; // ✅ forma correta
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import {
+  Box,
+  Container,
+  Card,
+  CardContent,
+  Typography,
+  CardMedia,
+  CardActions,
+  Button,
+} from '@mui/material';
+import { Link } from 'react-router-dom';
 
-interface Evento {
+type Evento = {
   id: number;
   nome: string;
+  descricao: string;
   data_inicio: string;
   data_fim: string;
-  descricao: string;
-  foto_capa: string | null;
-}
+  foto_capa?: string | null;
+};
 
-const Home: React.FC = () => {
+const Home = () => {
   const [eventos, setEventos] = useState<Evento[]>([]);
 
   useEffect(() => {
-    const fetchEventos = async () => {
+    async function fetchEventos() {
       try {
-        const response = await axios.get('http://localhost:3000/eventos');
+        const response = await axios.get<Evento[]>('http://localhost:3333/eventos');
         setEventos(response.data);
+        console.log('Eventos:', response.data); // debug
       } catch (error) {
         console.error('Erro ao buscar eventos:', error);
       }
-    };
+    }
 
     fetchEventos();
   }, []);
@@ -33,28 +43,47 @@ const Home: React.FC = () => {
       <Typography variant="h4" align="center" gutterBottom>
         Eventos em Destaque
       </Typography>
-      <Grid container spacing={4}>
+
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="center"
+        gap={4}
+        mt={4}
+      >
         {eventos.map((evento) => (
-          // <Grid item  key={evento.id} xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="140"
-                image={evento.foto_capa || "https://via.placeholder.com/140x100"}
-                alt={evento.nome}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {evento.nome}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {evento.descricao}
-                </Typography>
-              </CardContent>
-            </Card>
-          //</Grid>
+          <Card key={evento.id} sx={{ width: 300 }}>
+            <CardMedia
+              component="img"
+              height="140"
+              image={
+                evento.foto_capa
+                  ? `http://localhost:3333/uploads/${evento.foto_capa}`
+                  : 'https://source.unsplash.com/400x200/?auction,event'
+              }              
+              alt={evento.nome}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div">
+                {evento.nome}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {evento.descricao || 'Sem descrição'}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button
+                size="small"
+                component={Link}
+                to={`/eventos/${evento.id}`}
+                variant="outlined"
+              >
+                Ver Detalhes
+              </Button>
+            </CardActions>
+          </Card>
         ))}
-      </Grid>
+      </Box>
     </Container>
   );
 };

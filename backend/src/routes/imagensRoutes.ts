@@ -1,9 +1,13 @@
-import { Router } from 'express';
-import { getImagensPorLote, createImagem } from '../controllers/imagensController';
+// backend/src/routes/imagensRoutes.ts
+import { Router, Request, Response } from 'express';
+import multer from 'multer';
+import multerConfig from '../config/multerConfig';
 
 const router = Router();
+const upload = multer(multerConfig);
 
-router.get('/:lote_id', getImagensPorLote);  // imagens de um lote específico
-router.post('/', createImagem);             // adicionar nova imagem
+router.post('/', upload.single('imagem'), (req: Request, res: Response): void => {
+  res.json({ path: req.file?.filename });
+});
 
 export default router;
