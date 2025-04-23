@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
   Box,
@@ -6,16 +6,38 @@ import {
   Button,
   Typography,
   Paper,
-  Avatar
 } from '@mui/material';
+import { useParams, useNavigate } from 'react-router-dom';
 
-const NovoEvento = () => {
+const EditarEvento = () => {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [nome, setNome] = useState('');
   const [descricao, setDescricao] = useState('');
   const [dataInicio, setDataInicio] = useState('');
   const [dataFim, setDataFim] = useState('');
   const [imagem, setImagem] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchEvento() {
+      try {
+        const response = await axios.get(`http://localhost:3333/eventos/${id}`);
+        const evento = response.data;
+        setNome(evento.nome);
+        setDescricao(evento.descricao);
+        setDataInicio(evento.data_inicio.slice(0, 16)); // formato YYYY-MM-DDTHH:MM
+        setDataFim(evento.data_fim.slice(0, 16));
+        if (evento.foto_capa) {
+          setPreview(`http://localhost:3333/uploads/${evento.foto_capa}`);
+        }
+      } catch (error) {
+        console.error('Erro ao buscar evento:', error);
+      }
+    }
+
+    fetchEvento();
+  }, [id]);
 
   const handleImagemChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -26,49 +48,37 @@ const NovoEvento = () => {
         setPreview(reader.result as string);
       };
       reader.readAsDataURL(file);
-    } else {
-      setPreview(null);
     }
   };
 
   const handleSubmit = async () => {
-    if (!imagem) return alert('Selecione uma imagem!');
     const formData = new FormData();
     formData.append('nome', nome);
     formData.append('descricao', descricao);
     formData.append('data_inicio', dataInicio);
     formData.append('data_fim', dataFim);
-    formData.append('foto_capa', imagem);
-
+  
+    if (imagem) {
+      formData.append('foto_capa', imagem); // somente se imagem for alterada
+    }
+  
     try {
-      await axios.post('http://localhost:3333/eventos', formData, {
+      await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
-      alert('Evento criado com sucesso!');
-      setNome('');
-      setDescricao('');
-      setDataInicio('');
-      setDataFim('');
-      setImagem(null);
-      setPreview(null);
+      alert('Evento atualizado com sucesso!');
+      navigate('/');
     } catch (error) {
-      console.error('Erro ao criar evento:', error);
-      alert('Erro ao criar evento');
+      console.error('Erro ao atualizar evento:', error);
+      alert('Erro ao atualizar evento');
     }
   };
-
+  
   return (
-    <Box sx={{
-      background: 'linear-gradient(#f9f9f9, #e9f0f7)',
-      minHeight: '100vh',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      py: 6
-    }}>
-      <Paper elevation={4} sx={{ padding: 4, maxWidth: 500, width: '100%', borderRadius: 3 }}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
-          Novo Evento
+    <Box sx={{ maxWidth: 500, margin: 'auto', padding: 3 }}>
+      <Paper elevation={3} sx={{ padding: 3 }}>
+        <Typography variant="h5" gutterBottom>
+          Editar Evento
         </Typography>
 
         <TextField
@@ -109,15 +119,15 @@ const NovoEvento = () => {
           onChange={(e) => setDataFim(e.target.value)}
         />
 
-        <Button variant="outlined" component="label" sx={{ mt: 2 }}>
-          Escolher Imagem
+        <Button variant="contained" component="label" sx={{ mt: 2 }}>
+          Alterar Imagem
           <input type="file" hidden onChange={handleImagemChange} />
         </Button>
 
         {preview && (
-          <Box sx={{ mt: 3, textAlign: 'center' }}>
-            <Typography variant="subtitle1" gutterBottom>Pré-visualização:</Typography>
-            <Avatar src={preview} variant="rounded" sx={{ width: '100%', height: 200, borderRadius: 2 }} />
+          <Box sx={{ mt: 2 }}>
+            <Typography variant="subtitle1">Pré-visualização:</Typography>
+            <img src={preview} alt="Preview" style={{ width: '100%', borderRadius: 4 }} />
           </Box>
         )}
 
@@ -125,14 +135,14 @@ const NovoEvento = () => {
           variant="contained"
           color="primary"
           fullWidth
-          sx={{ mt: 3, fontWeight: 'bold' }}
+          sx={{ mt: 3 }}
           onClick={handleSubmit}
         >
-          Salvar
+          Atualizar
         </Button>
       </Paper>
     </Box>
   );
 };
 
-export default NovoEvento;
+export default EditarEvento;

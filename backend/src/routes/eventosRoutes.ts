@@ -15,7 +15,8 @@ router.get('/:id', getEvento);
 
 // ⬇️ Adiciona suporte a upload via multer
 router.post('/', upload.single('foto_capa'), createEvento);
-router.put('/:id', updateEvento);
+// router.put('/:id', updateEvento);
+router.put('/:id', upload.single('foto_capa'), updateEvento);
 router.delete('/:id', deleteEvento);
 
 export default router;
