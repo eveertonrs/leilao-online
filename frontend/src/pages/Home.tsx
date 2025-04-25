@@ -62,16 +62,25 @@ const Home = () => {
   }
 
   const handleExcluir = async (id: number) => {
-    if (window.confirm('Deseja excluir este evento?')) {
-      try {
-        await axios.delete(`http://localhost:3333/eventos/${id}`);
-        alert('Evento excluído com sucesso!');
-        setEventos(eventos.filter((evento) => evento.id !== id));
-      } catch (error) {
-        alert('Erro ao excluir o evento');
-      }
+    const confirmacao = window.confirm('Tem certeza que deseja excluir este evento?');
+    if (!confirmacao) return;
+  
+    try {
+      const token = localStorage.getItem('token'); // ✅ Pegue o token
+      await axios.delete(`http://localhost:3333/eventos/${id}`, {
+        headers: {
+          'Authorization': `Bearer ${token}` // ✅ Envie o token no header
+        }
+      });
+  
+      alert('Evento excluído com sucesso!');
+      // Atualizar a lista após exclusão (dependendo da lógica que você usa)
+    } catch (error) {
+      console.error('Erro ao excluir o evento:', error);
+      alert('Erro ao excluir o evento');
     }
   };
+  
 
   return (
     <Box sx={{ background: 'linear-gradient(#f9f9f9, #e9f0f7)', py: 6 }}>

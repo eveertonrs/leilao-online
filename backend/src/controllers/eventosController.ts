@@ -100,17 +100,17 @@ export async function updateEvento(req: Request, res: Response): Promise<void> {
   const inicio = new Date(data_inicio);
   const fim = new Date(data_fim);
 
-  if (inicio < now) {
-    console.log('Erro: Data de início é anterior à data atual');
-    res.status(400).json({ mensagem: 'A data de início não pode ser anterior à data atual' });
-    return;
-  }
+  // if (inicio < now) {
+  //   console.log('Erro: Data de início é anterior à data atual');
+  //   res.status(400).json({ mensagem: 'A data de início não pode ser anterior à data atual' });
+  //   return;
+  // }
 
-  if (fim <= inicio) {
-    console.log('Erro: Data de fim é anterior ou igual à data de início');
-    res.status(400).json({ mensagem: 'A data de fim deve ser posterior à data de início' });
-    return;
-  }
+  // if (fim <= inicio) {
+  //   console.log('Erro: Data de fim é anterior ou igual à data de início');
+  //   res.status(400).json({ mensagem: 'A data de fim deve ser posterior à data de início' });
+  //   return;
+  // }
 
   try {
     const request = (await pool).request();

@@ -8,15 +8,17 @@ import {
   deleteEvento,
 } from '../controllers/eventosController';
 
+import { autenticarToken } from '../middleware/authMiddleware'; // ✅ Importa o middleware
+
 const router = Router();
 
+// Rotas públicas
 router.get('/', getEventos);
 router.get('/:id', getEvento);
 
-// ⬇️ Adiciona suporte a upload via multer
-router.post('/', upload.single('foto_capa'), createEvento);
-// router.put('/:id', updateEvento);
-router.put('/:id', upload.single('foto_capa'), updateEvento);
-router.delete('/:id', deleteEvento);
+// ⬇️ Rotas protegidas com autenticação
+router.post('/', autenticarToken, upload.single('foto_capa'), createEvento);
+router.put('/:id', autenticarToken, upload.single('foto_capa'), updateEvento);
+router.delete('/:id', autenticarToken, deleteEvento);
 
 export default router;

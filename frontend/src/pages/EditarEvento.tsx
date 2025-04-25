@@ -61,10 +61,15 @@ const EditarEvento = () => {
     if (imagem) {
       formData.append('foto_capa', imagem); // somente se imagem for alterada
     }
-  
+
+    const token = localStorage.getItem('token'); // ✅ Pegando o token
+
     try {
       await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Authorization': `Bearer ${token}`, // ✅ Enviando o token
+        },
       });
       alert('Evento atualizado com sucesso!');
       navigate('/');
@@ -73,7 +78,7 @@ const EditarEvento = () => {
       alert('Erro ao atualizar evento');
     }
   };
-  
+
   return (
     <Box sx={{ maxWidth: 500, margin: 'auto', padding: 3 }}>
       <Paper elevation={3} sx={{ padding: 3 }}>

@@ -33,18 +33,25 @@ const NovoEvento = () => {
 
   const handleSubmit = async () => {
     if (!imagem) return alert('Selecione uma imagem!');
+  
     const formData = new FormData();
     formData.append('nome', nome);
     formData.append('descricao', descricao);
     formData.append('data_inicio', dataInicio);
     formData.append('data_fim', dataFim);
     formData.append('foto_capa', imagem);
-
+  
     try {
+      const token = localStorage.getItem('token'); // ✅ Pega o token salvo no login
       await axios.post('http://localhost:3333/eventos', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Authorization': `Bearer ${token}` // ✅ Adiciona o token
+        },
       });
+  
       alert('Evento criado com sucesso!');
+      // Limpar os campos
       setNome('');
       setDescricao('');
       setDataInicio('');
@@ -56,6 +63,7 @@ const NovoEvento = () => {
       alert('Erro ao criar evento');
     }
   };
+  
 
   return (
     <Box sx={{
