@@ -1,15 +1,10 @@
-// src/components/Navbar.tsx
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 
 const Navbar = () => {
-  const usuario = JSON.parse(localStorage.getItem('usuario') || 'null');
-
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('usuario');
-    window.location.href = '/login';
-  };
+  const { usuario, logout } = useContext(AuthContext);
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>
@@ -23,20 +18,24 @@ const Navbar = () => {
             Home
           </Button>
 
-          {/* Apenas ADMIN pode ver "Novo Evento" */}
+          {/* ADMIN - pode ver Novo Evento e Admin Lotes */}
           {usuario && usuario.tipo === 'ADMIN' && (
-            <Button color="inherit" component={Link} to="/novo-evento">
-              Novo Evento
-            </Button>
+            <>
+              <Button color="inherit" component={Link} to="/novo-evento">
+                Novo Evento
+              </Button>
+              <Button color="inherit" component={Link} to="/admin-lotes">
+                Admin Lotes
+              </Button>
+            </>
           )}
 
-          {/* Usuário logado */}
           {usuario ? (
             <>
               <Typography variant="body2" sx={{ mx: 2, display: 'inline-block' }}>
                 Olá, {usuario.nome}
               </Typography>
-              <Button color="inherit" onClick={handleLogout}>
+              <Button color="inherit" onClick={logout}>
                 Sair
               </Button>
             </>

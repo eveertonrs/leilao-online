@@ -1,5 +1,4 @@
-// src/pages/LoginPage.tsx
-import { useState } from 'react';
+import { useState, useContext } from 'react'; // ⬅️ Adicione useContext
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -12,19 +11,22 @@ import {
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
+import { AuthContext } from '../contexts/AuthContext'; // ⬅️ Importe o Contexto
+
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
+  const { setUsuario } = useContext(AuthContext); // ⬅️ Pegue o setUsuario do contexto
 
   const handleLogin = async () => {
     try {
       const response = await axios.post('http://localhost:3333/auth/login', { email, senha });
       const { token, usuario } = response.data;
 
-      // Armazena token e info do usuário
+      // Armazena token e atualiza o contexto
       localStorage.setItem('token', token);
-      localStorage.setItem('usuario', JSON.stringify(usuario));
+      setUsuario(usuario); // ⬅️ Atualiza o estado global
 
       alert(`Bem-vindo, ${usuario.nome}!`);
       navigate('/');

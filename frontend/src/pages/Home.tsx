@@ -38,6 +38,10 @@ const Home = () => {
   const [eventos, setEventos] = useState<Evento[]>([]);
   const navigate = useNavigate();
 
+  // ✅ Recuperar usuário logado
+  const usuarioLogado = JSON.parse(localStorage.getItem('usuario') || '{}');
+  const isAdmin = usuarioLogado?.tipo === 'ADMIN';
+
   useEffect(() => {
     fetchEventos();
   }, []);
@@ -64,28 +68,26 @@ const Home = () => {
   const handleExcluir = async (id: number) => {
     const confirmacao = window.confirm('Tem certeza que deseja excluir este evento?');
     if (!confirmacao) return;
-  
+
     try {
-      const token = localStorage.getItem('token'); // ✅ Pegue o token
+      const token = localStorage.getItem('token');
       await axios.delete(`http://localhost:3333/eventos/${id}`, {
         headers: {
-          'Authorization': `Bearer ${token}` // ✅ Envie o token no header
+          'Authorization': `Bearer ${token}`
         }
       });
-  
+
       alert('Evento excluído com sucesso!');
-      // Atualizar a lista após exclusão (dependendo da lógica que você usa)
+      fetchEventos(); // Atualiza lista após excluir
     } catch (error) {
       console.error('Erro ao excluir o evento:', error);
       alert('Erro ao excluir o evento');
     }
   };
-  
 
   return (
     <Box sx={{ background: 'linear-gradient(#f9f9f9, #e9f0f7)', py: 6 }}>
       <Container>
-
         {/* Carrossel com banners externos */}
         <Slider autoplay dots infinite speed={700} slidesToShow={1} slidesToScroll={1}>
           {banners.map((url, index) => (
@@ -169,22 +171,26 @@ const Home = () => {
                 >
                   Detalhes
                 </Button>
-                <Box>
-                  <IconButton
-                    size="small"
-                    color="secondary"
-                    onClick={() => navigate(`/editar-evento/${evento.id}`)}
-                  >
-                    <EditIcon />
-                  </IconButton>
-                  <IconButton
-                    size="small"
-                    color="error"
-                    onClick={() => handleExcluir(evento.id)}
-                  >
-                    <DeleteIcon />
-                  </IconButton>
-                </Box>
+
+                {/* ✅ Só ADMIN vê os botões */}
+                {isAdmin && (
+                  <Box>
+                    <IconButton
+                      size="small"
+                      color="secondary"
+                      onClick={() => navigate(`/editar-evento/${evento.id}`)}
+                    >
+                      <EditIcon />
+                    </IconButton>
+                    <IconButton
+                      size="small"
+                      color="error"
+                      onClick={() => handleExcluir(evento.id)}
+                    >
+                      <DeleteIcon />
+                    </IconButton>
+                  </Box>
+                )}
               </CardActions>
             </Card>
           ))}

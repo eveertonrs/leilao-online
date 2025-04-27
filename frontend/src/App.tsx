@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import EditarEvento from './pages/EditarEvento';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute';
+import AdminLotes from './pages/AdminLotes';
 
 function App() {
   return (
@@ -19,8 +20,25 @@ function App() {
         <Route path="/eventos/:id" element={<DetalhesEvento />} />
         <Route path="/upload" element={<UploadImagem />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/novo-evento" element={<PrivateRoute><NovoEvento /></PrivateRoute>} />
-        <Route path="/editar-evento/:id" element={<PrivateRoute><EditarEvento /></PrivateRoute>} />
+        
+        {/* Rotas protegidas */}
+        <Route path="/novo-evento" element={
+          <PrivateRoute>
+            <NovoEvento />
+          </PrivateRoute>
+        } />
+        
+        <Route path="/editar-evento/:id" element={
+          <PrivateRoute>
+            <EditarEvento />
+          </PrivateRoute>
+        } />
+
+        <Route path="/admin-lotes" element={
+          <PrivateRoute>
+            <AdminLotes />
+          </PrivateRoute>
+        } />
       </Routes>
     </>
   );
