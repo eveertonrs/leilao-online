@@ -24,6 +24,7 @@ app.use('/lotes', lotesRoutes);
 app.use('/lances', lancesRoutes);
 app.use('/imagens', imagensRoutes);
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
 app.use('/auth', authRoutes);
 
 app.get('/', (req, res) => {

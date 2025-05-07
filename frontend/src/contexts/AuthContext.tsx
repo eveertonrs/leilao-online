@@ -26,6 +26,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     if (usuario) {
       localStorage.setItem('usuario', JSON.stringify(usuario));
+      console.log('🔐 Usuário logado:', usuario); // <-- AQUI
     } else {
       localStorage.removeItem('usuario');
     }

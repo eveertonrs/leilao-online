@@ -9,6 +9,7 @@ import EditarEvento from './pages/EditarEvento';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute';
 import AdminLotes from './pages/AdminLotes';
+import DetalhesLote from './pages/DetalhesLote';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/eventos/:id" element={<DetalhesEvento />} />
         <Route path="/upload" element={<UploadImagem />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/lotes/:id" element={<DetalhesLote />} />
         
         {/* Rotas protegidas */}
         <Route path="/novo-evento" element={

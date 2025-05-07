@@ -59,25 +59,42 @@ const EditarEvento = () => {
     formData.append('data_fim', dataFim);
   
     if (imagem) {
-      formData.append('foto_capa', imagem); // somente se imagem for alterada
+      formData.append('foto_capa', imagem);
     }
-
-    const token = localStorage.getItem('token'); // ✅ Pegando o token
-
+  
+    const token = localStorage.getItem('token');
+  
+    // 🔍 Logs de verificação
+    console.log('🔧 Enviando os seguintes dados:');
+    console.log('nome:', nome);
+    console.log('descricao:', descricao);
+    console.log('data_inicio:', dataInicio);
+    console.log('data_fim:', dataFim);
+    console.log('imagem:', imagem ? imagem.name : 'não alterada');
+    console.log('token:', token ? 'Token presente' : 'Token ausente');
+  
     try {
-      await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
+      const response = await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
-          'Authorization': `Bearer ${token}`, // ✅ Enviando o token
+          'Authorization': `Bearer ${token}`,
         },
       });
+  
+      console.log('✅ Evento atualizado com sucesso:', response.data);
       alert('Evento atualizado com sucesso!');
       navigate('/');
-    } catch (error) {
-      console.error('Erro ao atualizar evento:', error);
-      alert('Erro ao atualizar evento');
+    } catch (error: any) {
+      console.error('❌ Erro ao atualizar evento:', error);
+      if (error.response) {
+        console.error('🔁 Resposta do servidor:', error.response.data);
+        alert(`Erro do servidor: ${error.response.data.mensagem || 'Verifique os campos.'}`);
+      } else {
+        alert('Erro inesperado. Verifique o console.');
+      }
     }
   };
+  
 
   return (
     <Box sx={{ maxWidth: 500, margin: 'auto', padding: 3 }}>
