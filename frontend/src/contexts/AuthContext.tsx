@@ -1,9 +1,11 @@
 import { createContext, useState, useEffect, ReactNode } from 'react';
 
 type Usuario = {
+  id: number;
   nome: string;
-  tipo: string; // 'ADMIN' ou outro
+  tipo: string;
 };
+
 
 type AuthContextType = {
   usuario: Usuario | null;
