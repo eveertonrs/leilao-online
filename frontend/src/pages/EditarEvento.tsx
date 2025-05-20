@@ -6,6 +6,7 @@ import {
   Button,
   Typography,
   Paper,
+  Avatar
 } from '@mui/material';
 import { useParams, useNavigate } from 'react-router-dom';
 
@@ -26,7 +27,7 @@ const EditarEvento = () => {
         const evento = response.data;
         setNome(evento.nome);
         setDescricao(evento.descricao);
-        setDataInicio(evento.data_inicio.slice(0, 16)); // formato YYYY-MM-DDTHH:MM
+        setDataInicio(evento.data_inicio.slice(0, 16));
         setDataFim(evento.data_fim.slice(0, 16));
         if (evento.foto_capa) {
           setPreview(`http://localhost:3333/uploads/${evento.foto_capa}`);
@@ -57,49 +58,46 @@ const EditarEvento = () => {
     formData.append('descricao', descricao);
     formData.append('data_inicio', dataInicio);
     formData.append('data_fim', dataFim);
-  
+
     if (imagem) {
       formData.append('foto_capa', imagem);
     }
-  
+
     const token = localStorage.getItem('token');
-  
-    // 🔍 Logs de verificação
-    console.log('🔧 Enviando os seguintes dados:');
-    console.log('nome:', nome);
-    console.log('descricao:', descricao);
-    console.log('data_inicio:', dataInicio);
-    console.log('data_fim:', dataFim);
-    console.log('imagem:', imagem ? imagem.name : 'não alterada');
-    console.log('token:', token ? 'Token presente' : 'Token ausente');
-  
+
     try {
-      const response = await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
+      await axios.put(`http://localhost:3333/eventos/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`,
         },
       });
-  
-      console.log('✅ Evento atualizado com sucesso:', response.data);
+
       alert('Evento atualizado com sucesso!');
       navigate('/');
     } catch (error: any) {
-      console.error('❌ Erro ao atualizar evento:', error);
+      console.error('Erro ao atualizar evento:', error);
       if (error.response) {
-        console.error('🔁 Resposta do servidor:', error.response.data);
         alert(`Erro do servidor: ${error.response.data.mensagem || 'Verifique os campos.'}`);
       } else {
         alert('Erro inesperado. Verifique o console.');
       }
     }
   };
-  
 
   return (
-    <Box sx={{ maxWidth: 500, margin: 'auto', padding: 3 }}>
-      <Paper elevation={3} sx={{ padding: 3 }}>
-        <Typography variant="h5" gutterBottom>
+    <Box sx={{
+      background: 'linear-gradient(#f9f9f9, #e9f0f7)',
+      minHeight: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      py: 6
+    }}>
+      <Paper elevation={4} sx={{ padding: 4, maxWidth: 500, width: '100%', borderRadius: 3 }}>
+        <Button variant="outlined" onClick={() => navigate(-1)} sx={{ mb: 2 }}>← Voltar</Button>
+
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
           Editar Evento
         </Typography>
 
@@ -141,15 +139,15 @@ const EditarEvento = () => {
           onChange={(e) => setDataFim(e.target.value)}
         />
 
-        <Button variant="contained" component="label" sx={{ mt: 2 }}>
+        <Button variant="outlined" component="label" sx={{ mt: 2 }}>
           Alterar Imagem
           <input type="file" hidden onChange={handleImagemChange} />
         </Button>
 
         {preview && (
-          <Box sx={{ mt: 2 }}>
-            <Typography variant="subtitle1">Pré-visualização:</Typography>
-            <img src={preview} alt="Preview" style={{ width: '100%', borderRadius: 4 }} />
+          <Box sx={{ mt: 3, textAlign: 'center' }}>
+            <Typography variant="subtitle1" gutterBottom>Pré-visualização:</Typography>
+            <Avatar src={preview} variant="rounded" sx={{ width: '100%', height: 200, borderRadius: 2 }} />
           </Box>
         )}
 
@@ -157,7 +155,7 @@ const EditarEvento = () => {
           variant="contained"
           color="primary"
           fullWidth
-          sx={{ mt: 3 }}
+          sx={{ mt: 3, fontWeight: 'bold' }}
           onClick={handleSubmit}
         >
           Atualizar

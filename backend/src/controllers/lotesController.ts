@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
-import sql from 'mssql'; // Importante!
+import sql from 'mssql';
 import pool from '../config/db';
 import path from 'path';
 import fs from 'fs';
 
-// Listar todos os lotes
 export async function getLotes(req: Request, res: Response): Promise<void> {
   try {
     const conn = await pool;
@@ -38,14 +37,12 @@ export async function getLotes(req: Request, res: Response): Promise<void> {
   }
 }
 
-// Buscar um lote por ID
 export async function getLote(req: Request, res: Response): Promise<void> {
   const { id } = req.params;
 
   try {
     const conn = await pool;
 
-    // Buscar o lote
     const resultLote = await conn.request()
       .input('id', sql.Int, Number(id))
       .query(`
@@ -68,7 +65,6 @@ export async function getLote(req: Request, res: Response): Promise<void> {
 
     const lote = resultLote.recordset[0];
 
-    // Buscar imagens do lote
     const resultImagens = await conn.request()
       .input('lote_id', sql.Int, Number(id))
       .query(`SELECT url FROM lote_imagens WHERE lote_id = @lote_id`);
@@ -82,8 +78,6 @@ export async function getLote(req: Request, res: Response): Promise<void> {
   }
 }
 
-
-// Criar novo lote
 export async function createLote(req: Request, res: Response): Promise<void> {
   let { nome, descricao, lance_minimo, data_inicio, data_fim, evento_id, categoria_id } = req.body;
 
@@ -124,24 +118,26 @@ export async function createLote(req: Request, res: Response): Promise<void> {
   }
 }
 
-
 export async function updateLote(req: Request, res: Response): Promise<void> {
   const { id } = req.params;
-  const { nome, descricao, lance_minimo, data_inicio, data_fim, evento_id, categoria_id } = req.body;
-  const imagens = req.files as Express.Multer.File[];
+  const {
+    nome, descricao, lance_minimo, data_inicio, data_fim,
+    evento_id, categoria_id, imagens_atuais = []
+  } = req.body;
 
   try {
     const conn = await pool;
 
+    // Atualiza os dados principais
     await conn.request()
       .input('id', Number(id))
       .input('nome', nome)
       .input('descricao', descricao || null)
-      .input('lance_minimo', lance_minimo)
+      .input('lance_minimo', parseFloat(lance_minimo))
       .input('data_inicio', new Date(data_inicio))
       .input('data_fim', new Date(data_fim))
-      .input('evento_id', evento_id)
-      .input('categoria_id', categoria_id)
+      .input('evento_id', parseInt(evento_id))
+      .input('categoria_id', parseInt(categoria_id))
       .query(`
         UPDATE lotes
         SET nome = @nome,
@@ -154,19 +150,27 @@ export async function updateLote(req: Request, res: Response): Promise<void> {
         WHERE id = @id
       `);
 
-    // Remove imagens antigas (ou use um campo de status)
-    await conn.request().input('lote_id', id).query(`DELETE FROM lote_imagens WHERE lote_id = @lote_id`);
+    // Buscar imagens atuais no banco
+    const imagensExistentes = await conn.request()
+      .input('lote_id', Number(id))
+      .query('SELECT url FROM lote_imagens WHERE lote_id = @lote_id');
 
-    // Salva novas imagens
-    for (const file of imagens) {
-      const imageUrl = `/uploads/${file.filename}`;
+    const urlsNoBanco = imagensExistentes.recordset.map((r: any) => r.url);
+
+    // Identificar quais devem ser excluídas
+    const imagensParaExcluir = urlsNoBanco.filter(url => !imagens_atuais.includes(`http://localhost:3333${url}`));
+
+    // Excluir do banco e do disco
+    for (const url of imagensParaExcluir) {
       await conn.request()
-        .input('lote_id', id)
-        .input('url', imageUrl)
-        .query(`
-          INSERT INTO lote_imagens (lote_id, url)
-          VALUES (@lote_id, @url)
-        `);
+        .input('lote_id', Number(id))
+        .input('url', url)
+        .query('DELETE FROM lote_imagens WHERE lote_id = @lote_id AND url = @url');
+
+      const caminho = path.join(__dirname, '..', '..', url);
+      if (fs.existsSync(caminho)) {
+        fs.unlinkSync(caminho);
+      }
     }
 
     res.status(200).json({ mensagem: 'Lote atualizado com sucesso' });
@@ -176,7 +180,6 @@ export async function updateLote(req: Request, res: Response): Promise<void> {
   }
 }
 
-// Deletar lote
 export async function deleteLote(req: Request, res: Response): Promise<void> {
   const { id } = req.params;
 

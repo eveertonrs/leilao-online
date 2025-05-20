@@ -45,16 +45,9 @@ export async function createEvento(req: Request, res: Response): Promise<void> {
   const dataInicioSQL = formatDateToSQL(data_inicio);
   const dataFimSQL = formatDateToSQL(data_fim);
 
-  // Validação de datas
-  const now = new Date();
+  // Validação de datas: apenas garantir fim > início
   const inicio = new Date(data_inicio);
   const fim = new Date(data_fim);
-
-  if (inicio < now) {
-    res.status(400).json({ mensagem: 'A data de início não pode ser anterior à data atual' });
-    return;
-  }
-
   if (fim <= inicio) {
     res.status(400).json({ mensagem: 'A data de fim deve ser posterior à data de início' });
     return;

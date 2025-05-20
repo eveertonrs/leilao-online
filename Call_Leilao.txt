@@ -1,0 +1,1674 @@
+Detected language: Portuguese
+[00:00.000 --> 00:05.600]  Num leilão a gente tem o evento de hoje é segunda-feira.
+[00:05.600 --> 00:14.000]  Então, eu chamo de evento, é, pode ser isso, eu tenho que ter o evento de segunda-feira.
+[00:14.000 --> 00:20.400]  Dentro deste evento de segunda, ele contém a data e hora que começa o evento.
+[00:20.400 --> 00:25.760]  A data inicial de 50 lotes dentro dele.
+[00:26.160 --> 00:29.760]  Então, o evento é só mesmo um nó.
+[00:29.760 --> 00:34.560]  Então, assim, se você for pensar que, ah, você está vendendo 40 peças de roupa.
+[00:34.560 --> 00:40.960]  Tá, mas hoje, o evento de segunda-feira vem assim, evento de segunda-feira, uma foto.
+[00:40.960 --> 00:44.960]  Elas vão começar a ser vendidas a partir das 10 da manhã.
+[00:44.960 --> 00:49.760]  E a última peça de roupa que é o pai, seria o pai.
+[00:49.760 --> 00:55.760]  E ele vai agrupar os outros 50 lotes, vai ser vendida meio-dia.
+[00:55.760 --> 01:01.760]  Então, entre 10 e meio-dia, eu vou ter esse inteiro 50 itens sendo leiluado, tá?
+[01:01.760 --> 01:04.960]  O evento hoje eu tenho todo dia.
+[01:04.960 --> 01:10.960]  Então, balo, né, pode ser tudo junto, pode não ser isso aí, é, varia.
+[01:10.960 --> 01:15.360]  Todo de segunda, terça, quarta, todo dia da semana eu tenho evento.
+[01:16.160 --> 01:22.560]  A minha intenção sempre é que, quando você pegar a data final,
+[01:22.560 --> 01:28.560]  for o nome dele, pode ser um evento de, evento particular do Everton,
+[01:28.560 --> 01:30.560]  pode ser o evento final.
+[01:30.560 --> 01:33.360]  Acabou hoje, segunda-feira, meio-dia.
+[01:33.360 --> 01:37.360]  Eu não posso ter mais ninguém do Banco Safra, evento do Itaú,
+[01:37.360 --> 01:39.760]  evento de Gado, é um evento.
+[01:39.760 --> 01:44.960]  Dentro dele vai ter que esteja no evento de segunda, mas que feche após o meio-dia.
+[01:45.760 --> 01:46.960]  Sabe?
+[01:46.960 --> 01:49.760]  Quem que está sendo agregado lá.
+[01:49.760 --> 01:52.960]  Então, dentro do evento do Everton, ele está vendendo computador,
+[01:52.960 --> 01:55.760]  então tem que amarrar isso de alguma forma.
+[01:55.760 --> 01:56.960]  Isso tem que estar amarrado.
+[01:56.960 --> 01:58.560]  Então, start o evento.
+[01:58.560 --> 02:02.160]  Roupa, câmera, celular, roupa, tá?
+[02:02.160 --> 02:04.560]  O evento que tem essas nomenclaturas,
+[02:04.560 --> 02:06.560]  vezes supondo 8 horas, meio-dia,
+[02:06.560 --> 02:09.360]  eu já tenho que bloquear aquele evento para ninguém conseguir mais,
+[02:09.360 --> 02:11.360]  como vocês falam mesmo, beleza.
+[02:11.760 --> 02:13.760]  Eu chamo de evento.
+[02:14.960 --> 02:16.160]  É, pode ser isso.
+[02:16.160 --> 02:18.160]  E eu tenho que incluir lotes.
+[02:18.160 --> 02:19.760]  Você não pode ter lotes.
+[02:19.760 --> 02:22.960]  Eu não posso ter, por exemplo, o Everton está vendendo 10 peças,
+[02:22.960 --> 02:25.360]  data e hora que começa o evento.
+[02:25.360 --> 02:30.560]  Então, o evento é a data inicial, essas de roupa que acaba o meio-dia.
+[02:30.560 --> 02:33.760]  Eu não posso ter uma décima primeira peça a uma hora da tarde.
+[02:33.760 --> 02:40.160]  Então, assim, se você for pensar que você está vendendo 40 peças de roupa,
+[02:40.160 --> 02:42.960]  mas porque ele está fora do evento, ele está fora.
+[02:42.960 --> 02:44.560]  Nada, nada, nada, é.
+[02:44.560 --> 02:45.360]  Na verdade, não.
+[02:45.360 --> 02:49.760]  Lance, elas vão começar a ser vendidas a partir das 10 da manhã.
+[02:49.760 --> 02:52.560]  E a última peça de roupa, lance,
+[02:52.560 --> 02:55.360]  a partir do momento que abre a data inicial desse evento,
+[02:55.360 --> 02:58.160]  o evento vai abrir às 8 horas da manhã de segunda.
+[02:58.160 --> 03:00.560]  Vai ser vendida meio-dia.
+[03:00.560 --> 03:04.960]  Então, entre 10 e meio-dia, eu vou ter esse intervalo.
+[03:04.960 --> 03:06.560]  O que significa abrir?
+[03:06.560 --> 03:09.760]  O abrir não significa que as pessoas podem dar lance, não.
+[03:09.760 --> 03:15.760]  Ele valo, pode ser tudo junto, pode não ser isso aí, varia.
+[03:15.760 --> 03:20.960]  Vai estar aberto a partir do momento que você postar.
+[03:20.960 --> 03:22.160]  Isso é um outro ponto.
+[03:22.160 --> 03:27.360]  A minha intenção sempre é que quando você pega a data final,
+[03:27.360 --> 03:29.760]  eu também já tinha falado com ele, porque assim,
+[03:29.760 --> 03:31.760]  a data do meu evento é,
+[03:31.760 --> 03:38.160]  esse evento acontece segunda-feira, final, acabou hoje, segunda-feira, meio-dia.
+[03:38.160 --> 03:40.960]  Eu não posso ter mais ninguém às 10 ao meio-dia.
+[03:40.960 --> 03:42.960]  Porém, quando eu coloco ele no ar,
+[03:42.960 --> 03:45.360]  eu coloco ele no ar na quarta-feira passada,
+[03:45.360 --> 03:49.760]  que esteja no evento de segunda, mas que feche após o meio-dia.
+[03:51.760 --> 03:54.560]  Ele já está aberto, tá?
+[03:54.560 --> 03:56.560]  O evento está aberto.
+[03:56.560 --> 04:00.960]  Todos os lojas, então, tem que amarrar isso de alguma forma.
+[04:00.960 --> 04:02.160]  Isso tem que estar amarrado.
+[04:02.160 --> 04:03.760]  Então, start o evento.
+[04:03.760 --> 04:05.360]  Os lojas dele estão abertos.
+[04:06.160 --> 04:09.360]  Ah, tá. Entendi, entendi.
+[04:09.360 --> 04:11.360]  Supondo 8 horas, meio-dia,
+[04:11.360 --> 04:14.160]  eu já tenho que bloquear aquele evento para ninguém conseguir mais...
+[04:14.160 --> 04:15.360]  Como vocês falam mesmo?
+[04:15.360 --> 04:17.360]  É para ele concluir o lote, né?
+[04:17.360 --> 04:20.160]  Isso, para concluir, para ele finalizar.
+[04:20.160 --> 04:22.960]  Então, assim, este lote vai incluir lotes.
+[04:22.960 --> 04:24.560]  Você não pode ter lotes.
+[04:24.560 --> 04:28.560]  Eu não posso ter, por exemplo, o Everton está vendendo 10 peças, vai acontecer.
+[04:28.560 --> 04:32.560]  Então, o leilão deste lote vai acontecer na segunda das 10 ao meio-dia.
+[04:32.560 --> 04:34.960]  Essas de roupa que acabam o meio-dia.
+[04:34.960 --> 04:38.160]  Eu não posso ter uma décima primeira peça a uma hora da tarde.
+[04:38.160 --> 04:38.960]  Uhum.
+[04:38.960 --> 04:40.560]  Esse é o compromisso dele.
+[04:40.560 --> 04:42.160]  Tem que acontecer entre 10 e meio-dia.
+[04:42.160 --> 04:44.960]  Mas, 10 e meio-dia é para ele fechar.
+[04:44.960 --> 04:47.360]  Porque ele está fora do evento, ele está fora...
+[04:47.360 --> 04:48.960]  Nada, nada, nada, é.
+[04:48.960 --> 04:50.160]  Na verdade, não.
+[04:50.160 --> 04:54.160]  Lance, o lance inicial é quando ele vai começar a fechar.
+[04:54.160 --> 04:56.960]  Então, ele vai começar a fechar às 10 horas da manhã.
+[04:56.960 --> 05:00.160]  Lance, a partir do momento que abre a data inicial deste evento,
+[05:00.160 --> 05:02.960]  o evento vai abrir às 8 horas da manhã de segunda.
+[05:03.760 --> 05:05.360]  Bater o primeiro item, fechou.
+[05:05.360 --> 05:07.960]  Aí o segundo, depende do horário que cada um quiser.
+[05:07.960 --> 05:08.960]  Isso é varia.
+[05:09.760 --> 05:11.360]  O que significa abrir?
+[05:11.360 --> 05:14.560]  O abrir não significa que as pessoas podem dar lance, não.
+[05:14.560 --> 05:19.760]  Mas a pessoa pode dar lance antes da data inicial do evento.
+[05:19.760 --> 05:20.960]  O evento vai começar...
+[05:20.960 --> 05:25.760]  Vai estar aberto a partir do momento que você postar.
+[05:25.760 --> 05:26.960]  Isso é um outro ponto.
+[05:26.960 --> 05:27.760]  É lote, né?
+[05:27.760 --> 05:28.960]  Isso, isso.
+[05:28.960 --> 05:30.760]  Tem do lote, só para entender.
+[05:30.760 --> 05:32.160]  Já está lá.
+[05:32.960 --> 05:33.960]  Eu também já tinha falado com ele.
+[05:33.960 --> 05:36.560]  Porque assim, a data do meu evento é...
+[05:36.560 --> 05:41.360]  Este evento acontece segunda, está cadastrado, dizendo que...
+[05:41.360 --> 05:42.560]  Hoje vai quarta-feira.
+[05:42.560 --> 05:45.760]  Dizendo que na segunda às 10 da manhã, vai aos 10 ao meio-dia.
+[05:45.760 --> 05:47.960]  Porém, quando eu coloco ele no ar,
+[05:47.960 --> 05:50.160]  eu coloco ele no ar na quarta-feira passada.
+[05:50.160 --> 05:51.360]  Dá isso aqui.
+[05:51.360 --> 05:54.960]  Então, todo mundo pode dar lance na quinta, na sexta, no sábado.
+[05:54.960 --> 05:56.160]  Pode dar lance.
+[05:56.160 --> 05:59.160]  Ele já está aberto, tá?
+[05:59.160 --> 06:01.360]  O evento está aberto.
+[06:01.760 --> 06:03.960]  Todos os lotes, tá?
+[06:03.960 --> 06:05.560]  Então, evento é isso.
+[06:05.560 --> 06:06.960]  É data, hora.
+[06:08.360 --> 06:09.960]  E os lotes dele estão abertos.
+[06:11.960 --> 06:13.560]  Ah, tá. Entendi, entendi.
+[06:13.560 --> 06:15.560]  E o nome dele?
+[06:16.160 --> 06:17.360]  Qual é o nome dele?
+[06:17.960 --> 06:19.960]  Os lotes, aí a gente tem os lotes.
+[06:19.960 --> 06:21.960]  Para ele concluir o lote, né?
+[06:21.960 --> 06:25.160]  Isso, para concluir, para ele finalizar.
+[06:25.160 --> 06:27.360]  Então, assim, este lote vai vendo, por exemplo,
+[06:27.560 --> 06:29.560]  carro, carro, caminhão,
+[06:29.560 --> 06:31.560]  utilitários.
+[06:31.560 --> 06:33.560]  Isso tudo vai acontecer.
+[06:33.560 --> 06:36.160]  Então, o leilão deste lote vai acontecer na segunda,
+[06:36.160 --> 06:37.560]  das 10 ao meio-dia.
+[06:39.560 --> 06:40.960]  É dentro do lote.
+[06:40.960 --> 06:42.760]  Mas, ok, o lote,
+[06:43.360 --> 06:44.160]  aí vai...
+[06:44.160 --> 06:45.560]  Este é o compromisso dele.
+[06:45.560 --> 06:47.360]  Tem que acontecer entre 10 e meio-dia.
+[06:47.360 --> 06:49.960]  Mas, 10 e meio-dia para ele fechar.
+[06:49.960 --> 06:51.560]  Vocês podem fazer uma organização.
+[06:51.560 --> 06:54.360]  O lote vai carregar essa categoria?
+[06:54.560 --> 06:57.560]  Ou essa categoria, então, entre a inicial,
+[06:57.560 --> 06:59.160]  é quando ele vai começar a fechar.
+[06:59.160 --> 07:02.160]  Então, ele vai começar a fechar às 10 horas da manhã.
+[07:02.160 --> 07:03.760]  Por exemplo, na segunda-feira,
+[07:03.760 --> 07:06.360]  eu posso ter um evento de carro,
+[07:06.360 --> 07:07.560]  um evento de moto.
+[07:08.560 --> 07:10.360]  Bater o primeiro item, fechou.
+[07:10.360 --> 07:12.760]  Aí o segundo, depende do horário que cada um quiser.
+[07:12.760 --> 07:13.960]  Isso é varia.
+[07:13.960 --> 07:15.360]  E um evento de caminhão.
+[07:15.360 --> 07:16.360]  No mesmo evento.
+[07:17.360 --> 07:18.760]  Então, hoje pode.
+[07:19.560 --> 07:21.960]  Mas a pessoa pode dar lance
+[07:21.960 --> 07:24.360]  antes da data inicial do evento.
+[07:24.360 --> 07:25.960]  O evento vai começar.
+[07:25.960 --> 07:26.960]  Eles não trabalham assim.
+[07:26.960 --> 07:28.760]  Hoje, no admin deles, eles trabalham.
+[07:28.760 --> 07:30.560]  Porque ele pode abrir um evento na segunda-feira
+[07:30.560 --> 07:31.760]  e falar que o Everton vai vender.
+[07:31.760 --> 07:32.560]  É lote, né?
+[07:32.560 --> 07:34.560]  Sim, tem do lote.
+[07:34.560 --> 07:35.560]  Só para entender.
+[07:35.560 --> 07:36.960]  Já está lá.
+[07:36.960 --> 07:41.760]  A bicicleta dele, a moto dele, o celular dele e o notebook.
+[07:41.760 --> 07:43.560]  São coisas completamente diferentes.
+[07:43.560 --> 07:46.160]  Está cadastrado, dizendo que...
+[07:46.160 --> 07:49.760]  Hoje vai quarta-feira, dizendo que na segunda às 10 da manhã vai rodar.
+[07:49.760 --> 07:51.560]  Mas ele está vendendo tudo isso.
+[07:51.760 --> 07:52.560]  Sim.
+[07:52.560 --> 07:54.160]  Porque muitas vezes eles pegam...
+[07:55.360 --> 07:56.760]  Para mudar isso aqui.
+[07:56.760 --> 08:00.160]  Então, todo mundo pode dar lance na quinta, na sexta, no sábado.
+[08:00.160 --> 08:01.360]  Pode dar lance.
+[08:01.360 --> 08:05.160]  Lotes que vêm fechados de um jurídico, de um judicial.
+[08:05.160 --> 08:08.160]  Que é uma casa, um terreno, um apartamento.
+[08:08.160 --> 08:08.960]  Tá?
+[08:08.960 --> 08:10.360]  Então, evento é isso.
+[08:10.360 --> 08:12.160]  É data, hora...
+[08:13.160 --> 08:14.760]  Quinta, uma kitnet.
+[08:14.760 --> 08:16.760]  Isso tudo, o cara joga tudo no mesmo lugar.
+[08:16.760 --> 08:19.160]  E fala, é o evento do Banco Safa.
+[08:19.160 --> 08:20.960]  E o nome dele?
+[08:20.960 --> 08:22.160]  Qual é o nome dele?
+[08:22.760 --> 08:24.760]  Os lotes, aí a gente tem os lotes.
+[08:24.760 --> 08:25.760]  Eu, pronto.
+[08:25.760 --> 08:28.160]  Tudo que está vendendo do Banco Safa, ele está vendendo.
+[08:28.160 --> 08:30.160]  Mas tem que ter uma categoria.
+[08:30.160 --> 08:36.360]  Para categorizar vendo, por exemplo, carro, foto, caminhão, utilitários.
+[08:36.360 --> 08:38.560]  Isso tudo, o que é?
+[08:39.160 --> 08:41.160]  Sim, para poder pesquisar tudo.
+[08:41.160 --> 08:42.160]  É.
+[08:42.160 --> 08:43.560]  Eu acredito que isso tudo...
+[08:44.360 --> 08:45.760]  É dentro do lote.
+[08:45.760 --> 08:46.560]  Mas, ok.
+[08:46.560 --> 08:47.560]  O lote...
+[08:48.160 --> 08:49.960]  Aí, com você, pode jogar...
+[08:50.760 --> 08:52.560]  A categoria dentro do lote.
+[08:52.560 --> 08:54.360]  Na hora que estiver cadastrando o lote.
+[08:54.360 --> 08:54.960]  Sim.
+[08:54.960 --> 08:56.360]  Vocês podem fazer...
+[08:56.360 --> 08:59.360]  O lote vai carregar essa categoria?
+[08:59.360 --> 09:00.960]  Ou essa categoria...
+[09:00.960 --> 09:04.360]  Tem uma tabela para poder saber as categorias.
+[09:04.360 --> 09:06.960]  Para categorizar ele aí dentro.
+[09:06.960 --> 09:09.760]  Por exemplo, na segunda-feira, eu posso ter
+[09:09.760 --> 09:12.760]  um evento de carro, um evento de moto.
+[09:12.760 --> 09:13.560]  Dentro do lote.
+[09:13.560 --> 09:14.360]  Uhum.
+[09:14.360 --> 09:15.560]  Beleza.
+[09:15.560 --> 09:18.760]  Então, no caso, o evento não vai ter uma categoria...
+[09:18.760 --> 09:20.160]  De um evento de caminhão.
+[09:20.160 --> 09:21.160]  No mesmo evento.
+[09:22.160 --> 09:23.560]  Então, hoje pode.
+[09:24.360 --> 09:25.760]  Mas não precisa...
+[09:25.760 --> 09:26.960]  Os lotes, no caso.
+[09:26.960 --> 09:27.560]  Isso.
+[09:27.560 --> 09:30.360]  Eu acredito que não precisa o evento ter uma categoria definida,
+[09:30.360 --> 09:31.560]  porque eles não trabalham assim.
+[09:31.560 --> 09:35.160]  Hoje, no admin deles, eles trabalham que ele pode abrir um evento na segunda-feira
+[09:35.160 --> 09:36.560]  e falar o Everton vai vender.
+[09:36.560 --> 09:37.160]  Por quê?
+[09:37.160 --> 09:39.360]  Se a gente for pensar, ok, estou fazendo.
+[09:39.360 --> 09:45.360]  Se eu for filtrar por, sei lá, caminhão, a bicicleta dele, a moto dele, o celular dele
+[09:45.360 --> 09:46.560]  e o notebook.
+[09:46.560 --> 09:48.360]  São coisas completamente diferentes.
+[09:48.760 --> 09:52.560]  Vai aparecer no evento de hoje, vai aparecer no evento de amanhã,
+[09:52.560 --> 09:54.560]  em todos os eventos que têm esse caminhão.
+[09:54.560 --> 09:56.560]  Mas eles estão vendendo tudo isso.
+[09:56.560 --> 09:57.360]  Sim.
+[09:57.360 --> 09:58.760]  Porque muitas vezes eles pegam...
+[10:00.760 --> 10:03.560]  E não só procurando no evento do dia de hoje.
+[10:04.960 --> 10:05.560]  Sim.
+[10:05.560 --> 10:06.360]  Então, é isso.
+[10:06.360 --> 10:09.960]  Lotes que vêm fechados de um jurídico, de um judicial,
+[10:09.960 --> 10:13.960]  que é uma casa, um terreno, um apartamento sobre evento,
+[10:13.960 --> 10:15.960]  é isso que a gente chama de evento.
+[10:15.960 --> 10:18.160]  Lote é o que está lá dentro.
+[10:18.560 --> 10:19.560]  Uma kitnet.
+[10:19.560 --> 10:21.560]  Isso tudo, o cara joga tudo no mesmo lugar.
+[10:21.560 --> 10:24.160]  Fala lá, é o evento do Banco Safra.
+[10:24.160 --> 10:27.560]  E aí é descrição, foto, data...
+[10:27.560 --> 10:29.160]  Aí é a data que ele...
+[10:29.160 --> 10:30.160]  De novo, a data...
+[10:30.160 --> 10:30.760]  Pronto.
+[10:30.760 --> 10:33.160]  Tudo que está vendendo do Banco Safra, ele está vendendo.
+[10:33.160 --> 10:35.160]  Mas tem que ter uma categoria.
+[10:35.160 --> 10:39.560]  Para categorizar a inicial que você põe o evento,
+[10:39.560 --> 10:42.560]  tem que ser a data, a primeira data.
+[10:42.560 --> 10:43.960]  O que que é?
+[10:43.960 --> 10:45.960]  Sim, para poder pesquisar tudo.
+[10:45.960 --> 10:46.960]  É.
+[10:47.160 --> 10:48.760]  Eu acredito que se lata do lote.
+[10:48.760 --> 10:50.760]  Então, a gente tem que sempre bater, que saber que...
+[10:50.760 --> 10:53.960]  O lote, ele falou que começa às oito horas da manhã,
+[10:53.960 --> 10:57.360]  você pode jogar a categoria dentro do lote,
+[10:57.360 --> 10:59.360]  na hora que estiver cadastrando o lote.
+[10:59.360 --> 11:00.160]  Sim.
+[11:00.160 --> 11:03.160]  Eu não posso ter um lote cadastrado para começar às sete.
+[11:04.160 --> 11:09.360]  Então, tem uma tabela para poder saber as categorias.
+[11:09.360 --> 11:11.960]  Para categorizar ele aí dentro.
+[11:11.960 --> 11:14.560]  Tem o tempo do evento, tem disso aí.
+[11:14.560 --> 11:16.760]  E depois ainda tem o tempo do lote.
+[11:16.760 --> 11:17.760]  O lote vai ter um...
+[11:17.760 --> 11:18.760]  O tempo do lote.
+[11:18.760 --> 11:19.760]  Uhum.
+[11:19.760 --> 11:20.760]  Beleza.
+[11:20.760 --> 11:23.760]  Então, no caso, o evento não vai ter uma categoria definida.
+[11:23.760 --> 11:25.760]  Um período para eles poderem arrematar isso.
+[11:25.760 --> 11:26.760]  Isso.
+[11:26.760 --> 11:28.760]  O lote hoje, ele começa assim.
+[11:28.760 --> 11:30.760]  O evento abre de dez minutos.
+[11:30.760 --> 11:31.760]  Os lotes, no caso.
+[11:31.760 --> 11:32.760]  Isso.
+[11:32.760 --> 11:35.760]  Eu acredito que não precisa o evento ter uma categoria definida
+[11:35.760 --> 11:36.760]  depois do meio-dia.
+[11:36.760 --> 11:39.760]  E de dois em dois minutos, fecha-se um lote.
+[11:39.760 --> 11:40.760]  Isso é hoje.
+[11:40.760 --> 11:41.760]  Tá?
+[11:41.760 --> 11:42.760]  Por quê?
+[11:42.760 --> 11:43.760]  Se a gente for pensar que...
+[11:43.960 --> 11:46.960]  Se eu for filtrar por, sei lá, caminhão.
+[11:46.960 --> 11:49.960]  Então, hoje o cara entra, cadastra.
+[11:49.960 --> 11:52.960]  Celular às dez e dez.
+[11:52.960 --> 11:54.960]  Então, vai aparecer no evento de hoje.
+[11:54.960 --> 11:56.960]  Vai aparecer no evento de amanhã.
+[11:56.960 --> 11:58.960]  Em todos os eventos tem esse caminhão.
+[11:58.960 --> 12:01.960]  Às dez e dez vai fechar o lote do celular.
+[12:01.960 --> 12:04.960]  Às dez e doze vai fechar o lote do notebook.
+[12:04.960 --> 12:07.960]  E não só no evento do dia de hoje.
+[12:07.960 --> 12:08.960]  Tá?
+[12:08.960 --> 12:09.960]  Sim.
+[12:09.960 --> 12:10.960]  Então, é isso.
+[12:11.160 --> 12:14.160]  Aí, dez e quatorze, o lote do monitor.
+[12:14.160 --> 12:15.160]  Entendeu?
+[12:15.160 --> 12:17.160]  Isso tudo dentro.
+[12:17.160 --> 12:19.160]  Sobre evento, é isso.
+[12:19.160 --> 12:21.160]  A gente chama de evento.
+[12:21.160 --> 12:23.160]  Lote é o que tá lá dentro.
+[12:23.160 --> 12:24.160]  O horário que tá o evento.
+[12:24.160 --> 12:26.160]  Então, são regrinhas.
+[12:26.160 --> 12:29.160]  Eu não posso também deixar um evento que vai fechar.
+[12:29.160 --> 12:32.160]  E aí é descrição, foto, data.
+[12:32.160 --> 12:34.160]  Aí é a data que ele...
+[12:34.160 --> 12:35.160]  De novo, a data.
+[12:35.160 --> 12:38.160]  Dez horas da manhã, só que o cara tá cadastrando até meio-dia.
+[12:38.360 --> 12:40.360]  Não, é.
+[12:40.360 --> 12:43.360]  O momento inicial que você põe o evento
+[12:43.360 --> 12:46.360]  tem que ser a data, a primeira data.
+[12:46.360 --> 12:48.360]  Fechar aquele lote, né?
+[12:48.360 --> 12:49.360]  Tudo tem que...
+[12:49.360 --> 12:51.360]  O lote tem que, assim...
+[12:51.360 --> 12:53.360]  Se eu colocar a data do lote,
+[12:53.360 --> 12:54.360]  então a gente tem que sempre bater,
+[12:54.360 --> 12:55.360]  que saber que, ah,
+[12:55.360 --> 12:58.360]  o lote ele falou que começa às oito horas da manhã,
+[12:58.360 --> 13:00.360]  cinquenta lotes dentro de um evento,
+[13:00.360 --> 13:02.360]  o meu último lote,
+[13:02.360 --> 13:04.360]  o último lote incluído,
+[13:04.360 --> 13:07.360]  eu não posso ter um lote cadastrado para começar às sete.
+[13:07.560 --> 13:09.560]  Entendeu?
+[13:09.560 --> 13:13.560]  Tem que ser a minha data final do meu evento.
+[13:13.560 --> 13:15.560]  Meu primeiro lote incluído...
+[13:15.560 --> 13:17.560]  Tem o tempo do evento,
+[13:17.560 --> 13:19.560]  tem disso aí,
+[13:19.560 --> 13:21.560]  e depois ainda tem o tempo dos lotes.
+[13:21.560 --> 13:23.560]  O lote vai ter um...
+[13:23.560 --> 13:25.560]  Entendeu?
+[13:25.560 --> 13:27.560]  Pera aí, então, faz o evento,
+[13:27.560 --> 13:30.560]  você coloca o período para eles poderem arrematar isso.
+[13:30.560 --> 13:32.560]  Isso, o lote hoje,
+[13:32.560 --> 13:34.560]  ele começa assim, o evento abre de...
+[13:34.560 --> 13:36.560]  Primeiro lote, então o primeiro lote
+[13:36.760 --> 13:37.760]  é a data inicial aqui.
+[13:37.760 --> 13:38.760]  Isso, ele tem que ser a data,
+[13:38.760 --> 13:39.760]  tem que ser o primeiro,
+[13:39.760 --> 13:41.760]  não pode nada mais a meio-dia,
+[13:41.760 --> 13:44.760]  e de dois em dois minutos fecha-se um lote,
+[13:44.760 --> 13:46.760]  isso é hoje, tá?
+[13:46.760 --> 13:48.760]  Não, então, entendi,
+[13:48.760 --> 13:50.760]  então vai ter que ser sequencial mesmo,
+[13:50.760 --> 13:52.760]  mas necessariamente o último...
+[13:52.760 --> 13:54.760]  Então, hoje o cara entra, cadasta,
+[13:54.760 --> 13:57.760]  celular às dez e dez.
+[13:57.760 --> 14:00.760]  O último tem que bater com a data final por quê?
+[14:00.760 --> 14:02.760]  Porque se o evento está aberto,
+[14:02.760 --> 14:04.760]  você pode cadastrar vários lotes.
+[14:04.960 --> 14:06.960]  Às dez vai fechar o lote do celular,
+[14:06.960 --> 14:09.960]  às dez e doze vai fechar o lote do notebook.
+[14:09.960 --> 14:11.960]  Mas como que...
+[14:11.960 --> 14:13.960]  Pra não entender muito a data final,
+[14:13.960 --> 14:15.960]  tem que bater do último, tem que bater com a data final.
+[14:15.960 --> 14:17.960]  Às dez e quatorze,
+[14:17.960 --> 14:19.960]  o lote do monitor, entendeu?
+[14:19.960 --> 14:21.960]  Isso tudo dentro do evento.
+[14:21.960 --> 14:23.960]  Eu não posso ter uma data final
+[14:23.960 --> 14:25.960]  dentro deste evento maior,
+[14:25.960 --> 14:28.960]  uma data final do horário que está o evento.
+[14:28.960 --> 14:30.960]  Então são regrinhas que assim,
+[14:30.960 --> 14:33.960]  eu não posso também deixar um evento que vai fechar o lote.
+[14:34.160 --> 14:36.160]  Ah, beleza, o lote não pode fechar
+[14:36.160 --> 14:38.160]  depois que o evento for fechar.
+[14:38.160 --> 14:40.160]  Isso, agora entendi.
+[14:40.160 --> 14:42.160]  Dez horas da manhã,
+[14:42.160 --> 14:44.160]  só que o cara está cadastrando até meio-dia.
+[14:44.160 --> 14:46.160]  Não, é, vai bater sim.
+[14:46.160 --> 14:48.160]  Agora entendi o de bater.
+[14:48.160 --> 14:50.160]  Tá, é isso daí só.
+[14:50.160 --> 14:52.160]  Então nessa parte...
+[14:52.160 --> 14:54.160]  Fechar aquele lote, né?
+[14:54.160 --> 14:56.160]  Todo lote tem que...
+[14:56.160 --> 14:58.160]  Se eu colocar...
+[14:58.160 --> 15:00.160]  Só isso.
+[15:00.160 --> 15:02.160]  Tá.
+[15:02.360 --> 15:05.360]  Tá, então eu fiz 50 lotes dentro de um evento,
+[15:05.360 --> 15:07.360]  o meu último lote,
+[15:07.360 --> 15:09.360]  o último lote incluído,
+[15:09.360 --> 15:11.360]  o meu evento lote.
+[15:11.360 --> 15:13.360]  Documento do...
+[15:13.360 --> 15:15.360]  Você falou que atualmente faz documento.
+[15:15.360 --> 15:17.360]  Tem que ser a minha data final
+[15:17.360 --> 15:19.360]  do meu evento.
+[15:19.360 --> 15:21.360]  Meu primeiro lote incluído,
+[15:21.360 --> 15:23.360]  o lote, os lotes,
+[15:23.360 --> 15:25.360]  não teria documento,
+[15:25.360 --> 15:27.360]  eles teriam...
+[15:27.360 --> 15:29.360]  O lote teria...
+[15:29.360 --> 15:31.360]  Entendeu?
+[15:31.360 --> 15:33.360]  Então faz o evento, você coloca o...
+[15:33.360 --> 15:35.360]  Ele teria foto,
+[15:35.360 --> 15:37.360]  vai ser as fotos,
+[15:37.360 --> 15:39.360]  o edital, que seria um documento,
+[15:39.360 --> 15:41.360]  o primeiro lote, então o primeiro lote vai bater
+[15:41.360 --> 15:43.360]  com essa data inicial aqui.
+[15:43.360 --> 15:45.360]  Isso, ele tem que ser a data, tem que ser o primeiro,
+[15:45.360 --> 15:47.360]  não pode nada colocar no lote.
+[15:47.360 --> 15:49.360]  O edital, ele tem que ser feito
+[15:49.360 --> 15:51.360]  por evento,
+[15:51.360 --> 15:53.360]  então vinha antes dele.
+[15:53.360 --> 15:55.360]  Então vai ter que ser sequencial mesmo,
+[15:55.360 --> 15:57.360]  mas necessariamente o...
+[15:57.360 --> 15:59.360]  Então pensa assim, você vai vender
+[15:59.360 --> 16:01.360]  nas coisas da sua casa.
+[16:01.360 --> 16:03.360]  Você abriu o evento pra vender.
+[16:03.360 --> 16:05.360]  O último tem que bater com a data final, por quê?
+[16:05.360 --> 16:07.360]  Porque se o evento tá aberto,
+[16:07.360 --> 16:09.360]  você pode cadastrar vários lotes.
+[16:09.360 --> 16:11.360]  Ou 10 peças pra vender.
+[16:11.360 --> 16:13.360]  Eu tenho que ter um edital
+[16:13.360 --> 16:15.360]  que tá resumindo o lote.
+[16:15.360 --> 16:17.360]  Mas como que...
+[16:17.360 --> 16:19.360]  Pra não entender muito a data final,
+[16:19.360 --> 16:21.360]  tem que bater do último, tem que bater com a data final.
+[16:21.360 --> 16:23.360]  Que são essas coisas? Então isso pra mim seria
+[16:23.360 --> 16:25.360]  dentro do evento.
+[16:25.360 --> 16:27.360]  Eu criei um evento, botei cinco...
+[16:27.360 --> 16:29.360]  Eu não posso ter uma data final
+[16:29.360 --> 16:31.360]  dentro deste evento maior,
+[16:31.360 --> 16:33.360]  uma data final dos 20 lotes.
+[16:33.360 --> 16:35.360]  Eu vou ter alguma função, algum botãozinho
+[16:35.360 --> 16:37.360]  que é gerar...
+[16:37.360 --> 16:39.360]  Gerar edital.
+[16:39.360 --> 16:41.360]  Ah, beleza. O lote não pode fechar
+[16:41.360 --> 16:43.360]  depois que o evento for cá.
+[16:43.360 --> 16:45.360]  Agora entendi.
+[16:45.360 --> 16:47.360]  Ele vai puxar informações básicas,
+[16:47.360 --> 16:49.360]  que eu vou mandar isso também pra vocês.
+[16:49.360 --> 16:51.360]  É o quê? Só uma folha?
+[16:51.360 --> 16:53.360]  Agora entendi o de bater.
+[16:53.360 --> 16:55.360]  Tá, é isso daí só.
+[16:55.360 --> 16:57.360]  Essa parte é a de rosto.
+[16:57.360 --> 16:59.360]  Contendo uma miniatura,
+[16:59.360 --> 17:01.360]  que é uma das fotos que já tá cadastrada.
+[17:01.360 --> 17:03.360]  Só isso.
+[17:07.360 --> 17:09.360]  Miniatura,
+[17:09.360 --> 17:11.360]  uma breve descrição,
+[17:11.360 --> 17:13.360]  e fazer uma listagem.
+[17:13.360 --> 17:15.360]  Que a pessoa, quando entrar no evento,
+[17:15.360 --> 17:17.360]  o documento do...
+[17:17.360 --> 17:19.360]  Que você falou que talvez já tivesse documento.
+[17:19.360 --> 17:21.360]  Isso.
+[17:21.360 --> 17:23.360]  Do Everton, ela vai falar, tá, deixa eu ver o que tem aqui.
+[17:23.360 --> 17:25.360]  Deixa eu pegar esse edital pra ver.
+[17:25.360 --> 17:27.360]  E aí dentro desse edital vai...
+[17:27.360 --> 17:29.360]  O lote, os lotes...
+[17:29.360 --> 17:31.360]  Não tem documento.
+[17:31.360 --> 17:33.360]  O lote vai estar todo mundo que tá lá dentro.
+[17:33.360 --> 17:35.360]  Tudo que você tá vendendo.
+[17:35.360 --> 17:37.360]  Ah, vai estar explicando que você pode comprar.
+[17:37.360 --> 17:39.360]  Não pode.
+[17:39.360 --> 17:41.360]  Ele teria foto, que vai ser as fotos.
+[17:41.360 --> 17:43.360]  O edital, que seria um documento,
+[17:43.360 --> 17:45.360]  mas eu não sei se ele tem que comprar uma coisa.
+[17:45.360 --> 17:47.360]  Isso tudo vem automático.
+[17:47.360 --> 17:49.360]  Então pra mim, o edital,
+[17:49.360 --> 17:51.360]  vou colocar no log,
+[17:51.360 --> 17:53.360]  o edital, ele
+[17:53.360 --> 17:55.360]  tem que ser feito por evento.
+[17:55.360 --> 17:57.360]  Evento do evento, aham, sim.
+[17:57.360 --> 17:59.360]  Uma coisa vinculada a evento.
+[17:59.360 --> 18:01.360]  Que a pessoa fazer o evento, ele já vai colocar esses parâmetros.
+[18:01.360 --> 18:03.360]  Então, pensa assim.
+[18:03.360 --> 18:05.360]  Você vai vender as coisas da sua casa.
+[18:05.360 --> 18:07.360]  Você abriu o evento pra vender.
+[18:07.360 --> 18:09.360]  O documento aí que ele precisa, né?
+[18:09.360 --> 18:11.360]  Que ele quer, se é mais um, mais dois, né?
+[18:11.360 --> 18:13.360]  Você tem alguma coisa, o que você usa, pronto?
+[18:13.360 --> 18:15.360]  Ou dez peças pra vender.
+[18:15.360 --> 18:17.360]  Eu tenho que ter um edital
+[18:17.360 --> 18:19.360]  que tá resumindo.
+[18:19.360 --> 18:21.360]  Tá pronto pra isso? Só pra eu ter uma base?
+[18:21.360 --> 18:23.360]  Tenho...
+[18:23.360 --> 18:25.360]  Eu tenho um edital, pronto.
+[18:25.360 --> 18:27.360]  Eu vou pegar aqui. O que são essas coisas?
+[18:27.360 --> 18:29.360]  Então isso pra mim seria dentro do evento.
+[18:29.360 --> 18:31.360]  Eu criei um evento,
+[18:31.360 --> 18:33.360]  botei cinco, eu vou te mandar um acesso também.
+[18:33.360 --> 18:35.360]  Do que vai ter de mim de hoje.
+[18:35.360 --> 18:37.360]  Pra você entender o evento, pra você olhar.
+[18:37.360 --> 18:39.360]  Como que em casa, no Entalox,
+[18:39.360 --> 18:41.360]  eu vou ter alguma função, algum botãozinho que é
+[18:41.360 --> 18:43.360]  gerar, gerar edital.
+[18:43.360 --> 18:45.360]  Dasta, como que não cadasta, o que que é.
+[18:45.360 --> 18:47.360]  Eu vou te mandar um acesso, tá?
+[18:47.360 --> 18:49.360]  Lá vai ter, você vai entender, você vai ver.
+[18:49.360 --> 18:51.360]  Ele vai puxar informações básicas,
+[18:51.360 --> 18:53.360]  que eu vou mandar isso também pra vocês.
+[18:53.360 --> 18:55.360]  É o que? É só mesmo uma folha.
+[18:55.360 --> 18:57.360]  Hoje, o edital é feito na mão.
+[18:57.360 --> 18:59.360]  Hoje é igual.
+[18:59.360 --> 19:01.360]  O cara pega o edital,
+[19:01.360 --> 19:03.360]  tem o olhar de rosto,
+[19:03.360 --> 19:05.360]  contendo uma miniatura,
+[19:05.360 --> 19:07.360]  que é uma das fotos que já tá cadastrada, né?
+[19:07.360 --> 19:09.360]  Então você vai pegar um PDF, ele coloca lá,
+[19:09.360 --> 19:11.360]  anexa, ele pode só anexar,
+[19:11.360 --> 19:13.360]  tem o mesmo botão pra você, o evento tem que ter miniatura,
+[19:13.360 --> 19:15.360]  uma breve descrição,
+[19:15.360 --> 19:17.360]  e fazer uma listagem.
+[19:17.360 --> 19:19.360]  E a pessoa, quando entrar no evento, tem uma foto.
+[19:19.360 --> 19:21.360]  Então, você tem que ter uma foto do evento,
+[19:21.360 --> 19:23.360]  que é uma foto de capa, tal.
+[19:23.360 --> 19:25.360]  O cara anexa junto,
+[19:25.360 --> 19:27.360]  o Everton, ela vai falar, tá, deixa eu ver o que tem aqui,
+[19:27.360 --> 19:29.360]  deixa eu pegar esse edital pra ver.
+[19:29.360 --> 19:31.360]  E aí dentro desse edital vai PDF.
+[19:31.360 --> 19:33.360]  Hoje é feito na mão.
+[19:33.360 --> 19:35.360]  Mas eu quero isso automático.
+[19:35.360 --> 19:37.360]  Sim, as informações que ele colocar, gerar um PDF.
+[19:37.360 --> 19:39.360]  E tá todo mundo que tá lá dentro.
+[19:39.360 --> 19:41.360]  Tudo que você tá vendendo.
+[19:41.360 --> 19:43.360]  Ah, vai estar explicando, que você pode comprar, não pode.
+[19:43.360 --> 19:45.360]  Isso, isso.
+[19:45.360 --> 19:47.360]  Você vai ter uma folha de rosto.
+[19:47.360 --> 19:49.360]  Isso.
+[19:49.360 --> 19:51.360]  Tem que comprar uma coisa.
+[19:51.360 --> 19:53.360]  Isso tudo vem automático.
+[19:53.360 --> 19:55.360]  Então, pra mim, o edital vai pra encher.
+[19:55.360 --> 19:57.360]  Daí nessa folha você vai trocar.
+[19:57.360 --> 19:59.360]  Aqui você vai trocar a data de hoje, aqui você vai trocar quais são os itens.
+[19:59.360 --> 20:01.360]  E...
+[20:01.360 --> 20:03.360]  Uma coisa vinculada ao evento.
+[20:03.360 --> 20:05.360]  Que é o cara fazer o evento,
+[20:05.360 --> 20:07.360]  ele já vai colocar esses parques.
+[20:07.360 --> 20:09.360]  A data de início e data de fim que a pessoa escolheu,
+[20:09.360 --> 20:11.360]  vai sair no edital conforme a pessoa marcou.
+[20:11.360 --> 20:13.360]  O prêmio que ele precisa, né?
+[20:13.360 --> 20:15.360]  Que ele quer, se é mais um, mais dois, né?
+[20:15.360 --> 20:17.360]  Você tem alguma coisa,
+[20:17.360 --> 20:19.360]  que você usa pronto?
+[20:19.360 --> 20:21.360]  Um evento e lote, é isso.
+[20:21.360 --> 20:23.360]  É simples, assim.
+[20:23.360 --> 20:25.360]  É simples, porque não tem muita pronta pra ele, só pra ter uma base.
+[20:25.360 --> 20:27.360]  Tenho...
+[20:27.360 --> 20:29.360]  Eu tenho um edital pronto.
+[20:29.360 --> 20:31.360]  Eu vou pegar aqui a ligação entre eles.
+[20:31.360 --> 20:33.360]  Não tem... Você fazer muita conexão.
+[20:33.360 --> 20:35.360]  Os lotes,
+[20:35.360 --> 20:37.360]  que eu vou te mandar um acesso também,
+[20:37.360 --> 20:39.360]  do prédio de mim de hoje.
+[20:39.360 --> 20:41.360]  Pra você entender o evento, pra você olhar
+[20:41.360 --> 20:43.360]  como em casa começa as conexões
+[20:43.360 --> 20:45.360]  mais difíceis e mais chatas.
+[20:45.360 --> 20:47.360]  Dentro dos lotes.
+[20:47.360 --> 20:49.360]  Dasta, como que não cadasta,
+[20:49.360 --> 20:51.360]  o que que é... Eu vou te mandar um acesso.
+[20:51.360 --> 20:53.360]  E lá vai ter, você vai entender, você vai ver.
+[20:53.360 --> 20:55.360]  Lá vai ter, tá?
+[20:55.360 --> 20:57.360]  Então, que é dentro do lote.
+[20:57.360 --> 20:59.360]  Então, você criou, cadastrou.
+[20:59.360 --> 21:01.360]  Você já tem.
+[21:01.360 --> 21:03.360]  Hoje, o edital é feito na mão.
+[21:03.360 --> 21:05.360]  O cara pega o edital,
+[21:05.360 --> 21:07.360]  tem o campo de texto,
+[21:07.360 --> 21:09.360]  você vai ter a descrição do lote,
+[21:09.360 --> 21:11.360]  você vai ter descrição do lote,
+[21:11.360 --> 21:13.360]  você vai ter foto, PDF,
+[21:13.360 --> 21:15.360]  ele coloca lá,
+[21:15.360 --> 21:17.360]  anexa, ele pode só anexar, tem o mesmo botão
+[21:17.360 --> 21:19.360]  pra você botar o evento.
+[21:19.360 --> 21:21.360]  Você vai ter a data que inicia e termina
+[21:21.360 --> 21:23.360]  aquele lote,
+[21:23.360 --> 21:25.360]  você vai ter que vincular ele com uma foto.
+[21:25.360 --> 21:27.360]  Então, você tem que ter uma foto do evento,
+[21:27.360 --> 21:29.360]  que é uma foto de capa, tal.
+[21:29.360 --> 21:31.360]  O cara anexa junto com aquele evento.
+[21:31.360 --> 21:33.360]  Então, você já cadastrou o evento,
+[21:33.360 --> 21:35.360]  aí você na hora de cadastrar o lote, vai lá e puxa
+[21:35.360 --> 21:37.360]  a carinha, fala PDF. Hoje é feito na mão.
+[21:37.360 --> 21:39.360]  Mas eu quero isso automático.
+[21:39.360 --> 21:41.360]  Sim, com as informações que ele colocar,
+[21:41.360 --> 21:43.360]  eu quero esse cara aqui,
+[21:43.360 --> 21:45.360]  puxa ele.
+[21:45.360 --> 21:47.360]  Você tem que ter
+[21:47.360 --> 21:49.360]  tudo que ele coloca.
+[21:49.360 --> 21:51.360]  Isso, isso, você vai ter uma
+[21:51.360 --> 21:53.360]  folha de rosto,
+[21:53.360 --> 21:55.360]  isso também dentro do cadastro,
+[21:55.360 --> 21:57.360]  data de início,
+[21:57.360 --> 21:59.360]  data de fim.
+[21:59.360 --> 22:01.360]  Vai pra encher, daí nessa folha você vai
+[22:01.360 --> 22:03.360]  trocar, aqui você vai trocar a data de hoje,
+[22:03.360 --> 22:05.360]  vai trocar quais são os itens,
+[22:05.360 --> 22:07.360]  e dá uma aba talvez de vídeo,
+[22:07.360 --> 22:09.360]  assim, o cara coloca outras informações.
+[22:09.360 --> 22:11.360]  Mas as que são a aba,
+[22:11.360 --> 22:13.360]  está de início, data de fim, que a pessoa escolheu,
+[22:13.360 --> 22:15.360]  vai sair no edital conforme
+[22:15.360 --> 22:17.360]  a pessoa marcou.
+[22:17.360 --> 22:19.360]  Então,
+[22:19.360 --> 22:21.360]  a aba de descrição seria,
+[22:21.360 --> 22:23.360]  campo pra poder botar a descrição do lote.
+[22:23.360 --> 22:25.360]  Um evento e lote,
+[22:25.360 --> 22:27.360]  é isso, é simples,
+[22:27.360 --> 22:29.360]  é simples porque não tem muito
+[22:29.360 --> 22:31.360]  som, tá?
+[22:31.360 --> 22:33.360]  Bom, lote e detalhes,
+[22:33.360 --> 22:35.360]  deve ser isso que eles colocaram,
+[22:35.360 --> 22:37.360]  muita ligação entre eles, não tem,
+[22:37.360 --> 22:39.360]  você fazer muita conexão.
+[22:39.360 --> 22:41.360]  Os lotes,
+[22:41.360 --> 22:43.360]  é só não deixar na mesma tabela pra não ficar
+[22:43.360 --> 22:45.360]  poluído, então eu vou separar ele.
+[22:45.360 --> 22:47.360]  Tá bom, tá tranquilo,
+[22:47.360 --> 22:49.360]  e começa as conexões mais difíceis e mais
+[22:49.360 --> 22:51.360]  chatas,
+[22:51.360 --> 22:53.360]  dentro dos lotes.
+[22:53.360 --> 22:55.360]  Ah, é porque eu ia te falar uma coisa,
+[22:55.360 --> 22:57.360]  até pra você ir pensando,
+[22:57.360 --> 22:59.360]  o que muito se faz,
+[22:59.360 --> 23:01.360]  tá? Então, o que é dentro do lote?
+[23:01.360 --> 23:03.360]  Então, você criou, cadastrou,
+[23:03.360 --> 23:05.360]  você já tem,
+[23:05.360 --> 23:07.360]  no escritório, na parte
+[23:07.360 --> 23:09.360]  de trás. Hoje, teve
+[23:09.360 --> 23:11.360]  o evento do Everton, tinha o campo
+[23:11.360 --> 23:13.360]  de texto, que é a descrição do lote,
+[23:13.360 --> 23:15.360]  você vai ter a descrição do lote, você vai ter
+[23:15.360 --> 23:17.360]  foto, 10 peças pra vender,
+[23:17.360 --> 23:19.360]  cara, ele vendeu só uma,
+[23:19.360 --> 23:21.360]  tá? Então, eu vou pegar
+[23:21.360 --> 23:23.360]  as outras nove, você vai ter
+[23:23.360 --> 23:25.360]  a data que inicia e termina
+[23:25.360 --> 23:27.360]  aquele lote, você vai
+[23:27.360 --> 23:29.360]  ter que vincular ele com
+[23:29.360 --> 23:31.360]  que não foram vendidas,
+[23:31.360 --> 23:33.360]  que eu vou recadastrar, que é pro evento da
+[23:33.360 --> 23:35.360]  próxima semana, que vai entrar na, com aquele
+[23:35.360 --> 23:37.360]  evento, então, você já cadastrou o evento,
+[23:37.360 --> 23:39.360]  aí você na hora de cadastrar o lote, vai lá e puxa
+[23:39.360 --> 23:41.360]  o carinha, fala, terça-feira que vem,
+[23:41.360 --> 23:43.360]  pra tentar vender, de novo,
+[23:43.360 --> 23:45.360]  e aí eu re-aproveito,
+[23:45.360 --> 23:47.360]  e aí é uma, quero esse cara aqui,
+[23:47.360 --> 23:49.360]  puxa ele.
+[23:51.360 --> 23:53.360]  Você tem que ter, uma coisa que
+[23:53.360 --> 23:55.360]  hoje, eles fazem como? Eles re-aproveitam
+[23:55.360 --> 23:57.360]  o evento inteiro, ele pega o evento,
+[23:57.360 --> 23:59.360]  já tá montado também, dentro do
+[23:59.360 --> 24:01.360]  cadastro, data de início,
+[24:01.360 --> 24:03.360]  data de fim,
+[24:03.360 --> 24:05.360]  as suas dez peças,
+[24:05.360 --> 24:07.360]  tá, vendeu uma, beleza, essa uma já
+[24:07.360 --> 24:09.360]  tirou, tem nove peças,
+[24:09.360 --> 24:11.360]  ele vai e altera, é uma aba, talvez,
+[24:11.360 --> 24:13.360]  de vídeo, porque assim, o cara coloca outras
+[24:13.360 --> 24:15.360]  informações,
+[24:15.360 --> 24:17.360]  mas assim, são abas, data inicial e data final,
+[24:17.360 --> 24:19.360]  acabou.
+[24:19.360 --> 24:21.360]  Ele faz só isso, e já
+[24:21.360 --> 24:23.360]  altera todos de...
+[24:23.360 --> 24:25.360]  Então, a aba de descrição seria,
+[24:25.360 --> 24:27.360]  campo pra poder botar a descrição
+[24:27.360 --> 24:29.360]  do lote, todos os itens que estão
+[24:29.360 --> 24:31.360]  dentro do lote, entendeu?
+[24:31.360 --> 24:33.360]  Então, você me perguntou...
+[24:33.360 --> 24:35.360]  O lote que foi vendido...
+[24:35.360 --> 24:37.360]  Tá, bom, lote detalhes,
+[24:37.360 --> 24:39.360]  deve ser isso que ele deve
+[24:39.360 --> 24:41.360]  colocar, não, esse que tá vendido,
+[24:41.360 --> 24:43.360]  tá fechado, porque se tá fechado não passa nada.
+[24:43.360 --> 24:45.360]  Entendido.
+[24:45.360 --> 24:47.360]  Fechou, vendeu? Sim, é só não deixar
+[24:47.360 --> 24:49.360]  na mesma tabela pra não ficar poluído, então
+[24:49.360 --> 24:51.360]  eu vou separar ele. Tá bom,
+[24:51.360 --> 24:53.360]  tranquilo. Arrematou? Foi um usuário
+[24:53.360 --> 24:55.360]  real que arrematou? Beleza.
+[24:55.360 --> 24:57.360]  Já tira ele dos lotes lá, né?
+[24:57.360 --> 24:59.360]  Ah, é porque eu ia te falar uma coisa,
+[24:59.360 --> 25:01.360]  até pra você ir pensando.
+[25:01.360 --> 25:03.360]  O que muito se faz,
+[25:03.360 --> 25:05.360]  ele... Então,
+[25:05.360 --> 25:07.360]  eu não tiro, ainda, nem tiraria,
+[25:07.360 --> 25:09.360]  porque muitas vezes o cara arremata, mas o cara não
+[25:09.360 --> 25:11.360]  paga. No escritório,
+[25:11.360 --> 25:13.360]  na parte de trás.
+[25:13.360 --> 25:15.360]  Hoje teve o evento do Everton,
+[25:15.360 --> 25:17.360]  ele tinha... Ou arremata,
+[25:17.360 --> 25:19.360]  chega lá e desiste, paga multa, e aí eu tenho
+[25:19.360 --> 25:21.360]  que voltar. Então,
+[25:21.360 --> 25:23.360]  10 peças pra vender.
+[25:23.360 --> 25:25.360]  Ele vendeu só uma.
+[25:25.360 --> 25:27.360]  Então, eu vou pegar as outras nove,
+[25:27.360 --> 25:29.360]  eu deixaria,
+[25:29.360 --> 25:31.360]  eu pensaria no tipo do desativado.
+[25:31.360 --> 25:33.360]  Arrematado entra como desativado.
+[25:33.360 --> 25:35.360]  Que não foram vendidas,
+[25:35.360 --> 25:37.360]  que eu vou recadastrar,
+[25:37.360 --> 25:39.360]  que é pro evento da próxima semana, que vai entrar na...
+[25:39.360 --> 25:41.360]  Entendi.
+[25:41.360 --> 25:43.360]  Tendente de pagamento, alguma coisa assim, né?
+[25:43.360 --> 25:45.360]  Ele vê os status depois, né? É, você teria que
+[25:45.360 --> 25:47.360]  vender essa feira que vem, pra tentar vender,
+[25:47.360 --> 25:49.360]  de novo.
+[25:49.360 --> 25:51.360]  E aí eu aproveito.
+[25:51.360 --> 25:53.360]  E aí é uma mudando status, o lote tem que ir mudando
+[25:53.360 --> 25:55.360]  de status.
+[25:55.360 --> 25:57.360]  Então, o lote tá...
+[25:57.360 --> 25:59.360]  A coisa que hoje, eles fazem como?
+[25:59.360 --> 26:01.360]  Eles reaproveitam o evento inteiro.
+[26:01.360 --> 26:03.360]  Ele pega o evento, que já tá montado,
+[26:03.360 --> 26:05.360]  primeiro, ele pode nem estar aberto.
+[26:05.360 --> 26:07.360]  Então, é quando a pessoa tá subindo
+[26:07.360 --> 26:09.360]  os lotes, fala, fala, fala,
+[26:09.360 --> 26:11.360]  das suas 10 peças, ah, vendeu uma,
+[26:11.360 --> 26:13.360]  beleza, essa uma já tirou.
+[26:13.360 --> 26:15.360]  Tem nove peças, ele vai alterado,
+[26:15.360 --> 26:17.360]  tá subindo, tá colocando no ar.
+[26:17.360 --> 26:19.360]  Se eu tô colocando no ar e você entra e olha,
+[26:19.360 --> 26:21.360]  ah, mas isso aqui tá, ainda tem
+[26:21.360 --> 26:23.360]  data inicial e data final, acabou.
+[26:23.360 --> 26:25.360]  Ele faz só isso,
+[26:25.360 --> 26:27.360]  e já altera em todos os eventos,
+[26:27.360 --> 26:29.360]  ele tá fazendo lote, ele não tá
+[26:29.360 --> 26:31.360]  ainda pronto.
+[26:31.360 --> 26:33.360]  Ah, agora o cara abriu, falou que tá liberado,
+[26:33.360 --> 26:35.360]  os itens que estão dentro do lote,
+[26:35.360 --> 26:37.360]  entendeu? Então, se ele perguntou...
+[26:37.360 --> 26:39.360]  Mas esse lote aqui foi vendido.
+[26:39.360 --> 26:41.360]  Ah, liberou? Tá, então tá
+[26:41.360 --> 26:43.360]  aberto pra receber lance.
+[26:43.360 --> 26:45.360]  Recebeu lance.
+[26:45.360 --> 26:47.360]  Não, esse que tá vendido tá fechado,
+[26:47.360 --> 26:49.360]  porque isso tá fechado não passa nada.
+[26:49.360 --> 26:51.360]  Fechou, vendeu, finalizou,
+[26:51.360 --> 26:53.360]  fechou, quem ganhou
+[26:53.360 --> 26:55.360]  foi um usuário real? Ah, foi um usuário real que ganhou.
+[26:55.360 --> 26:57.360]  Esse usuário real ganhou, arrematou?
+[26:57.360 --> 26:59.360]  Foi um usuário real que arrematou?
+[26:59.360 --> 27:01.360]  Beleza.
+[27:01.360 --> 27:03.360]  Já tira ele dos lotes lá, né?
+[27:03.360 --> 27:05.360]  Ele vai ficar pendente de pagamento.
+[27:05.360 --> 27:07.360]  Enquanto os outros,
+[27:07.360 --> 27:09.360]  que são os cobôs que ganharam,
+[27:09.360 --> 27:11.360]  então, eu não tiro,
+[27:11.360 --> 27:13.360]  ainda nem tiraria, porque muitas vezes o cara arremata,
+[27:13.360 --> 27:15.360]  mas o cara não paga.
+[27:15.360 --> 27:17.360]  Esses aí, zera tudo,
+[27:17.360 --> 27:19.360]  finaliza, eles fecham,
+[27:19.360 --> 27:21.360]  o evento fecha,
+[27:21.360 --> 27:23.360]  ou arremata, chega lá e desita,
+[27:23.360 --> 27:25.360]  paga multa, e aí eu tenho que voltar.
+[27:25.360 --> 27:27.360]  Então,
+[27:27.360 --> 27:29.360]  o evento fechou, ninguém faz mais nada,
+[27:29.360 --> 27:31.360]  você só consegue ver as informações,
+[27:31.360 --> 27:33.360]  então é isso.
+[27:33.360 --> 27:35.360]  Eu deixaria, eu pensaria no tipo do
+[27:35.360 --> 27:37.360]  desativado. Arrematado
+[27:37.360 --> 27:39.360]  entra como desativado. Bem, o evento fechou
+[27:39.360 --> 27:41.360]  na hora lá.
+[27:41.360 --> 27:43.360]  Todos os lotes param
+[27:43.360 --> 27:45.360]  de construir.
+[27:45.360 --> 27:47.360]  Entendi. Pendente de pagamento,
+[27:47.360 --> 27:49.360]  alguma coisa assim, eles vêem os status depois, né?
+[27:49.360 --> 27:51.360]  É, você teria que ter me guia receber
+[27:51.360 --> 27:53.360]  lance de cliente,
+[27:53.360 --> 27:55.360]  o cliente só vai poder ver.
+[27:55.360 --> 27:57.360]  Então, por favor, não dá mais, não faz.
+[27:57.360 --> 27:59.360]  Mudando status, o lote tem que ir mudando de status.
+[27:59.360 --> 28:01.360]  Então, o lote está
+[28:01.360 --> 28:03.360]  mais nada, não mexe nisso.
+[28:03.360 --> 28:05.360]  Uma pergunta,
+[28:05.360 --> 28:07.360]  o bot arrematar, isso aqui,
+[28:07.360 --> 28:09.360]  eu não entendi direito.
+[28:09.360 --> 28:11.360]  Primeiro, ele pode nem estar aberto,
+[28:11.360 --> 28:13.360]  quando a pessoa está subindo os lotes,
+[28:13.360 --> 28:15.360]  vai fechar o lote
+[28:15.360 --> 28:17.360]  se o bot arrematar?
+[28:17.360 --> 28:19.360]  Então, você acha que não passou?
+[28:19.360 --> 28:21.360]  Eu tenho usuários reais subindo,
+[28:21.360 --> 28:23.360]  está colocando no ar. Se eu estou colocando no ar
+[28:23.360 --> 28:25.360]  e você entra e olha,
+[28:25.360 --> 28:27.360]  ainda tem um leilão,
+[28:27.360 --> 28:29.360]  e tem usuários que são robôs,
+[28:29.360 --> 28:31.360]  o bot do cliente.
+[28:31.360 --> 28:33.360]  E o cliente está fazendo
+[28:33.360 --> 28:35.360]  lote, ele não está ainda pronto.
+[28:35.360 --> 28:37.360]  Agora o cara abriu,
+[28:37.360 --> 28:39.360]  falou que está liberado,
+[28:39.360 --> 28:41.360]  usando esses robôs, que são cadastro
+[28:41.360 --> 28:43.360]  fake, que aí ele fica
+[28:43.360 --> 28:45.360]  dando lado.
+[28:45.360 --> 28:47.360]  Então, está aberto para receber
+[28:47.360 --> 28:49.360]  lance.
+[28:49.360 --> 28:51.360]  Então, ele vê que esse cliente está ganhando,
+[28:51.360 --> 28:53.360]  mas não está no preço ainda,
+[28:53.360 --> 28:55.360]  no valor ainda.
+[28:55.360 --> 28:57.360]  Finalizou, fechou.
+[28:57.360 --> 28:59.360]  Quem ganhou? Foi um usuário real?
+[28:59.360 --> 29:01.360]  Foi um usuário real que ganhou.
+[29:01.360 --> 29:03.360]  Esse usuário real ganhou, ele clica lá no botãozinho,
+[29:03.360 --> 29:05.360]  e cobre esse valor.
+[29:05.360 --> 29:07.360]  Só para valorizar mesmo.
+[29:07.360 --> 29:09.360]  Agora ele vai ficar pendente de pagamento.
+[29:11.360 --> 29:13.360]  Enquanto os robôs que ganharam,
+[29:13.360 --> 29:15.360]  é para você...
+[29:15.360 --> 29:17.360]  Isso vai ter no sistema,
+[29:17.360 --> 29:19.360]  ele só aprende da lance.
+[29:19.360 --> 29:21.360]  Esses aí,
+[29:21.360 --> 29:23.360]  zera tudo, finaliza, eles
+[29:23.360 --> 29:25.360]  fecham, o evento fecha,
+[29:25.360 --> 29:27.360]  o evento fechou, ninguém faz mais nada,
+[29:27.360 --> 29:29.360]  você só consegue ver
+[29:29.360 --> 29:31.360]  as informações, então é isso.
+[29:31.360 --> 29:33.360]  Só uma dúvida que me surgiu agora,
+[29:33.360 --> 29:35.360]  esses bots, eles vão ter que ter
+[29:35.360 --> 29:37.360]  cadastros próprios.
+[29:37.360 --> 29:39.360]  O evento fechou na hora lá,
+[29:39.360 --> 29:41.360]  fechou, todos os lotes
+[29:41.360 --> 29:43.360]  param.
+[29:43.360 --> 29:45.360]  Então, sim, hoje eles têm.
+[29:45.360 --> 29:47.360]  No banco, que é bem ruim hoje,
+[29:47.360 --> 29:49.360]  dos liguei receber
+[29:49.360 --> 29:51.360]  lance,
+[29:51.360 --> 29:53.360]  de cliente, o cliente só vai poder ver.
+[29:53.360 --> 29:55.360]  Então, por favor, não dá mais num
+[29:55.360 --> 29:57.360]  usuário 1 ou 2 mil, eu sei que são
+[29:57.360 --> 29:59.360]  robôs, são 2 mil bots.
+[29:59.360 --> 30:01.360]  Que eles ficam aleatoriamente empanados,
+[30:01.360 --> 30:03.360]  não mexe nisso.
+[30:03.360 --> 30:05.360]  Uma pergunta, o bot arrematar,
+[30:05.360 --> 30:07.360]  isso que eu não entendi direito.
+[30:07.360 --> 30:09.360]  Entre eles, dando lance em todos os leilões,
+[30:09.360 --> 30:11.360]  todos, eles abrem leilão,
+[30:11.360 --> 30:13.360]  então assim, o meu robô quando passa...
+[30:13.360 --> 30:15.360]  Vai fechar o lote se o bot
+[30:15.360 --> 30:17.360]  arrematar?
+[30:17.360 --> 30:19.360]  Eu tenho usuários reais,
+[30:19.360 --> 30:21.360]  ele passa um randômico,
+[30:21.360 --> 30:23.360]  tipo, você cadastrou,
+[30:23.360 --> 30:25.360]  10 itens que você vai vender,
+[30:25.360 --> 30:27.360]  num leilão, e tem usuários que são robôs.
+[30:27.360 --> 30:29.360]  E o cliente,
+[30:29.360 --> 30:31.360]  você botou, que o valor mínimo
+[30:31.360 --> 30:33.360]  desses itens é 100 reais.
+[30:33.360 --> 30:35.360]  Só que, sim, se não chegar um
+[30:35.360 --> 30:37.360]  usuário que está usando esses
+[30:37.360 --> 30:39.360]  robôs, que são cadastros
+[30:39.360 --> 30:41.360]  fake,
+[30:41.360 --> 30:43.360]  que aí ele fica dando os 100 reais,
+[30:43.360 --> 30:45.360]  ele vai estar sempre zero.
+[30:45.360 --> 30:47.360]  Então, hoje, no meu
+[30:47.360 --> 30:49.360]  sistema é assim.
+[30:49.360 --> 30:51.360]  Então ele vê que esse cliente está ganhando,
+[30:51.360 --> 30:53.360]  mas não está no preço ainda, não está no valor ainda.
+[30:53.360 --> 30:55.360]  Subir, o ideal seria
+[30:55.360 --> 30:57.360]  quando você cadastra um lote
+[30:57.360 --> 30:59.360]  e fala, o lance mínimo desse é
+[30:59.360 --> 31:01.360]  25.900, ele clica lá num botãozinho,
+[31:01.360 --> 31:03.360]  um martelinho, e cobre esse
+[31:03.360 --> 31:05.360]  valor, entendeu?
+[31:05.360 --> 31:07.360]  Só pra valorizar mesmo o...
+[31:07.360 --> 31:09.360]  Para, este vai ser o valor
+[31:09.360 --> 31:11.360]  de abertura, vai estar lá, 25.900.
+[31:11.360 --> 31:13.360]  E aí, isso,
+[31:13.360 --> 31:15.360]  é pra você igualizar.
+[31:15.360 --> 31:17.360]  Isso vai ter no sistema, então, ali só pra ele mudar
+[31:17.360 --> 31:19.360]  da lança.
+[31:19.360 --> 31:21.360]  E o meu robô, quando passar, daqui a 3
+[31:21.360 --> 31:23.360]  horas ele vai passar, ele viu lá.
+[31:23.360 --> 31:25.360]  Esse item...
+[31:25.360 --> 31:27.360]  Só uma dúvida que me surgiu agora, esses bots
+[31:27.360 --> 31:29.360]  eles vão ter que ter cadastros próprios.
+[31:29.360 --> 31:31.360]  Aqui,
+[31:31.360 --> 31:33.360]  25.900.
+[31:33.360 --> 31:35.360]  O último lance dele, é um usuário real?
+[31:35.360 --> 31:37.360]  Não. Então,
+[31:37.360 --> 31:39.360]  sim, hoje eles tem.
+[31:39.360 --> 31:41.360]  No banco, que é bem ruim hoje,
+[31:41.360 --> 31:43.360]  tem lance?
+[31:43.360 --> 31:45.360]  Não, então eu vou dar.
+[31:45.360 --> 31:47.360]  Ah, não tem lance? Eu dou.
+[31:47.360 --> 31:49.360]  Meu robô dá um usuário 1 ou 2 mil,
+[31:49.360 --> 31:51.360]  eu sei que são robôs. São 2 mil bots.
+[31:51.360 --> 31:53.360]  Que eles ficam aleatoriamente em lance.
+[31:53.360 --> 31:55.360]  Com o valor de 100 reais.
+[31:55.360 --> 31:57.360]  Aí, vai 26 mil, pá.
+[31:57.360 --> 31:59.360]  Daqui a 3 horas, vai passar
+[31:59.360 --> 32:01.360]  entre eles, dando lance em todos os leilões.
+[32:01.360 --> 32:03.360]  Todos. Eles abrem leilão, então,
+[32:03.360 --> 32:05.360]  assim, o meu robô, quando passa,
+[32:05.360 --> 32:07.360]  de novo. Se algum usuário tiver coberto
+[32:07.360 --> 32:09.360]  esses 26 mil, ele não faz nada.
+[32:09.360 --> 32:11.360]  Agora, se ele chega,
+[32:11.360 --> 32:13.360]  ele passa um randômico,
+[32:13.360 --> 32:15.360]  tipo, você cadastrou,
+[32:15.360 --> 32:17.360]  10 itens que você vai vender.
+[32:17.360 --> 32:19.360]  E aí, batei só com os 26 mil de um robô,
+[32:19.360 --> 32:21.360]  ele acresce mais 100 reais.
+[32:21.360 --> 32:23.360]  Aí, ele bota 26 mil e 6.
+[32:23.360 --> 32:25.360]  Você botou que o valor mínimo desses itens
+[32:25.360 --> 32:27.360]  é 100 reais.
+[32:27.360 --> 32:29.360]  Só que, sim, se não chegar um usuário...
+[32:29.360 --> 32:31.360]  Então, o usuário real lançar...
+[32:31.360 --> 32:33.360]  Aham. Então, o usuário real chegar e bater.
+[32:33.360 --> 32:35.360]  Se o usuário real bater lá
+[32:35.360 --> 32:37.360]  e dar os 100 reais,
+[32:37.360 --> 32:39.360]  ele vai estar sempre zero.
+[32:39.360 --> 32:41.360]  Então, hoje, no meu sistema é assim.
+[32:41.360 --> 32:43.360]  Opa, 26 e 100, tá bom, vou dar 26 e 200.
+[32:43.360 --> 32:45.360]  Pum, você deu 26 e 200.
+[32:45.360 --> 32:47.360]  O meu robô vai passar, vai ver que você é real.
+[32:47.360 --> 32:49.360]  O ideal seria, quando você
+[32:49.360 --> 32:51.360]  cadastra um lote e fala,
+[32:51.360 --> 32:53.360]  o lance mínimo desse é 25.900,
+[32:53.360 --> 32:55.360]  ele não vai fazer nada.
+[32:55.360 --> 32:57.360]  Agora, o meu admin, hora que vê lá,
+[32:57.360 --> 32:59.360]  hum, esse cara aqui deu 2600.
+[33:01.360 --> 33:03.360]  Este vai ser o valor de abertura,
+[33:03.360 --> 33:05.360]  vai estar lá, 25.900.
+[33:05.360 --> 33:07.360]  E aí, existe 100, só que tá baixa ainda.
+[33:07.360 --> 33:09.360]  Aí, ele vai na mão ali, tem um...
+[33:09.360 --> 33:11.360]  Eu tenho hoje um martelinho, um atalho.
+[33:11.360 --> 33:13.360]  E o meu robô, quando passar,
+[33:13.360 --> 33:15.360]  daqui a 3 horas, ele vai passar,
+[33:15.360 --> 33:17.360]  você viu lá, este item,
+[33:17.360 --> 33:19.360]  ele clica no martelinho, pum, cobre o cara.
+[33:21.360 --> 33:23.360]  Se não chegou no valor ainda que vocês querem, né?
+[33:23.360 --> 33:25.360]  Aqui, 25.900.
+[33:25.360 --> 33:27.360]  O último lance dele,
+[33:27.360 --> 33:29.360]  é um usuário real? Não, isso.
+[33:29.360 --> 33:31.360]  Tem lá o valor de...
+[33:31.360 --> 33:33.360]  Tem que ter essas duas coisas, então.
+[33:33.360 --> 33:35.360]  Tem que ter um robô que vai dar lance, caso...
+[33:35.360 --> 33:37.360]  Tem lance?
+[33:37.360 --> 33:39.360]  Não, então eu vou dar. Ah, não tem lance?
+[33:39.360 --> 33:41.360]  Eu dou, pum, meu robô dá um lance.
+[33:41.360 --> 33:43.360]  Ninguém dá o lance.
+[33:43.360 --> 33:45.360]  Ninguém dá o lance. Isso.
+[33:45.360 --> 33:47.360]  E deixar manual.
+[33:47.360 --> 33:49.360]  Um lance, com um valor de 100 reais.
+[33:49.360 --> 33:51.360]  Aí, vai, 26.000, pá.
+[33:51.360 --> 33:53.360]  Daqui a 3 horas, vai passar...
+[33:53.360 --> 33:55.360]  Caso um lote que tá,
+[33:55.360 --> 33:57.360]  não tá batendo o valor que eles querem,
+[33:57.360 --> 33:59.360]  vocês meio que cobrem.
+[33:59.360 --> 34:01.360]  De novo, se algum usuário tiver coberto
+[34:01.360 --> 34:03.360]  esses 26.000, ele não faz nada.
+[34:03.360 --> 34:05.360]  Agora, se ele chegar...
+[34:05.360 --> 34:07.360]  Aí, também...
+[34:07.360 --> 34:09.360]  A outra pergunta. A hora que você cobrir
+[34:09.360 --> 34:11.360]  manual, o robô...
+[34:11.360 --> 34:13.360]  Só com os 26.000 de um robô,
+[34:13.360 --> 34:15.360]  ele acresce mais 100 reais. Aí, ele bota 26.600.
+[34:15.360 --> 34:17.360]  Ah, tá. Até o robô vai passar
+[34:17.360 --> 34:19.360]  de novo e vai cobrir?
+[34:19.360 --> 34:21.360]  Ou esse manual vai ser...
+[34:21.360 --> 34:23.360]  Não, ele continua. Porque aí ele vai...
+[34:23.360 --> 34:25.360]  É um usuário real lançar...
+[34:25.360 --> 34:27.360]  Aham. Então, o usuário real vai chegar e bater.
+[34:27.360 --> 34:29.360]  Se o usuário real bateu lá, tem um robô
+[34:29.360 --> 34:31.360]  que vai estar em primeiro. Quando ele passar
+[34:31.360 --> 34:33.360]  3 horas de novo, ele vai ver o robô,
+[34:33.360 --> 34:35.360]  se o cara não cobriu. Opa, 26.100,
+[34:35.360 --> 34:37.360]  tá bom. Vou dar 26.200.
+[34:37.360 --> 34:39.360]  Pum, você deu 26.200. Meu robô
+[34:39.360 --> 34:41.360]  vai passar, vai ver que você é real.
+[34:41.360 --> 34:43.360]  Ele vai olhar o robô e vai passar mais 100 reais acima.
+[34:43.360 --> 34:45.360]  Tá. Então, o manual vai continuar
+[34:45.360 --> 34:47.360]  sendo um robô. Isso.
+[34:47.360 --> 34:49.360]  Ele não vai fazer nada. Agora, o meu
+[34:49.360 --> 34:51.360]  admin, hora que vê lá...
+[34:51.360 --> 34:53.360]  Hum, esse cara aqui deu 26.000.
+[34:53.360 --> 34:55.360]  Agora, sobre o cadastro de bote.
+[34:55.360 --> 34:57.360]  Hoje, a gente tem muita
+[34:57.360 --> 34:59.360]  ferramenta para coexistência, só que
+[34:59.360 --> 35:01.360]  tá baixa ainda. Aí, ele vai na mão ali.
+[35:01.360 --> 35:03.360]  Eu tenho hoje um martelinho,
+[35:03.360 --> 35:05.360]  um atalho.
+[35:05.360 --> 35:07.360]  Mais prática do que ficar enchendo
+[35:07.360 --> 35:09.360]  um pouco de dado com...
+[35:09.360 --> 35:11.360]  Clica no martelinho,
+[35:11.360 --> 35:13.360]  pum, e cobre o cara.
+[35:13.360 --> 35:15.360]  Se não chegou no valor ainda que vocês querem, né?
+[35:15.360 --> 35:17.360]  Com script, com robô, com
+[35:17.360 --> 35:19.360]  cadastro fake.
+[35:19.360 --> 35:21.360]  O que eu pensaria, já tinha pensado,
+[35:21.360 --> 35:23.360]  era, sei lá, isso.
+[35:23.360 --> 35:25.360]  Tem lá o valor de receita. Tem que ter essas duas
+[35:25.360 --> 35:27.360]  coisas, então. Tem que ter um robô que vai dar lance,
+[35:27.360 --> 35:29.360]  caso... Se a gente tivesse alguma...
+[35:29.360 --> 35:31.360]  A gente, sei lá, se a gente tivesse
+[35:31.360 --> 35:33.360]  um cadastro, que fosse...
+[35:33.360 --> 35:35.360]  Ninguém dá
+[35:35.360 --> 35:37.360]  ninguém dá o lance.
+[35:37.360 --> 35:39.360]  Isso. E deixar manual.
+[35:39.360 --> 35:41.360]  Um bote. E esse bote
+[35:41.360 --> 35:43.360]  aleatorizar-se o nome dele.
+[35:43.360 --> 35:45.360]  O que eu preciso que seja o João.
+[35:45.360 --> 35:47.360]  Pra caso, um lote
+[35:47.360 --> 35:49.360]  que tá batendo o valor
+[35:49.360 --> 35:51.360]  que eles querem, vocês meio que cobrem.
+[35:51.360 --> 35:53.360]  O João Mário, eu preciso que seja o Pedro Paulo.
+[35:53.360 --> 35:55.360]  Eu preciso que seja a Maria.
+[35:55.360 --> 35:57.360]  E aí, o que eu queria perguntar, se a gente não conseguiria...
+[35:57.360 --> 35:59.360]  Aí também...
+[35:59.360 --> 36:01.360]  Mas agora, a outra pergunta.
+[36:01.360 --> 36:03.360]  Agora que você cobri manual,
+[36:03.360 --> 36:05.360]  botar isso daí
+[36:05.360 --> 36:07.360]  no banco sem ter... Porque eu tenho
+[36:07.360 --> 36:09.360]  dois mil cadastros de robô.
+[36:09.360 --> 36:11.360]  O robô vai passar de novo?
+[36:11.360 --> 36:13.360]  E vai cobrir? Ou esse manual...
+[36:13.360 --> 36:15.360]  Não, ele continua. Porque aí ele vai...
+[36:15.360 --> 36:17.360]  Queira, quer não, isso é uma brecha gigante.
+[36:17.360 --> 36:19.360]  Porque os robôs têm acesso
+[36:19.360 --> 36:21.360]  a acessar...
+[36:21.360 --> 36:23.360]  Tem um robô que vai estar em primeiro.
+[36:23.360 --> 36:25.360]  Quando ele passar dali há três horas de novo,
+[36:25.360 --> 36:27.360]  ele vai ver o robô, se o cara não cobriu
+[36:27.360 --> 36:29.360]  a pasta de minha conta,
+[36:29.360 --> 36:31.360]  que é um usuário. Só que eu só coloquei
+[36:31.360 --> 36:33.360]  condição para eles que eles são robôs.
+[36:33.360 --> 36:35.360]  Ele vai olhar o robô e vai passar mais
+[36:35.360 --> 36:37.360]  R$100,00 acima. Entendeu?
+[36:37.360 --> 36:39.360]  Então o manual vai continuar sendo um robô.
+[36:39.360 --> 36:41.360]  Isso. Então, se eu ativei uma condição
+[36:41.360 --> 36:43.360]  de que é robô, sim ou não, no banco de dados.
+[36:43.360 --> 36:45.360]  E aí, eles não usam.
+[36:45.360 --> 36:47.360]  Agora, sobre o cadastro
+[36:47.360 --> 36:49.360]  de bot.
+[36:49.360 --> 36:51.360]  Hoje a gente tem muita ferramenta.
+[36:51.360 --> 36:53.360]  Não manda o e-mail quando finaliza a lote.
+[36:53.360 --> 36:55.360]  Não passa por toda
+[36:55.360 --> 36:57.360]  jornada, que passaria
+[36:57.360 --> 36:59.360]  mais prática do que ficar enchendo
+[36:59.360 --> 37:01.360]  banco de dados
+[37:01.360 --> 37:03.360]  com o seu
+[37:03.360 --> 37:05.360]  usuário real.
+[37:05.360 --> 37:07.360]  Não gasto com isso.
+[37:07.360 --> 37:09.360]  Não gasto com digital,
+[37:09.360 --> 37:11.360]  com escritor, com robô, com cadastro
+[37:11.360 --> 37:13.360]  faker.
+[37:13.360 --> 37:15.360]  O que eu pensaria, já tinha pensado, era
+[37:15.360 --> 37:17.360]  ser relacionante, não gasto com e-mail,
+[37:17.360 --> 37:19.360]  não gasto com nada.
+[37:19.360 --> 37:21.360]  Então, se você, não sei se
+[37:21.360 --> 37:23.360]  tivesse alguma,
+[37:23.360 --> 37:25.360]  sei lá, se a gente tivesse um cadastro
+[37:25.360 --> 37:27.360]  que fosse, um que ele já
+[37:27.360 --> 37:29.360]  montou, se ele já pensou, não fez,
+[37:29.360 --> 37:31.360]  diz pra mim que ele tinha feito alguma ideia
+[37:31.360 --> 37:33.360]  dos bots, de que ele matava um bot.
+[37:33.360 --> 37:35.360]  E esse bot, aleatorizasse
+[37:35.360 --> 37:37.360]  o nome dele.
+[37:37.360 --> 37:39.360]  O que eu preciso que seja o João, o
+[37:39.360 --> 37:41.360]  ele só dos bots, mas...
+[37:41.360 --> 37:43.360]  Mano, pelo o que eu tenho aqui dele,
+[37:43.360 --> 37:45.360]  não tinha nada, né?
+[37:45.360 --> 37:47.360]  João Mário, eu preciso que seja o Pedro Paulo,
+[37:47.360 --> 37:49.360]  eu preciso que seja a Maria.
+[37:49.360 --> 37:51.360]  E aí, eu queria perguntar, se a gente não conseguiria...
+[37:51.360 --> 37:53.360]  Eu imagino, por isso que eu estou tentando
+[37:53.360 --> 37:55.360]  explicar mesmo.
+[37:55.360 --> 37:57.360]  Entender, sim.
+[37:57.360 --> 37:59.360]  Botar isso aí, no banco, sem ter,
+[37:59.360 --> 38:01.360]  porque eu tenho dois mil cadastros de robôs.
+[38:01.360 --> 38:03.360]  E assim, o que ele tinha,
+[38:03.360 --> 38:05.360]  vou até mostrar, o que ele tinha feito
+[38:05.360 --> 38:07.360]  mesmo, é o front-end,
+[38:07.360 --> 38:09.360]  estava bem bonito o front-end.
+[38:09.360 --> 38:11.360]  Isso é uma brecha gigante, porque os robôs
+[38:11.360 --> 38:13.360]  têm acesso a
+[38:13.360 --> 38:15.360]  acessar, e não
+[38:15.360 --> 38:17.360]  foi ele que fez, e não foi ele.
+[38:17.360 --> 38:19.360]  Ah, então por isso que ele não está
+[38:19.360 --> 38:21.360]  conseguindo ajudar a gente. A pasta de minha
+[38:21.360 --> 38:23.360]  conta, que é um usuário, só que
+[38:23.360 --> 38:25.360]  eu só coloquei uma condição pra eles,
+[38:25.360 --> 38:27.360]  que eles são robôs. O front-end,
+[38:27.360 --> 38:29.360]  quem fez, foi o menino que ele mandou embora.
+[38:31.360 --> 38:33.360]  Então,
+[38:33.360 --> 38:35.360]  eu tive uma condição de que é robô, sim ou não,
+[38:35.360 --> 38:37.360]  no banco de dados. E aí,
+[38:37.360 --> 38:39.360]  eles não...
+[38:39.360 --> 38:41.360]  É, o front-end, ele mandou o menino embora.
+[38:41.360 --> 38:43.360]  Eu sei que assim, o menino
+[38:43.360 --> 38:45.360]  fazia a front, ele não manda o e-mail,
+[38:45.360 --> 38:47.360]  quando finaliza a lote,
+[38:47.360 --> 38:49.360]  não passa por toda a jornada,
+[38:49.360 --> 38:51.360]  que passaria a fazer a back, toda a parte do back.
+[38:51.360 --> 38:53.360]  Daí,
+[38:53.360 --> 38:55.360]  eu cheguei a ver o sistema
+[38:55.360 --> 38:57.360]  no ar, como se fosse um usuário real.
+[38:57.360 --> 38:59.360]  Não gasto com isso,
+[38:59.360 --> 39:01.360]  não gasto com...
+[39:01.360 --> 39:03.360]  Eu cheguei a ver.
+[39:03.360 --> 39:05.360]  Isso aí, cheguei a ver.
+[39:05.360 --> 39:07.360]  Mas eu nunca tive isso,
+[39:07.360 --> 39:09.360]  não gasto em e-mail,
+[39:09.360 --> 39:11.360]  não gasto em nada.
+[39:11.360 --> 39:13.360]  Então,
+[39:13.360 --> 39:15.360]  se você não sei como acessar isso.
+[39:17.360 --> 39:19.360]  Então, assim, isso já...
+[39:19.360 --> 39:21.360]  Você já sabe o que ele já montou, se ele já pensou,
+[39:21.360 --> 39:23.360]  ou não fez? Diz pra mim que ele tinha
+[39:23.360 --> 39:25.360]  feito alguma ideia dos bots,
+[39:25.360 --> 39:27.360]  tem bastante coisa, se você tem esse front
+[39:27.360 --> 39:29.360]  pra você poder usar.
+[39:29.360 --> 39:31.360]  Já é...
+[39:31.360 --> 39:33.360]  Parou só dos bots, mas...
+[39:33.360 --> 39:35.360]  Mano, pelo o que eu tenho aqui
+[39:35.360 --> 39:37.360]  dele, não tinha nada.
+[39:37.360 --> 39:39.360]  Pra mim, já é um adianto gigante.
+[39:39.360 --> 39:41.360]  Eu não sei como está o back, porque
+[39:41.360 --> 39:43.360]  ele tinha feito...
+[39:43.360 --> 39:45.360]  Eu imagino, por isso que estou
+[39:45.360 --> 39:47.360]  tentando explicar mesmo.
+[39:47.360 --> 39:49.360]  Entendi, assim.
+[39:49.360 --> 39:51.360]  Ele tinha colocado o lote, eu vi...
+[39:51.360 --> 39:53.360]  Eu entrei num, eu vi lá o campo
+[39:53.360 --> 39:55.360]  pra eu poder dar lance.
+[39:55.360 --> 39:57.360]  O que ele tinha, vou até mostrar,
+[39:57.360 --> 39:59.360]  o que ele tinha feito mesmo,
+[39:59.360 --> 40:01.360]  é o front-end, estava bem bonito o front-end.
+[40:01.360 --> 40:03.360]  Eu não me registrei, não consegui registrar, mas...
+[40:03.360 --> 40:05.360]  Eu vi que estava assim,
+[40:05.360 --> 40:07.360]  o front estava montado.
+[40:07.360 --> 40:09.360]  E não foi ele que fez, e não foi ele.
+[40:11.360 --> 40:13.360]  Então, por isso que ele não está conseguindo ajudar a gente.
+[40:13.360 --> 40:15.360]  Obviamente. Não sei se estava conectado alguma coisa.
+[40:17.360 --> 40:19.360]  Então, tem ele, tem até...
+[40:19.360 --> 40:21.360]  O front-end, quem fez, foi o menino
+[40:21.360 --> 40:23.360]  que ele mandou embora.
+[40:25.360 --> 40:27.360]  Eu até fiz o back-end aqui, mas...
+[40:27.360 --> 40:29.360]  Está faltando muita coisa.
+[40:31.360 --> 40:33.360]  É, o front-end, ele mandou o menino
+[40:33.360 --> 40:35.360]  embora.
+[40:35.360 --> 40:37.360]  Eu sei que assim, o menino fazia a front, ele...
+[40:37.360 --> 40:39.360]  Muita coisa, né?
+[40:39.360 --> 40:41.360]  É, até por isso que a gente
+[40:41.360 --> 40:43.360]  optou pra...
+[40:43.360 --> 40:45.360]  Fazer a back, toda parte do back.
+[40:45.360 --> 40:47.360]  Daí, eu cheguei a ver o sistema
+[40:47.360 --> 40:49.360]  no ar.
+[40:49.360 --> 40:51.360]  Por essa opção mesmo, o código.
+[40:51.360 --> 40:53.360]  De verdade, eu entendo como que é pegar um código
+[40:53.360 --> 40:55.360]  legado, e...
+[40:55.360 --> 40:57.360]  Eu ia ver. Isso aí.
+[40:57.360 --> 40:59.360]  Cheguei a ver.
+[40:59.360 --> 41:01.360]  Mas eu nunca te vi isso.
+[41:01.360 --> 41:03.360]  Eu não entendo.
+[41:03.360 --> 41:05.360]  E até porque a gente percebeu que
+[41:05.360 --> 41:07.360]  muita coisa do que ele estava falando...
+[41:07.360 --> 41:09.360]  Entendi.
+[41:11.360 --> 41:13.360]  Isso já...
+[41:13.360 --> 41:15.360]  Nem estava feito.
+[41:15.360 --> 41:17.360]  Não estava feito, exatamente.
+[41:17.360 --> 41:19.360]  Tem bastante coisa.
+[41:19.360 --> 41:21.360]  Se você tem esse front pra você poder usar...
+[41:21.360 --> 41:23.360]  Isso, estava pensando nisso.
+[41:23.360 --> 41:25.360]  Já é...
+[41:25.360 --> 41:27.360]  Se vê, não tem nada de bot, não.
+[41:27.360 --> 41:29.360]  Não. User change.
+[41:29.360 --> 41:31.360]  Cara, nem pra mim já é um adianto gigante.
+[41:31.360 --> 41:33.360]  Eu não sei como está o back, porque
+[41:33.360 --> 41:35.360]  ele tinha feito...
+[41:35.360 --> 41:37.360]  O slot user que ele ia fazer
+[41:37.360 --> 41:39.360]  via AWS, lá naquela
+[41:39.360 --> 41:41.360]  portada que ele serviu da AWS, ele ia colocar
+[41:41.360 --> 41:43.360]  pra fazer os usuários. Ele tinha colocado o lote.
+[41:43.360 --> 41:45.360]  Eu vi...
+[41:45.360 --> 41:47.360]  Eu entrei num, eu vi lá o campo pra eu poder dar lance.
+[41:47.360 --> 41:49.360]  Só na bar gerenciar tudo.
+[41:49.360 --> 41:51.360]  Não fez, não me entregou.
+[41:51.360 --> 41:53.360]  Então, outra coisa que eu vou
+[41:53.360 --> 41:55.360]  falar já. Não me registrei, não consegui registrar.
+[41:55.360 --> 41:57.360]  Mas...
+[41:57.360 --> 41:59.360]  Eu vi que estava assim, a coisa estava lá. O front estava
+[41:59.360 --> 42:01.360]  montado.
+[42:01.360 --> 42:03.360]  Porque eu não sei se ele passou ou não.
+[42:03.360 --> 42:05.360]  A minha ideia
+[42:05.360 --> 42:07.360]  disso é ter um sobro.
+[42:07.360 --> 42:09.360]  Não sei se estava conectado a alguma coisa.
+[42:11.360 --> 42:13.360]  Tem, ele tem até...
+[42:13.360 --> 42:15.360]  Um SaaS mesmo. Por que? Eu tenho.
+[42:15.360 --> 42:17.360]  Olha lá, cara, hoje
+[42:17.360 --> 42:19.360]  comigo eu devo ter uns 15...
+[42:19.360 --> 42:21.360]  Eu já tenho feito o back-end aqui, mas
+[42:21.360 --> 42:23.360]  está faltando muita coisa, né?
+[42:23.360 --> 42:25.360]  15 clientes, uns 15 sites
+[42:25.360 --> 42:27.360]  que usam a mesma plataforma.
+[42:27.360 --> 42:29.360]  Pra esses 15, eu tenho que ficar subindo.
+[42:29.360 --> 42:31.360]  15...
+[42:31.360 --> 42:33.360]  Muita coisa, né?
+[42:33.360 --> 42:35.360]  É, até por isso que a gente optou pra...
+[42:35.360 --> 42:37.360]  15 sistemas em PHP hoje.
+[42:37.360 --> 42:39.360]  Então, eu tenho uma...
+[42:39.360 --> 42:41.360]  A minha ideia era ter um
+[42:41.360 --> 42:43.360]  back-end. Por essa opção mesmo.
+[42:43.360 --> 42:45.360]  De verdade, eu entendo
+[42:45.360 --> 42:47.360]  como que é pegar um código ledado
+[42:47.360 --> 42:49.360]  e um front-end
+[42:49.360 --> 42:51.360]  modulado.
+[42:51.360 --> 42:53.360]  Que eu conseguisse alterar essa cara
+[42:53.360 --> 42:55.360]  que eu entendo.
+[42:55.360 --> 42:57.360]  E até porque a gente percebeu
+[42:57.360 --> 42:59.360]  que muita coisa do que ele estava
+[42:59.360 --> 43:01.360]  falando, que eu conseguisse mudar pro próximo
+[43:01.360 --> 43:03.360]  cliente, que eu tinha o máximo mínimo num front,
+[43:03.360 --> 43:05.360]  ele fosse simples dele olhar e fazer.
+[43:05.360 --> 43:07.360]  Era só bug?
+[43:07.360 --> 43:09.360]  Nem tava feito.
+[43:09.360 --> 43:11.360]  Exatamente.
+[43:11.360 --> 43:13.360]  Isso tudo...
+[43:13.360 --> 43:15.360]  é...
+[43:15.360 --> 43:17.360]  de uma maneira que eu tivesse um back
+[43:17.360 --> 43:19.360]  pra tudo.
+[43:19.360 --> 43:21.360]  Se vê, não tem nada de bot, não.
+[43:21.360 --> 43:23.360]  Não. User change...
+[43:23.360 --> 43:25.360]  Cara, então se o cara da loja 1
+[43:25.360 --> 43:27.360]  chegar no meu back-end lá
+[43:27.360 --> 43:29.360]  no admin e entrar
+[43:29.360 --> 43:31.360]  com o user que ele ia fazer via
+[43:31.360 --> 43:33.360]  AWS, lá naquela porra que ele serviu da AWS,
+[43:33.360 --> 43:35.360]  ele ia colocar pra fazer os usos
+[43:35.360 --> 43:37.360]  Arobaloja1.com
+[43:37.360 --> 43:39.360]  ele vai ser direcionado pro banco dele
+[43:39.360 --> 43:41.360]  pras coisas dele. A partir do momento
+[43:41.360 --> 43:43.360]  lá ele vai gerenciar tudo.
+[43:43.360 --> 43:45.360]  Não fez, não me entregou. Então...
+[43:45.360 --> 43:47.360]  outra coisa então que eu vou precisar falar já
+[43:47.360 --> 43:49.360]  que o cara da loja 2 fizer o login
+[43:49.360 --> 43:51.360]  no mesmo domínio, ele vai
+[43:51.360 --> 43:53.360]  ser direcionado pra loja 1.
+[43:53.360 --> 43:55.360]  Porque eu não sei se também ele passou
+[43:55.360 --> 43:57.360]  ou não.
+[43:57.360 --> 43:59.360]  A minha ideia disso é ter uns
+[43:59.360 --> 44:01.360]  lojas dele pro banco dele.
+[44:01.360 --> 44:03.360]  Então a minha ideia sempre foi ter
+[44:03.360 --> 44:05.360]  um back,
+[44:05.360 --> 44:07.360]  um SaaS. Um SaaS mesmo.
+[44:07.360 --> 44:09.360]  Por que? Eu tenho.
+[44:09.360 --> 44:11.360]  Olha lá cara, hoje comigo eu devo ter uns 15
+[44:11.360 --> 44:13.360]  aí esse back-end vai ser o
+[44:13.360 --> 44:15.360]  barra de admin pros meus clientes usarem.
+[44:15.360 --> 44:17.360]  Então eu vou ter 11 clientes,
+[44:17.360 --> 44:19.360]  uns 15 sites que usam a mesma plataforma.
+[44:19.360 --> 44:21.360]  Pra esses 15
+[44:21.360 --> 44:23.360]  eu tenho que ficar subindo que em domínio
+[44:23.360 --> 44:25.360]  pra eles, porque eles tem muito
+[44:25.360 --> 44:27.360]  problema de, ah, o site
+[44:27.360 --> 44:29.360]  dele é Leilão e Sistemas
+[44:29.360 --> 44:31.360]  em PHP hoje. Então eu tenho uma
+[44:31.360 --> 44:33.360]  é, a minha ideia era
+[44:33.360 --> 44:35.360]  eu tenho um back-end 1.com
+[44:35.360 --> 44:37.360]  se você digita barra de
+[44:37.360 --> 44:39.360]  admin, você tem acesso ao barra de
+[44:39.360 --> 44:41.360]  admin do cara e sofre ataque end
+[44:41.360 --> 44:43.360]  e um front-end
+[44:43.360 --> 44:45.360]  modulado que eu conseguisse
+[44:45.360 --> 44:47.360]  alterar essa cara que eu sofre a porra
+[44:47.360 --> 44:49.360]  toda. Se eu tenho
+[44:49.360 --> 44:51.360]  jleilonserviço.com
+[44:51.360 --> 44:53.360]  barra e conseguisse
+[44:53.360 --> 44:55.360]  mudar pro próximo cliente, que eu tinha
+[44:55.360 --> 44:57.360]  máximo mínimo num front, ele fosse simples dele
+[44:57.360 --> 44:59.360]  olhar e fazer. E o admin
+[44:59.360 --> 45:01.360]  protegido, viu? Você não vai
+[45:01.360 --> 45:03.360]  bater nesse domínio à toa, você não vai chegar
+[45:03.360 --> 45:05.360]  lá do nada. Isso tudo
+[45:05.360 --> 45:07.360]  é
+[45:07.360 --> 45:09.360]  de uma maneira que eu tivesse um
+[45:09.360 --> 45:11.360]  back pra tudo.
+[45:11.360 --> 45:13.360]  Nem que você domine. Ainda que eu
+[45:13.360 --> 45:15.360]  proteja ele com uma codeflare,
+[45:15.360 --> 45:17.360]  coloque num, sei lá. Então se o cara
+[45:17.360 --> 45:19.360]  da loja 1 chegar no meu
+[45:19.360 --> 45:21.360]  back-end lá no admin e
+[45:21.360 --> 45:23.360]  entrar com a loja 1, eu tenho
+[45:23.360 --> 45:25.360]  N maneiras, mas eu não quero mais usar pra
+[45:25.360 --> 45:27.360]  cada site eu tenho que subir
+[45:27.360 --> 45:29.360]  uma estrutura inteira.
+[45:29.360 --> 45:31.360]  arrobaloja1.com, ele vai ser direcionado
+[45:31.360 --> 45:33.360]  pro banco dele, pras coisas dele.
+[45:33.360 --> 45:35.360]  A partir do momento.
+[45:35.360 --> 45:37.360]  Então, não sei se isso foi passado
+[45:37.360 --> 45:39.360]  pra você, se ele tava montando real assim, não estava.
+[45:39.360 --> 45:41.360]  Que o cara da loja
+[45:41.360 --> 45:43.360]  2 fizer o login no mesmo domínio
+[45:43.360 --> 45:45.360]  ele vai ser direcionado
+[45:45.360 --> 45:47.360]  pra...
+[45:47.360 --> 45:49.360]  Então...
+[45:49.360 --> 45:51.360]  Chegamos a AWS lá, mas...
+[45:51.360 --> 45:53.360]  Mas também não preciso. A loja dele, o banco
+[45:53.360 --> 45:55.360]  dele. Então a minha ideia sempre
+[45:55.360 --> 45:57.360]  foi ter um back
+[45:57.360 --> 45:59.360]  preciso.
+[45:59.360 --> 46:01.360]  Eu não preciso que seja feito
+[46:01.360 --> 46:03.360]  da ideia que eu estava com a AWS.
+[46:03.360 --> 46:05.360]  O que eu queria.
+[46:05.360 --> 46:07.360]  Esse back-end vai ser o barra de admin
+[46:07.360 --> 46:09.360]  pros meus clientes usarem.
+[46:09.360 --> 46:11.360]  Então eu vou ter um back-end, que é o que eu tenho hoje
+[46:11.360 --> 46:13.360]  pra você entender o que eu quero, porque que eu tava mudando.
+[46:13.360 --> 46:15.360]  Hoje eu tenho VPS,
+[46:15.360 --> 46:17.360]  então eu tenho, sei lá, um domínio pra eles
+[46:17.360 --> 46:19.360]  porque eles tem muito problema de
+[46:19.360 --> 46:21.360]  ah, o site dele é
+[46:21.360 --> 46:23.360]  leilão ato 5 VPS.
+[46:23.360 --> 46:25.360]  Antes delas eu tenho
+[46:25.360 --> 46:27.360]  um proxy reverso.
+[46:27.360 --> 46:29.360]  Que proteja o mundo.com.
+[46:29.360 --> 46:31.360]  Se você digita a barra de admin, você tem acesso
+[46:31.360 --> 46:33.360]  ao barra de admin do cara e sofre
+[46:33.360 --> 46:35.360]  ataques, minhas VPS e todos esses
+[46:35.360 --> 46:37.360]  arquivos que estão lá.
+[46:37.360 --> 46:39.360]  Porque muitos clientes vendem
+[46:39.360 --> 46:41.360]  e sofre a porra toda.
+[46:41.360 --> 46:43.360]  Se eu tenho jleilão
+[46:43.360 --> 46:45.360]  serviço.com
+[46:45.360 --> 46:47.360]  e colocam o logo
+[46:47.360 --> 46:49.360]  imagem, tipo ah, eu tô vendendo
+[46:49.360 --> 46:51.360]  terreno financiado do
+[46:51.360 --> 46:53.360]  o barra de admin protegido, viu?
+[46:53.360 --> 46:55.360]  Você não vai bater nesse domínio à toa.
+[46:55.360 --> 46:57.360]  Você não vai chegar lá do nada.
+[46:57.360 --> 46:59.360]  E aí o cara mete a porra do jogo do
+[46:59.360 --> 47:01.360]  Santander dentro do banner dele.
+[47:01.360 --> 47:03.360]  Aí o cara tá vendendo um lote de carro
+[47:03.360 --> 47:05.360]  que nem que você domine.
+[47:05.360 --> 47:07.360]  Ainda que eu proteja eles com
+[47:07.360 --> 47:09.360]  uma call de flare, coloque no, sei lá,
+[47:09.360 --> 47:11.360]  o que recuperou da Porto Seguro. Ele mete
+[47:11.360 --> 47:13.360]  o logo da Porto Seguro no site dele.
+[47:13.360 --> 47:15.360]  E eu tenho
+[47:15.360 --> 47:17.360]  N maneiras, mas eu não quero mais
+[47:17.360 --> 47:19.360]  usar pra cada site, eu
+[47:19.360 --> 47:21.360]  tenho que subir uma estrutura inteira.
+[47:21.360 --> 47:23.360]  Problema com copyright,
+[47:23.360 --> 47:25.360]  com DCMA, com tudo.
+[47:25.360 --> 47:27.360]  Tudo, mano. Porque os caras simplesmente
+[47:27.360 --> 47:29.360]  não precisam. Então
+[47:29.360 --> 47:31.360]  isso foi passado. Se ele tava montando
+[47:31.360 --> 47:33.360]  real assim, não estava.
+[47:33.360 --> 47:35.360]  Bota foto também aí.
+[47:35.360 --> 47:37.360]  Como se fosse se passando.
+[47:37.360 --> 47:39.360]  Na verdade não é se passando não, porque assim
+[47:41.360 --> 47:43.360]  Então, eles chegam a usar a AWS lá, mas
+[47:43.360 --> 47:45.360]  Mas também não precisa.
+[47:45.360 --> 47:47.360]  Ele pode vender.
+[47:47.360 --> 47:49.360]  Porque ele pegou aquele lote
+[47:49.360 --> 47:51.360]  do Banco Santander.
+[47:51.360 --> 47:53.360]  Eu não preciso
+[47:53.360 --> 47:55.360]  que seja feito da ideia
+[47:55.360 --> 47:57.360]  que ele estava com a AWS. Porque eu queria.
+[47:57.360 --> 47:59.360]  O Banco Santander não autoriza que você
+[47:59.360 --> 48:01.360]  use uma foto do banner da
+[48:01.360 --> 48:03.360]  logo dele no seu site.
+[48:03.360 --> 48:05.360]  O que eu tenho hoje, pra você entender o que eu quero,
+[48:05.360 --> 48:07.360]  o que eu tava mudando. Hoje
+[48:07.360 --> 48:09.360]  eu tenho VPS, então eu tenho, sei lá,
+[48:09.360 --> 48:11.360]  Carte. Entendeu? Você pode até
+[48:11.360 --> 48:13.360]  escrever, recuperar do Santander.
+[48:13.360 --> 48:15.360]  Você botar a foto dele aí, mais quatro, cinco
+[48:15.360 --> 48:17.360]  VPS. Antes delas
+[48:17.360 --> 48:19.360]  eu tenho um proxy reverso.
+[48:19.360 --> 48:21.360]  Que protege a imagem.
+[48:21.360 --> 48:23.360]  Aí mata, mano.
+[48:23.360 --> 48:25.360]  Todos os bancos
+[48:25.360 --> 48:27.360]  são robôs que passam minhas VPS
+[48:27.360 --> 48:29.360]  e todos esses arquivos que estão lá.
+[48:29.360 --> 48:31.360]  Porque muitos clientes
+[48:31.360 --> 48:33.360]  vendem o dia inteiro.
+[48:33.360 --> 48:35.360]  Pegando se tem foto, se tem
+[48:35.360 --> 48:37.360]  imagem, se tem menção.
+[48:37.360 --> 48:39.360]  E aí eu sofro e coloco
+[48:39.360 --> 48:41.360]  o logo. Imagem. Tipo, eu tô vendendo
+[48:41.360 --> 48:43.360]  terreno
+[48:43.360 --> 48:45.360]  financiado do Santander. Não sei, aí
+[48:45.360 --> 48:47.360]  caia, eu perdia tudo. Aí eu fiz o que?
+[48:47.360 --> 48:49.360]  Criei os proxys reverso.
+[48:49.360 --> 48:51.360]  E aí o cara
+[48:51.360 --> 48:53.360]  mete a foto do logo do Santander
+[48:53.360 --> 48:55.360]  dentro do banner dele. Aí o cara tá vendendo
+[48:55.360 --> 48:57.360]  um lote de carros que são, nada
+[48:57.360 --> 48:59.360]  mais que umas VPS baratinhas.
+[48:59.360 --> 49:01.360]  Ah, bateu, reclamou, caiu.
+[49:01.360 --> 49:03.360]  Eu troco, eu faço uma prova. Ele recuperou da Porto
+[49:03.360 --> 49:05.360]  Seguro. Ele mete o logo da Porto
+[49:05.360 --> 49:07.360]  Seguro no site dele.
+[49:07.360 --> 49:09.360]  E eu tenho o próximo, eu só subo aquele
+[49:09.360 --> 49:11.360]  arquivo do meu proxy reverso e o site
+[49:11.360 --> 49:13.360]  Eu vou continuar, entendeu?
+[49:13.360 --> 49:15.360]  Só pra eu não ter problema com
+[49:15.360 --> 49:17.360]  copyright, com DCMA,
+[49:17.360 --> 49:19.360]  com tudo. Tudo, mano.
+[49:19.360 --> 49:21.360]  Porque os caras simplesmente, a reclamação
+[49:21.360 --> 49:23.360]  eu continuo recebendo.
+[49:23.360 --> 49:25.360]  Então, quando eu conversei com ele
+[49:25.360 --> 49:27.360]  eu falei, cara, eu se boto a foto também aí.
+[49:27.360 --> 49:29.360]  Como se fosse se passando.
+[49:29.360 --> 49:31.360]  Na verdade, não é se passando não,
+[49:31.360 --> 49:33.360]  porque assim, sei que eu vou continuar.
+[49:33.360 --> 49:35.360]  Porque eu não posso perder conta da AWS
+[49:35.360 --> 49:37.360]  porque tá vazando imagem.
+[49:37.360 --> 49:39.360]  Ele pode vender.
+[49:39.360 --> 49:43.360]  Ele pegou aquele lote do Banco Santander.
+[49:43.360 --> 49:45.360]  Só hospedou.
+[49:45.360 --> 49:47.360]  Eu hospedo aqui. Então, você hospedar dentro
+[49:47.360 --> 49:49.360]  de um bucket da AWS e vazar
+[49:49.360 --> 49:51.360]  o caminho dessa imagem. Porque assim, o Banco Santander não autoriza
+[49:51.360 --> 49:53.360]  que você use uma foto do banner
+[49:53.360 --> 49:55.360]  da logo dele
+[49:55.360 --> 49:57.360]  no teu site. A AWS
+[49:57.360 --> 49:59.360]  vai bater em mim. E aí, eu vou
+[49:59.360 --> 50:01.360]  perder minha conta, vou perder tudo. Então,
+[50:01.360 --> 50:03.360]  eu não quero copyright.
+[50:03.360 --> 50:05.360]  Você pode até escrever, recuperar
+[50:05.360 --> 50:07.360]  do Santander. Você botar a foto dele,
+[50:07.360 --> 50:09.360]  a imagem. Ou você arruma um jeito
+[50:09.360 --> 50:11.360]  de fazer o que? Ah, subiu no bucket.
+[50:11.360 --> 50:13.360]  Só que tá apontando
+[50:13.360 --> 50:15.360]  imagem. Aí, mata, mano.
+[50:15.360 --> 50:17.360]  Porque aí é robô.
+[50:17.360 --> 50:19.360]  Todos os bancos são robôs que passam
+[50:19.360 --> 50:21.360]  pra outro lugar,
+[50:21.360 --> 50:23.360]  tá pegando de outro. Beleza. Ele disse que
+[50:23.360 --> 50:25.360]  conseguiria, que tinha como usar.
+[50:25.360 --> 50:27.360]  E não o dia inteiro. Pegando se tem
+[50:27.360 --> 50:29.360]  foto, se tem imagem, se tem
+[50:29.360 --> 50:31.360]  menção. E aí, eu sofro
+[50:31.360 --> 50:33.360]  sair o endereço,
+[50:33.360 --> 50:35.360]  o caminho da
+[50:35.360 --> 50:37.360]  do bucket que estivesse.
+[50:37.360 --> 50:39.360]  Aí, caiu, eu perdia tudo.
+[50:39.360 --> 50:41.360]  Aí, eu fiz o quê? Criei
+[50:41.360 --> 50:43.360]  os proxies reversos.
+[50:43.360 --> 50:45.360]  Eu não sei, porque
+[50:45.360 --> 50:47.360]  quando ele passou pra mim, eu tinha
+[50:47.360 --> 50:49.360]  na hora de configurar o bucket lá, tinha que deixar público.
+[50:49.360 --> 50:51.360]  Então, nada mal que umas VPS
+[50:51.360 --> 50:53.360]  baratinhas. Ah, bateu, reclamou,
+[50:53.360 --> 50:55.360]  caiu. Eu troco, eu faço uma prova.
+[50:55.360 --> 50:57.360]  É, mas você deixa público.
+[50:57.360 --> 50:59.360]  Mas eu acho que era com alguma lâmida
+[50:59.360 --> 51:01.360]  que quando ele
+[51:01.360 --> 51:03.360]  só suba aquele arquivo do meu proxies
+[51:03.360 --> 51:05.360]  reversos, e o site continua.
+[51:05.360 --> 51:07.360]  Entendeu? É só pra eu
+[51:07.360 --> 51:09.360]  fazer a requisição da imagem.
+[51:09.360 --> 51:11.360]  A imagem passava
+[51:11.360 --> 51:13.360]  e ia pra um outro canto.
+[51:13.360 --> 51:15.360]  A reclamação, eu continuo
+[51:15.360 --> 51:17.360]  recebendo. Então,
+[51:17.360 --> 51:19.360]  quando eu conversei com ele, eu falei, cara,
+[51:19.360 --> 51:21.360]  eu só que voltava com outro nome.
+[51:21.360 --> 51:23.360]  Era algum lambda isso,
+[51:23.360 --> 51:25.360]  ela ia pra um outro endereço, subia e voltava.
+[51:25.360 --> 51:27.360]  Sei que eu vou continuar. Só que eu não posso perder
+[51:27.360 --> 51:29.360]  conta da AWS, porque tá
+[51:29.360 --> 51:31.360]  vazando imagem,
+[51:31.360 --> 51:33.360]  entendi, pra não ter a raiz.
+[51:33.360 --> 51:35.360]  Se você inspecionasse, não tava lá
+[51:35.360 --> 51:37.360]  S3,
+[51:37.360 --> 51:39.360]  eu hospedo aqui.
+[51:39.360 --> 51:41.360]  Então, se eu hospedar dentro de um bucket da AWS
+[51:41.360 --> 51:43.360]  e vazar o caminho dessa imagem,
+[51:43.360 --> 51:45.360]  eu vou vir do carro.
+[51:45.360 --> 51:47.360]  Coisa bem pensada. Então, isso é um pensamento
+[51:47.360 --> 51:49.360]  que eu preciso colocar, porque a imagem
+[51:49.360 --> 51:51.360]  da AWS vai bater em mim.
+[51:51.360 --> 51:53.360]  E aí, eu vou perder minha conta, vou perder
+[51:53.360 --> 51:55.360]  tudo. Então, eu não quero.
+[51:55.360 --> 51:57.360]  Eu não posso ter isso exposto.
+[51:57.360 --> 51:59.360]  Eu não posso mesmo. Aí, a AWS
+[51:59.360 --> 52:01.360]  é necessária?
+[52:01.360 --> 52:03.360]  Ou você arruma um jeito de fazer o que?
+[52:03.360 --> 52:05.360]  Ah, subiu no bucket, só que
+[52:05.360 --> 52:07.360]  tá apontando
+[52:07.360 --> 52:09.360]  de verdade. Pra mim, não.
+[52:09.360 --> 52:11.360]  Eu hoje trabalho com a
+[52:11.360 --> 52:13.360]  Hetzner, que é de VPS,
+[52:13.360 --> 52:15.360]  pra outro lugar, tá pegando de outro.
+[52:15.360 --> 52:17.360]  Beleza. Ele disse que conseguiria, que tinha como
+[52:17.360 --> 52:19.360]  usar e não esse elemento.
+[52:19.360 --> 52:21.360]  Trabalho com a Contabo,
+[52:21.360 --> 52:23.360]  trabalho com, ah não, um monte de
+[52:23.360 --> 52:25.360]  VPS, fora daquilo sair
+[52:25.360 --> 52:27.360]  o endereço, o caminho
+[52:27.360 --> 52:29.360]  da, do bucket
+[52:29.360 --> 52:31.360]  que estivesse.
+[52:31.360 --> 52:33.360]  Então, com a OVH também.
+[52:33.360 --> 52:35.360]  Então, assim, eu tenho um monte de VPS que eu posso
+[52:35.360 --> 52:37.360]  principalmente a gente configurar. Beleza.
+[52:37.360 --> 52:39.360]  Eu não sei, porque quando ele passou pra mim,
+[52:39.360 --> 52:41.360]  eu tinha, na hora de configurar o bucket lá,
+[52:41.360 --> 52:43.360]  tinha que deixar público.
+[52:43.360 --> 52:45.360]  Eu coloco ela pra funcionar, a gente protege
+[52:45.360 --> 52:47.360]  e monta uma estrutura dentro dela
+[52:47.360 --> 52:49.360]  e acabou.
+[52:49.360 --> 52:51.360]  É, mas você deixar público, mas eu acho que era com
+[52:51.360 --> 52:53.360]  alguma lâmida, que quando
+[52:53.360 --> 52:55.360]  ele de
+[52:55.360 --> 52:57.360]  roda, a ideia de vocês é
+[52:57.360 --> 52:59.360]  continuar isso de node,
+[52:59.360 --> 53:01.360]  certo? Fazia a requisição
+[53:01.360 --> 53:03.360]  da imagem,
+[53:03.360 --> 53:05.360]  a imagem passava e ia pra
+[53:05.360 --> 53:07.360]  um outro canto.
+[53:07.360 --> 53:09.360]  E aí, assim,
+[53:09.360 --> 53:11.360]  a tecnologia,
+[53:11.360 --> 53:13.360]  o que você vai fazer? Voltava com outro nome.
+[53:13.360 --> 53:15.360]  Era algum lâmide,
+[53:15.360 --> 53:17.360]  isso, ela ia pra um outro endereço,
+[53:17.360 --> 53:19.360]  subia e voltava a fazer. O que que você vai botar no front?
+[53:19.360 --> 53:21.360]  O que que não vai botar? Beleza, pra mim não
+[53:21.360 --> 53:23.360]  importa. O que me interessa é
+[53:23.360 --> 53:25.360]  um front e um outro nome.
+[53:25.360 --> 53:27.360]  Entendi, pra não ter a raiz, né?
+[53:27.360 --> 53:29.360]  Se você inspecionasse, não tava lá S3,
+[53:29.360 --> 53:31.360]  leve, pra quê?
+[53:31.360 --> 53:33.360]  Pra que eu possa fazer o
+[53:33.360 --> 53:35.360]  deploy rápido, então, ah, fiz deploy,
+[53:35.360 --> 53:37.360]  subiu o saco do carro,
+[53:37.360 --> 53:39.360]  coisa que eu não tinha pensado.
+[53:39.360 --> 53:41.360]  Então, isso é um pensamento que eu preciso
+[53:41.360 --> 53:43.360]  colocar, porque vai, dois, três,
+[53:43.360 --> 53:45.360]  subi a instância,
+[53:45.360 --> 53:47.360]  qual é o problema que eu tiver naquele
+[53:47.360 --> 53:49.360]  front, eu não posso ter isso exposto.
+[53:49.360 --> 53:51.360]  Não posso mesmo.
+[53:51.360 --> 53:53.360]  Aí, ah, a AWS é necessária?
+[53:53.360 --> 53:55.360]  Então, aí a AWS tá no meu
+[53:55.360 --> 53:57.360]  escudo, que eu vou fazer lá o meu reverso.
+[53:57.360 --> 53:59.360]  Maravilha. Vou ter um reverso
+[53:59.360 --> 54:01.360]  pronto. De verdade, pra mim
+[54:01.360 --> 54:03.360]  não. Eu hoje trabalho com
+[54:03.360 --> 54:05.360]  a Rettiner, que é de
+[54:05.360 --> 54:07.360]  VPS, pronto pra isso, vou continuar usando.
+[54:07.360 --> 54:09.360]  Então, a gente vai ter que
+[54:09.360 --> 54:11.360]  só alinhar esse
+[54:11.360 --> 54:13.360]  esse elemã, trabalho com a
+[54:13.360 --> 54:15.360]  contabo, trabalho com
+[54:15.360 --> 54:17.360]  ah não, um monte de VPS fora daqui.
+[54:17.360 --> 54:19.360]  É melhor você fazer o que é melhor
+[54:19.360 --> 54:21.360]  fazer ali, aí eu fico com vocês.
+[54:21.360 --> 54:23.360]  Para mim, onde que acha aqui.
+[54:23.360 --> 54:25.360]  Então, com a OVH também.
+[54:25.360 --> 54:27.360]  Então, assim, eu tenho um monte de VPS
+[54:27.360 --> 54:29.360]  que eu posso, principalmente, a gente configura
+[54:29.360 --> 54:31.360]  melhor.
+[54:31.360 --> 54:33.360]  Então, na parte de segurança,
+[54:33.360 --> 54:35.360]  não prescindura,
+[54:35.360 --> 54:37.360]  eu coloco ela pra funcionar, a gente
+[54:37.360 --> 54:39.360]  protege, monta uma estrutura
+[54:39.360 --> 54:41.360]  dentro dela e acabou.
+[54:41.360 --> 54:43.360]  Ele estava fazendo
+[54:43.360 --> 54:45.360]  o que ele disse que fazia melhor, que era o que sabia,
+[54:45.360 --> 54:47.360]  então, deixei.
+[54:47.360 --> 54:49.360]  E roda.
+[54:49.360 --> 54:51.360]  A ideia de vocês é continuar
+[54:51.360 --> 54:53.360]  isso de node, certo?
+[54:53.360 --> 54:55.360]  Então, aí é com você
+[54:55.360 --> 54:57.360]  que mexe, que manja, que sabe, que
+[54:57.360 --> 54:59.360]  sabe, ah, posso fazer esse deploy aqui sim?
+[55:01.360 --> 55:03.360]  E aí, assim,
+[55:03.360 --> 55:05.360]  a tecnologia, o que você vai fazer aqui em tal
+[55:05.360 --> 55:07.360]  lugar? Posso? Resolve.
+[55:07.360 --> 55:09.360]  Maravilha. Mesma coisa, banco de dado.
+[55:09.360 --> 55:11.360]  Banco de dado é o que
+[55:11.360 --> 55:13.360]  que você vai colocar no front, o que que não vai botar
+[55:13.360 --> 55:15.360]  cara, para mim não importa.
+[55:15.360 --> 55:17.360]  Para mim, o que me interessa é um front, uma coisa que
+[55:17.360 --> 55:19.360]  hoje eu uso, um SQL
+[55:19.360 --> 55:21.360]  gigante, que eu tenho vários,
+[55:21.360 --> 55:23.360]  eu tenho um servidor de SQL com
+[55:23.360 --> 55:25.360]  leve, para quê?
+[55:25.360 --> 55:27.360]  Para que eu possa fazer o deploy rápido,
+[55:27.360 --> 55:29.360]  então, fiz o deploy, só tenho vários
+[55:29.360 --> 55:31.360]  banquinhos, que é para cada, então, eu tenho 15 sites,
+[55:31.360 --> 55:33.360]  tenho 15 bancos.
+[55:33.360 --> 55:35.360]  Tenho 15 manutenções para fazer, aí, dois,
+[55:35.360 --> 55:37.360]  três, subir a instância,
+[55:37.360 --> 55:39.360]  a lá, qualquer
+[55:39.360 --> 55:41.360]  problema que eu tiver naquele front, quando precisa.
+[55:41.360 --> 55:43.360]  Ah,
+[55:43.360 --> 55:45.360]  então, você prefere um banco único?
+[55:45.360 --> 55:47.360]  Prefiro. Então, aí, a
+[55:47.360 --> 55:49.360]  AWS está no meu escudo, que eu vou fazer lá
+[55:49.360 --> 55:51.360]  o meu reverso. Maravilha.
+[55:51.360 --> 55:53.360]  Vou ter um reverso pronto. Se eu tiver esse
+[55:53.360 --> 55:55.360]  banco único, seguro,
+[55:55.360 --> 55:57.360]  tranquilo, que nem a gente, aí, conversar
+[55:57.360 --> 55:59.360]  com ele e falar, ah, na AWS eu conto para isso, vou continuar
+[55:59.360 --> 56:01.360]  usando. Então,
+[56:01.360 --> 56:03.360]  a gente vai ter que só alinhar
+[56:03.360 --> 56:05.360]  esse, não tem problema, você vai
+[56:05.360 --> 56:07.360]  pagar um pouco mais caro, mas você vai ter um banco
+[56:07.360 --> 56:09.360]  estável, com backup,
+[56:09.360 --> 56:11.360]  com isso, com isso mesmo.
+[56:11.360 --> 56:13.360]  E aí, você fala, o que é melhor fazer ali?
+[56:13.360 --> 56:15.360]  Aí, eu fico com vocês.
+[56:15.360 --> 56:17.360]  Para mim, onde que acha melhor?
+[56:17.360 --> 56:19.360]  Que se precisar subir, aumentar
+[56:19.360 --> 56:21.360]  avais, se precisar baixar avais,
+[56:21.360 --> 56:23.360]  foi maravilha, melhor.
+[56:25.360 --> 56:27.360]  Aí, então, na parte de segurança,
+[56:27.360 --> 56:29.360]  não precisa, não pode fazer.
+[56:29.360 --> 56:31.360]  E aí, por isso que ele foi passando para
+[56:31.360 --> 56:33.360]  AWS, mas se quiser, também, só
+[56:33.360 --> 56:35.360]  usar um banco da AWS.
+[56:35.360 --> 56:37.360]  Ele estava fazendo, porque ele disse que fazia
+[56:37.360 --> 56:39.360]  melhor, que era o que sabia, então,
+[56:39.360 --> 56:41.360]  deixei, AWS, usar
+[56:41.360 --> 56:43.360]  VPS de outro lugar, fora,
+[56:43.360 --> 56:45.360]  até para eu poder fazer um deploy.
+[56:47.360 --> 56:49.360]  Então, aí, é com você que mexe, que
+[56:49.360 --> 56:51.360]  manja, que sabe, que, sabe, ah, posso fazer
+[56:51.360 --> 56:53.360]  esse deploy aqui, um dia eu não tiver mais uma AWS,
+[56:53.360 --> 56:55.360]  o que que eu faço?
+[56:55.360 --> 56:57.360]  Do jeito que ele estava fazendo,
+[56:57.360 --> 56:59.360]  aqui em tal lugar, posso?
+[56:59.360 --> 57:01.360]  Resolve, maravilha.
+[57:01.360 --> 57:03.360]  Mesma coisa, banco de dados.
+[57:03.360 --> 57:05.360]  Banco de dados, eu ia virar
+[57:05.360 --> 57:07.360]  refém da AWS.
+[57:07.360 --> 57:09.360]  É, estava tudo lá.
+[57:09.360 --> 57:11.360]  Uma coisa que hoje eu uso,
+[57:11.360 --> 57:13.360]  um SQL gigante,
+[57:13.360 --> 57:15.360]  que eu tenho vários, eu tenho um servidor
+[57:15.360 --> 57:17.360]  de SQL, não tem outro serviço que faça igual
+[57:17.360 --> 57:19.360]  o que ele estava fazendo, então...
+[57:19.360 --> 57:21.360]  Ia ter que reestruturar tudo para poder...
+[57:21.360 --> 57:23.360]  Vários banquinhos, que é para cada...
+[57:23.360 --> 57:25.360]  Então, eu tenho 15 sites, tenho 15 bancos.
+[57:25.360 --> 57:27.360]  Sim.
+[57:27.360 --> 57:29.360]  Tenho 15 manutenções para fazer.
+[57:29.360 --> 57:31.360]  O que a gente está fazendo agora é pensar nisso,
+[57:31.360 --> 57:33.360]  que para mim tem que ser uma coisa dinâmica,
+[57:33.360 --> 57:35.360]  que é o que quando precisa.
+[57:35.360 --> 57:37.360]  Ah, você prefere um banco único?
+[57:37.360 --> 57:39.360]  Prefiro.
+[57:39.360 --> 57:41.360]  Mano, é um deploy.
+[57:41.360 --> 57:43.360]  Ele vai lá, nem que seja uma action do GitHub,
+[57:43.360 --> 57:45.360]  mandou, colocou, fez um deploy.
+[57:45.360 --> 57:47.360]  Se eu tiver esse banco único,
+[57:47.360 --> 57:49.360]  seguro, tranquilo,
+[57:49.360 --> 57:51.360]  que nem a gente conversar com ele e falar,
+[57:51.360 --> 57:53.360]  ah, na AWS, você vai no Aversel, fez aqui,
+[57:53.360 --> 57:55.360]  fez no seu próprio servidor, montou a sua
+[57:55.360 --> 57:57.360]  própria Aversel, monta, a gente monta, nossa...
+[57:57.360 --> 57:59.360]  Não tem problema, você vai pagar um pouco mais caro,
+[57:59.360 --> 58:01.360]  mas você vai ter um banco estável,
+[58:01.360 --> 58:03.360]  com backup, com isso mesmo,
+[58:03.360 --> 58:05.360]  e assim, tranquilo.
+[58:07.360 --> 58:09.360]  Então, pode pensar nisso,
+[58:09.360 --> 58:11.360]  que se precisar subir,
+[58:11.360 --> 58:13.360]  aumentar vai, se precisar baixar vai,
+[58:13.360 --> 58:15.360]  foi maravilha.
+[58:15.360 --> 58:17.360]  E botar suas ideias e achar que você
+[58:17.360 --> 58:19.360]  pode fazer o que você acha melhor.
+[58:19.360 --> 58:21.360]  Como você pensaria que, ah, como que eu
+[58:21.360 --> 58:23.360]  posso fazer? E aí, por isso
+[58:23.360 --> 58:25.360]  que ele foi passando para a AWS, mas
+[58:25.360 --> 58:27.360]  se quiser também só usar um banco da AWS,
+[58:27.360 --> 58:29.360]  isso aqui, essa liberdade
+[58:29.360 --> 58:31.360]  você tem. Eu não estou botando nada
+[58:31.360 --> 58:33.360]  assim, ah, eu quero que use
+[58:33.360 --> 58:35.360]  se usar VPS de outro lugar,
+[58:35.360 --> 58:37.360]  fora, até para eu poder
+[58:37.360 --> 58:39.360]  fazer um deploy,
+[58:39.360 --> 58:41.360]  tal ferramenta. Não, não quero.
+[58:41.360 --> 58:43.360]  A vontade. Pode trazer coisa nova.
+[58:43.360 --> 58:45.360]  Pô, tem esse serviço novo, de um dia eu
+[58:45.360 --> 58:47.360]  não tiver mais uma AWS, o que que eu faço?
+[58:47.360 --> 58:49.360]  É, fica preso, né?
+[58:49.360 --> 58:51.360]  Do jeito que ele estava fazendo, estou aqui que
+[58:51.360 --> 58:53.360]  cabe para você. Maravilha.
+[58:55.360 --> 58:57.360]  Vamos lá, no banco, o que mais que você precisa,
+[58:57.360 --> 58:59.360]  eu ia virar refém da AWS.
+[58:59.360 --> 59:01.360]  Que estava tocando, é, estava tocando.
+[59:01.360 --> 59:03.360]  Todo, todo, eu não tinha, eu não...

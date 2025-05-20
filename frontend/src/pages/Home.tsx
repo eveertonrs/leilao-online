@@ -29,9 +29,9 @@ type Evento = {
 };
 
 const banners = [
-  'https://sba1.com/arquivos/leiloes/2019/02/leilao-especial-gado-de-corte-leiloforte.jpg',
-  'https://sba1.com/arquivos/leiloes/2019/Virtual%20MS%20Leil%C3%B5es.jpeg',
-  'https://souagro.net/wp-content/uploads/2021/08/gado.jpg',
+  'https://www.picellileiloes.com.br/arquivos/leiloes/logos/66353b8ab2f95.jpg',
+  'https://www.picellileiloes.com.br/arquivos/leiloes/logos/64e3a95e0b6a5.jpg',
+  'https://i.ytimg.com/vi/mOaQhvlzcjU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC3114NHiduxlnl4LKzPYC2hRTwzg',
 ];
 
 const Home = () => {
@@ -92,7 +92,7 @@ const Home = () => {
         <Slider autoplay dots infinite speed={700} slidesToShow={1} slidesToScroll={1}>
           {banners.map((url, index) => (
             <Box key={index}>
-              <img src={url} alt={`Banner ${index + 1}`} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px' }} />
+              <img src={url} alt={`Banner ${index + 1}`} style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '50px' }} />
             </Box>
           ))}
         </Slider>

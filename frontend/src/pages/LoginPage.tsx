@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'; // ⬅️ Adicione useContext
+import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -11,22 +11,22 @@ import {
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
-import { AuthContext } from '../contexts/AuthContext'; // ⬅️ Importe o Contexto
+import { useAuth } from '../contexts/AuthContext'; // useAuth é melhor e tipado
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
-  const { setUsuario } = useContext(AuthContext); // ⬅️ Pegue o setUsuario do contexto
+  const { setUsuario, setToken } = useAuth(); // pega do hook
 
   const handleLogin = async () => {
     try {
       const response = await axios.post('http://localhost:3333/auth/login', { email, senha });
       const { token, usuario } = response.data;
 
-      // Armazena token e atualiza o contexto
       localStorage.setItem('token', token);
-      setUsuario(usuario); // ⬅️ Atualiza o estado global
+      setUsuario(usuario);
+      setToken(token);
 
       alert(`Bem-vindo, ${usuario.nome}!`);
       navigate('/');

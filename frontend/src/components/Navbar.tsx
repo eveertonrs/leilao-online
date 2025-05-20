@@ -1,10 +1,14 @@
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const Navbar = () => {
-  const { usuario, logout } = useContext(AuthContext);
+  const { usuario, setUsuario, setToken } = useAuth();
+
+  const logout = () => {
+    setUsuario(null);
+    setToken(null);
+  };
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>

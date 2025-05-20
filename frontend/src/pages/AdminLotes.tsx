@@ -1,3 +1,4 @@
+// frontend/src/pages/AdminLotes.tsx
 import { useEffect, useState, ChangeEvent } from 'react';
 import axios from 'axios';
 import {
@@ -6,47 +7,22 @@ import {
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-
-type Lote = {
-  id: number;
-  nome: string;
-  descricao: string;
-  lance_minimo: number;
-  data_inicio: string;
-  data_fim: string;
-  evento_id: number;
-  evento_nome?: string;
-  categoria_id: number;
-  categoria_nome?: string;
-  status?: string;
-  lance_atual?: number;
-  qtd_lances?: number;
-  imagens?: string[];
-};
+import CloseIcon from '@mui/icons-material/Close';
 
 const AdminLotes = () => {
-  const [lotes, setLotes] = useState<Lote[]>([]);
+  const [lotes, setLotes] = useState<any[]>([]);
   const [open, setOpen] = useState(false);
-  const [editando, setEditando] = useState<Lote | null>(null);
-  const [imagens, setImagens] = useState<File[]>([]);
-  const [preview, setPreview] = useState<string[]>([]);
-  const [filtroEvento, setFiltroEvento] = useState('');
-  const [filtroCategoria, setFiltroCategoria] = useState('');
-  const [filtroMinLance, setFiltroMinLance] = useState('');
-  const [filtroMaxLance, setFiltroMaxLance] = useState('');
+  const [editando, setEditando] = useState<any | null>(null);
+  const [imagensNovas, setImagensNovas] = useState<File[]>([]);
+  const [imagensExistentes, setImagensExistentes] = useState<string[]>([]);
+  const [imagensRemovidas, setImagensRemovidas] = useState<string[]>([]);
 
   const [formData, setFormData] = useState({
-    nome: '',
-    descricao: '',
-    lance_minimo: '',
-    data_inicio: '',
-    data_fim: '',
-    evento_id: '',
-    categoria_id: ''
+    nome: '', descricao: '', lance_minimo: '', data_inicio: '', data_fim: '', evento_id: '', categoria_id: ''
   });
 
-  const [eventos, setEventos] = useState([]);
-  const [categorias, setCategorias] = useState([]);
+  const [eventos, setEventos] = useState<any[]>([]);
+  const [categorias, setCategorias] = useState<any[]>([]);
 
   useEffect(() => {
     fetchLotes();
@@ -55,43 +31,41 @@ const AdminLotes = () => {
   }, []);
 
   const fetchLotes = async () => {
-    const response = await axios.get('http://localhost:3333/lotes');
-    setLotes(response.data);
+    const res = await axios.get('http://localhost:3333/lotes');
+    setLotes(res.data);
   };
 
   const fetchEventos = async () => {
-    const response = await axios.get('http://localhost:3333/eventos');
-    setEventos(response.data);
+    const res = await axios.get('http://localhost:3333/eventos');
+    setEventos(res.data);
   };
 
   const fetchCategorias = async () => {
-    const response = await axios.get('http://localhost:3333/categorias');
-    setCategorias(response.data);
+    const res = await axios.get('http://localhost:3333/categorias');
+    setCategorias(res.data);
   };
 
-  const handleOpen = async (lote: Lote | null = null) => {
+  const handleOpen = async (lote: any | null = null) => {
     if (lote) {
       const res = await axios.get(`http://localhost:3333/lotes/${lote.id}`);
-      const loteComImagens = res.data;
-
-      setEditando(loteComImagens);
+      const dados = res.data;
+      setEditando(dados);
       setFormData({
-        nome: loteComImagens.nome,
-        descricao: loteComImagens.descricao,
-        lance_minimo: loteComImagens.lance_minimo.toString(),
-        data_inicio: loteComImagens.data_inicio.slice(0, 16),
-        data_fim: loteComImagens.data_fim.slice(0, 16),
-        evento_id: loteComImagens.evento_id.toString(),
-        categoria_id: loteComImagens.categoria_id.toString()
+        nome: dados.nome, descricao: dados.descricao,
+        lance_minimo: dados.lance_minimo.toString(),
+        data_inicio: dados.data_inicio.slice(0, 16),
+        data_fim: dados.data_fim.slice(0, 16),
+        evento_id: dados.evento_id.toString(),
+        categoria_id: dados.categoria_id.toString()
       });
-
-      setPreview(loteComImagens.imagens || []);
+      setImagensExistentes(dados.imagens || []);
     } else {
       setEditando(null);
       setFormData({ nome: '', descricao: '', lance_minimo: '', data_inicio: '', data_fim: '', evento_id: '', categoria_id: '' });
-      setPreview([]);
+      setImagensExistentes([]);
     }
-    setImagens([]);
+    setImagensNovas([]);
+    setImagensRemovidas([]);
     setOpen(true);
   };
 
@@ -103,16 +77,40 @@ const AdminLotes = () => {
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
-    if (files) {
-      const fileArray = Array.from(files);
-      setImagens(fileArray);
-      setPreview(fileArray.map(file => URL.createObjectURL(file)));
-    }
+    if (files) setImagensNovas(Array.from(files));
+  };
+
+  const handleRemoveImagemExistente = (url: string) => {
+    setImagensRemovidas([...imagensRemovidas, url]);
+    setImagensExistentes(imagensExistentes.filter(img => img !== url));
+  };
+
+  const handleRemoveImagemNova = (index: number) => {
+    const novas = [...imagensNovas];
+    novas.splice(index, 1);
+    setImagensNovas(novas);
   };
 
   const handleSubmit = async () => {
     const token = localStorage.getItem('token');
+    // Debug de validação de evento
+    console.log('formData.evento_id:', formData.evento_id);
+    console.log('eventos disponíveis:', eventos);
 
+    // Validação de datas dentro do intervalo do evento
+    const selectedEvent = eventos.find(ev => ev.id === parseInt(formData.evento_id, 10));
+    if (!selectedEvent) {
+      alert('Selecione um evento válido.');
+      return;
+    }
+    const lotStart = new Date(formData.data_inicio);
+    const lotEnd = new Date(formData.data_fim);
+    const evStart = new Date(selectedEvent.data_inicio);
+    const evEnd = new Date(selectedEvent.data_fim);
+    if (lotStart < evStart || lotEnd > evEnd) {
+      alert(`Datas do lote devem estar entre ${evStart.toLocaleString()} e ${evEnd.toLocaleString()}.`);
+      return;
+    }
     const lotePayload = {
       nome: formData.nome,
       descricao: formData.descricao,
@@ -120,12 +118,12 @@ const AdminLotes = () => {
       data_inicio: formData.data_inicio,
       data_fim: formData.data_fim,
       evento_id: parseInt(formData.evento_id),
-      categoria_id: parseInt(formData.categoria_id)
+      categoria_id: parseInt(formData.categoria_id),
+      imagensRemovidas: imagensRemovidas
     };
 
     try {
       let loteId: number;
-
       if (editando) {
         await axios.put(`http://localhost:3333/lotes/${editando.id}`, lotePayload, { headers: { Authorization: `Bearer ${token}` } });
         loteId = editando.id;
@@ -134,15 +132,11 @@ const AdminLotes = () => {
         loteId = res.data.id;
       }
 
-      if (imagens.length > 0 && loteId) {
+      if (imagensNovas.length > 0 && loteId) {
         const form = new FormData();
-        imagens.forEach(img => form.append('imagens', img));
-
+        imagensNovas.forEach(img => form.append('imagens', img));
         await axios.post(`http://localhost:3333/lotes/${loteId}/imagens`, form, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            'Content-Type': 'multipart/form-data'
-          }
+          headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' }
         });
       }
 
@@ -154,91 +148,74 @@ const AdminLotes = () => {
     }
   };
 
-  const handleDelete = async (id: number) => {
-    if (window.confirm('Tem certeza que deseja excluir este lote?')) {
-      const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:3333/lotes/${id}`, { headers: { Authorization: `Bearer ${token}` } });
-      fetchLotes();
-    }
-  };
-
-  const lotesFiltrados = lotes.filter((lote) => {
-    const matchEvento = !filtroEvento || lote.evento_nome === filtroEvento;
-    const matchCategoria = !filtroCategoria || lote.categoria_nome === filtroCategoria;
-    const matchMin = !filtroMinLance || lote.lance_minimo >= parseFloat(filtroMinLance);
-    const matchMax = !filtroMaxLance || lote.lance_minimo <= parseFloat(filtroMaxLance);
-    return matchEvento && matchCategoria && matchMin && matchMax;
-  });
+  function handleDelete(id: any): void {
+    throw new Error('Function not implemented.');
+  }
 
   return (
     <Box sx={{ maxWidth: 1000, margin: 'auto', padding: 4 }}>
       <Typography variant="h4" gutterBottom>Administração de Lotes</Typography>
-      <Button variant="contained" color="primary" sx={{ mb: 3 }} onClick={() => handleOpen()}>Novo Lote</Button>
+      <Button variant="contained" onClick={() => handleOpen()}>Novo Lote</Button>
 
-      <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mb: 3 }}>
-        <TextField select label="Evento" value={filtroEvento} onChange={(e) => setFiltroEvento(e.target.value)} sx={{ minWidth: 180 }}>
-          <MenuItem value="">Todos</MenuItem>
-          {eventos.map((ev: any) => <MenuItem key={ev.id} value={ev.nome}>{ev.nome}</MenuItem>)}
-        </TextField>
-        <TextField select label="Categoria" value={filtroCategoria} onChange={(e) => setFiltroCategoria(e.target.value)} sx={{ minWidth: 180 }}>
-          <MenuItem value="">Todas</MenuItem>
-          {categorias.map((cat: any) => <MenuItem key={cat.id} value={cat.nome}>{cat.nome}</MenuItem>)}
-        </TextField>
-        <TextField label="Lance mínimo (de)" type="number" value={filtroMinLance} onChange={(e) => setFiltroMinLance(e.target.value)} />
-        <TextField label="Lance mínimo (até)" type="number" value={filtroMaxLance} onChange={(e) => setFiltroMaxLance(e.target.value)} />
-      </Box>
-
-      {lotesFiltrados.map((lote) => (
-        <Paper key={lote.id} sx={{ padding: 2, mb: 2, display: 'flex', flexDirection: 'column', gap: 1 }}>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Box>
-              <Typography variant="h6">{lote.nome}</Typography>
-              <Typography variant="body2">Evento: {lote.evento_nome} | Categoria: {lote.categoria_nome}</Typography>
-              <Typography variant="body2">Início: {new Date(lote.data_inicio).toLocaleString()} | Fim: {new Date(lote.data_fim).toLocaleString()}</Typography>
-              <Typography variant="body2">Lance Mínimo: R$ {lote.lance_minimo}</Typography>
-              {lote.status && <Typography variant="body2">Status: {lote.status}</Typography>}
-            </Box>
-            <Box>
-              <IconButton color="secondary" onClick={() => handleOpen(lote)}><EditIcon /></IconButton>
-              <IconButton color="error" onClick={() => handleDelete(lote.id)}><DeleteIcon /></IconButton>
-            </Box>
+      {lotes.map((lote) => (
+        <Paper key={lote.id} sx={{ p: 2, mt: 2 }}>
+          <Typography variant="h6">{lote.nome}</Typography>
+          <Typography variant="body2">Evento: {lote.evento_nome} | Categoria: {lote.categoria_nome}</Typography>
+          <Typography variant="body2">Início: {new Date(lote.data_inicio).toLocaleString()}</Typography>
+          <Typography variant="body2">Fim: {new Date(lote.data_fim).toLocaleString()}</Typography>
+          <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+            {lote.imagens?.map((img: string, i: number) => (
+              <img key={i} src={img} width={100} height={60} style={{ borderRadius: 4 }} />
+            ))}
           </Box>
-          {lote.imagens && lote.imagens.length > 0 && (
-            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mt: 1 }}>
-              {lote.imagens.map((img, i) => (
-                <img key={i} src={img} alt={`lote-${lote.id}-img-${i}`} width={100} height={70} style={{ objectFit: 'cover', borderRadius: 8 }} />
-              ))}
-            </Box>
-          )}
+          <Box sx={{ mt: 1 }}>
+            <IconButton onClick={() => handleOpen(lote)}><EditIcon /></IconButton>
+            <IconButton onClick={() => handleDelete(lote.id)}><DeleteIcon /></IconButton>
+          </Box>
         </Paper>
       ))}
 
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
         <DialogTitle>{editando ? 'Editar Lote' : 'Novo Lote'}</DialogTitle>
         <DialogContent>
-          <TextField margin="dense" label="Nome" fullWidth name="nome" value={formData.nome} onChange={handleChange} />
-          <TextField margin="dense" label="Descrição" fullWidth name="descricao" value={formData.descricao} onChange={handleChange} />
-          <TextField margin="dense" label="Lance Mínimo" fullWidth name="lance_minimo" value={formData.lance_minimo} onChange={handleChange} />
-          <TextField margin="dense" type="datetime-local" label="Data Início" fullWidth name="data_inicio" value={formData.data_inicio} onChange={handleChange} InputLabelProps={{ shrink: true }} />
-          <TextField margin="dense" type="datetime-local" label="Data Fim" fullWidth name="data_fim" value={formData.data_fim} onChange={handleChange} InputLabelProps={{ shrink: true }} />
-          <TextField select margin="dense" label="Evento" fullWidth name="evento_id" value={formData.evento_id} onChange={handleChange}>
+          <TextField fullWidth margin="dense" name="nome" label="Nome" value={formData.nome} onChange={handleChange} />
+          <TextField fullWidth margin="dense" name="descricao" label="Descrição" value={formData.descricao} onChange={handleChange} />
+          <TextField fullWidth margin="dense" name="lance_minimo" label="Lance Mínimo" value={formData.lance_minimo} onChange={handleChange} />
+          <TextField fullWidth margin="dense" name="data_inicio" type="datetime-local" label="Data Início" value={formData.data_inicio} onChange={handleChange} InputLabelProps={{ shrink: true }} />
+          <TextField fullWidth margin="dense" name="data_fim" type="datetime-local" label="Data Fim" value={formData.data_fim} onChange={handleChange} InputLabelProps={{ shrink: true }} />
+          <TextField fullWidth select name="evento_id" label="Evento" value={formData.evento_id} onChange={handleChange} margin="dense">
             <MenuItem value="">Selecione...</MenuItem>
-            {eventos.map((e: any) => <MenuItem key={e.id} value={e.id}>{e.nome}</MenuItem>)}
+            {eventos.map((ev: any) => <MenuItem key={ev.id} value={ev.id}>{ev.nome}</MenuItem>)}
           </TextField>
-          <TextField select margin="dense" label="Categoria" fullWidth name="categoria_id" value={formData.categoria_id} onChange={handleChange}>
+          <TextField fullWidth select name="categoria_id" label="Categoria" value={formData.categoria_id} onChange={handleChange} margin="dense">
             <MenuItem value="">Selecione...</MenuItem>
-            {categorias.map((c: any) => <MenuItem key={c.id} value={c.id}>{c.nome}</MenuItem>)}
+            {categorias.map((cat: any) => <MenuItem key={cat.id} value={cat.id}>{cat.nome}</MenuItem>)}
           </TextField>
-          <input type="file" multiple accept="image/*" onChange={handleFileChange} style={{ marginTop: 16 }} />
-          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mt: 2 }}>
-            {preview.map((src, i) => (
-              <img key={i} src={src} alt={`preview-${i}`} width={100} height={70} style={{ objectFit: 'cover', borderRadius: 8 }} />
+
+          <input type="file" multiple onChange={handleFileChange} style={{ marginTop: 16 }} />
+
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mt: 2 }}>
+            {imagensExistentes.map((url, i) => (
+              <Box key={i} sx={{ position: 'relative' }}>
+                <img src={url} width={100} height={70} style={{ borderRadius: 4 }} />
+                <IconButton onClick={() => handleRemoveImagemExistente(url)} size="small" sx={{ position: 'absolute', top: -8, right: -8, background: 'white' }}>
+                  <CloseIcon fontSize="small" />
+                </IconButton>
+              </Box>
+            ))}
+            {imagensNovas.map((file, i) => (
+              <Box key={i} sx={{ position: 'relative' }}>
+                <img src={URL.createObjectURL(file)} width={100} height={70} style={{ borderRadius: 4 }} />
+                <IconButton onClick={() => handleRemoveImagemNova(i)} size="small" sx={{ position: 'absolute', top: -8, right: -8, background: 'white' }}>
+                  <CloseIcon fontSize="small" />
+                </IconButton>
+              </Box>
             ))}
           </Box>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancelar</Button>
-          <Button onClick={handleSubmit} variant="contained" color="primary">Salvar</Button>
+          <Button onClick={handleSubmit} variant="contained">Salvar</Button>
         </DialogActions>
       </Dialog>
     </Box>

@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import {
   Box, Typography, Button, Paper, TextField, List, ListItem, ListItemText, Divider, Alert
@@ -7,12 +7,13 @@ import {
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import { AuthContext } from '../contexts/AuthContext';
+
+import { useAuth } from '../contexts/AuthContext';
 
 const DetalhesLote = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { usuario } = useContext(AuthContext);
+  const { usuario } = useAuth();
 
   const [lote, setLote] = useState<any>(null);
   const [lances, setLances] = useState<any[]>([]);
