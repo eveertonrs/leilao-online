@@ -3,21 +3,8 @@ import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import {
-  Container,
-  Card,
-  CardContent,
-  Typography,
-  CardMedia,
-  CardActions,
-  Button,
-  Box,
-  Chip,
-  IconButton,
-} from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline';
 
 type Evento = {
   id: number;
@@ -29,16 +16,14 @@ type Evento = {
 };
 
 const banners = [
-  'https://sba1.com/arquivos/leiloes/2019/02/leilao-especial-gado-de-corte-leiloforte.jpg',
-  'https://sba1.com/arquivos/leiloes/2019/Virtual%20MS%20Leil%C3%B5es.jpeg',
-  'https://souagro.net/wp-content/uploads/2021/08/gado.jpg',
+  'https://www.picellileiloes.com.br/arquivos/leiloes/logos/67925f3fca5c9.jpeg',
+  'https://www.maxicar.com.br/wp-content/uploads/2024/07/DCM_BANNER_CUPOM_600X500.jpg',
+  'https://i.pinimg.com/originals/4a/f3/8c/4af38c93a23b50ccb11a0f06ff4a4870.jpg',
 ];
 
-const Home = () => {
+export default function Home() {
   const [eventos, setEventos] = useState<Evento[]>([]);
   const navigate = useNavigate();
-
-  // ✅ Recuperar usuário logado
   const usuarioLogado = JSON.parse(localStorage.getItem('usuario') || '{}');
   const isAdmin = usuarioLogado?.tipo === 'ADMIN';
 
@@ -50,15 +35,12 @@ const Home = () => {
     try {
       const response = await axios.get<Evento[]>('http://localhost:3333/eventos');
       let data = response.data;
-
       const agora = new Date();
-
       if (filtro === 'ativos') {
         data = data.filter(e => new Date(e.data_inicio) <= agora && new Date(e.data_fim) >= agora);
       } else if (filtro === 'futuros') {
         data = data.filter(e => new Date(e.data_inicio) > agora);
       }
-
       setEventos(data);
     } catch (error) {
       console.error('Erro ao buscar eventos:', error);
@@ -66,19 +48,14 @@ const Home = () => {
   }
 
   const handleExcluir = async (id: number) => {
-    const confirmacao = window.confirm('Tem certeza que deseja excluir este evento?');
-    if (!confirmacao) return;
-
+    if (!window.confirm('Tem certeza que deseja excluir este evento?')) return;
     try {
       const token = localStorage.getItem('token');
       await axios.delete(`http://localhost:3333/eventos/${id}`, {
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
+        headers: { Authorization: `Bearer ${token}` },
       });
-
       alert('Evento excluído com sucesso!');
-      fetchEventos(); // Atualiza lista após excluir
+      fetchEventos();
     } catch (error) {
       console.error('Erro ao excluir o evento:', error);
       alert('Erro ao excluir o evento');
@@ -86,118 +63,62 @@ const Home = () => {
   };
 
   return (
-    <Box sx={{ background: 'linear-gradient(#f9f9f9, #e9f0f7)', py: 6 }}>
-      <Container>
-        {/* Carrossel com banners externos */}
-        <Slider autoplay dots infinite speed={700} slidesToShow={1} slidesToScroll={1}>
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white py-10">
+      <div className="container mx-auto px-4">
+        <Slider autoplay dots infinite speed={700} slidesToShow={1} slidesToScroll={1} className="rounded-xl overflow-hidden mb-8 shadow-xl">
           {banners.map((url, index) => (
-            <Box key={index}>
-              <img src={url} alt={`Banner ${index + 1}`} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px' }} />
-            </Box>
+            <div key={index} className="relative">
+              <img src={url} alt={`Banner ${index + 1}`} className="w-full h-72 object-cover" />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
           ))}
         </Slider>
 
-        {/* Título */}
-        <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 'bold', mt: 4, borderBottom: '2px solid #1976d2', display: 'inline-block', pb: 1 }}>
-          Leilões em Destaque
-        </Typography>
+        <h2 className="text-4xl font-bold text-center text-blue-300 border-b-4 border-blue-600 inline-block pb-2 mb-8">Leilões em Destaque</h2>
 
-        {/* Filtros */}
-        <Box display="flex" justifyContent="center" gap={2} mt={2}>
-          <Button variant="outlined" onClick={() => fetchEventos('todos')}>Todos</Button>
-          <Button variant="outlined" onClick={() => fetchEventos('ativos')}>Ativos</Button>
-          <Button variant="outlined" onClick={() => fetchEventos('futuros')}>Futuros</Button>
-        </Box>
+        <div className="flex justify-center gap-4 mb-10">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full" onClick={() => fetchEventos('todos')}>Todos</button>
+          <button className="bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full" onClick={() => fetchEventos('ativos')}>Ativos</button>
+          <button className="bg-yellow-400 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-full" onClick={() => fetchEventos('futuros')}>Futuros</button>
+        </div>
 
-        {/* Lista de Eventos */}
-        <Box
-          display="flex"
-          flexWrap="wrap"
-          justifyContent="center"
-          gap={4}
-          mt={4}
-        >
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {eventos.map((evento) => (
-            <Card
-              key={evento.id}
-              sx={{
-                width: 300,
-                borderRadius: 3,
-                boxShadow: '0 6px 18px rgba(0,0,0,0.1)',
-                transition: 'transform 0.3s',
-                '&:hover': {
-                  transform: 'scale(1.03)',
-                  boxShadow: '0 8px 24px rgba(25, 118, 210, 0.3)',
-                },
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="180"
-                image={
-                  evento.foto_capa
-                    ? `http://localhost:3333/uploads/${evento.foto_capa}`
-                    : 'https://source.unsplash.com/400x200/?auction,event'
-                }
+            <div key={evento.id} className="bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+              <img
+                src={evento.foto_capa ? `http://localhost:3333/uploads/${evento.foto_capa}` : 'https://source.unsplash.com/400x200/?auction,event'}
                 alt={evento.nome}
+                className="h-48 w-full object-cover rounded-t-xl"
               />
-              <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                  {evento.nome}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ height: 40, overflow: 'hidden' }}>
-                  {evento.descricao || 'Sem descrição'}
-                </Typography>
-                <Chip
-                  label={`Início: ${new Date(evento.data_inicio).toLocaleDateString()}`}
-                  size="small"
-                  sx={{ mt: 1 }}
-                />
-              </CardContent>
-              <CardActions sx={{ justifyContent: 'space-between', px: 2, pb: 2 }}>
-                <Button
-                  size="small"
-                  component={Link}
+              <div className="p-4">
+                <h3 className="text-xl font-bold text-white mb-2">{evento.nome}</h3>
+                <p className="text-sm text-gray-300">{evento.descricao || 'Sem descrição'}</p>
+                <p className="text-sm text-blue-400 mt-2">Início: {new Date(evento.data_inicio).toLocaleDateString()}</p>
+              </div>
+              <div className="flex justify-between items-center px-4 pb-4">
+                <Link
                   to={`/eventos/${evento.id}`}
-                  variant="contained"
-                  color="primary"
-                  sx={{
-                    transition: 'all 0.3s ease',
-                    '&:hover': {
-                      backgroundColor: '#1565c0',
-                      transform: 'scale(1.05)'
-                    }
-                  }}
+                  className="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded"
                 >
                   Detalhes
-                </Button>
-
-                {/* ✅ Só ADMIN vê os botões */}
+                </Link>
                 {isAdmin && (
-                  <Box>
-                    <IconButton
-                      size="small"
-                      color="secondary"
-                      onClick={() => navigate(`/editar-evento/${evento.id}`)}
-                    >
-                      <EditIcon />
-                    </IconButton>
-                    <IconButton
-                      size="small"
-                      color="error"
-                      onClick={() => handleExcluir(evento.id)}
-                    >
-                      <DeleteIcon />
-                    </IconButton>
-                  </Box>
+                  <div className="flex gap-2">
+                    <button onClick={() => navigate(`/editar-evento/${evento.id}`)} className="bg-yellow-500 hover:bg-yellow-700 text-black px-2 py-1 rounded flex items-center">
+                      <PencilSquareIcon className="h-5 w-5 mr-1" />
+                      Editar
+                    </button>
+                    <button onClick={() => handleExcluir(evento.id)} className="bg-red-500 hover:bg-red-700 text-white px-2 py-1 rounded flex items-center">
+                      <TrashIcon className="h-5 w-5 mr-1" />
+                      Excluir
+                    </button>
+                  </div>
                 )}
-              </CardActions>
-            </Card>
+              </div>
+            </div>
           ))}
-        </Box>
-      </Container>
-    </Box>
+        </div>
+      </div>
+    </div>
   );
-};
-
-export default Home;
+}

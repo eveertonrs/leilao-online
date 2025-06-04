@@ -1,4 +1,3 @@
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
@@ -7,46 +6,44 @@ const Navbar = () => {
   const { usuario, logout } = useContext(AuthContext);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>
-      <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+    <nav className="bg-gray-800 shadow-md sticky top-0 z-50">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        <Link to="/" className="text-white text-lg font-semibold hover:text-blue-300 transition duration-300">
           Sistema de Leilões
-        </Typography>
+        </Link>
 
-        <Box>
-          <Button color="inherit" component={Link} to="/">
+        <div className="flex items-center space-x-4">
+          <Link to="/" className="text-gray-200 hover:text-white transition duration-300">
             Home
-          </Button>
+          </Link>
 
           {/* ADMIN - pode ver Novo Evento e Admin Lotes */}
           {usuario && usuario.tipo === 'ADMIN' && (
             <>
-              <Button color="inherit" component={Link} to="/novo-evento">
-                Novo Evento
-              </Button>
-              <Button color="inherit" component={Link} to="/admin-lotes">
-                Admin Lotes
-              </Button>
+
             </>
           )}
 
           {usuario ? (
             <>
-              <Typography variant="body2" sx={{ mx: 2, display: 'inline-block' }}>
-                Olá, {usuario.nome}
-              </Typography>
-              <Button color="inherit" onClick={logout}>
+              <span className="text-gray-200">Olá, {usuario.nome}</span>
+              <button onClick={logout} className="text-gray-200 hover:text-white transition duration-300">
                 Sair
-              </Button>
+              </button>
             </>
           ) : (
-            <Button color="inherit" component={Link} to="/login">
-              Login
-            </Button>
+            <>
+              <Link to="/login" className="text-gray-200 hover:text-blue-300 transition duration-300">
+                Login
+              </Link>
+              <Link to="/admin/login" className="text-gray-200 hover:text-blue-300 transition duration-300">
+                Admin Login
+              </Link>
+            </>
           )}
-        </Box>
-      </Toolbar>
-    </AppBar>
+        </div>
+      </div>
+    </nav>
   );
 };
 

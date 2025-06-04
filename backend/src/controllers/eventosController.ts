@@ -50,10 +50,14 @@ export async function createEvento(req: Request, res: Response): Promise<void> {
   const inicio = new Date(data_inicio);
   const fim = new Date(data_fim);
 
-  if (inicio < now) {
-    res.status(400).json({ mensagem: 'A data de início não pode ser anterior à data atual' });
-    return;
-  }
+if (inicio < now) {
+  const hojeFormatado = new Date().toLocaleDateString('pt-BR'); 
+  res.status(400).json({
+    mensagem: `A data de início não pode ser anterior à data atual (${hojeFormatado}) ou igual a Hoje..`
+  });
+  return;
+}
+
 
   if (fim <= inicio) {
     res.status(400).json({ mensagem: 'A data de fim deve ser posterior à data de início' });
@@ -153,13 +157,32 @@ export async function updateEvento(req: Request, res: Response): Promise<void> {
 }
 
 
-// Excluir evento
+// Excluir evento com verificação de lotes vinculados
 export async function deleteEvento(req: Request, res: Response): Promise<void> {
   const { id } = req.params;
 
   try {
-    const request = (await pool).request();
-    await request.input('id', Number(id)).query('DELETE FROM eventos WHERE id = @id');
+    const db = await pool;
+
+    // Verifica se há lotes vinculados a este evento
+    const lotesResult = await db
+      .request()
+      .input('evento_id', Number(id))
+      .query('SELECT id FROM lotes WHERE evento_id = @evento_id');
+
+    if (lotesResult.recordset.length > 0) {
+      const ids = lotesResult.recordset.map((lote: any) => lote.id).join(', ');
+
+      res.status(400).json({
+        mensagem: `Este evento possui ${lotesResult.recordset.length} lote(s) vinculado(s) com ID(s): ${ids}. Remova-os antes de excluir o evento.`
+      });
+      return;
+    }
+
+    // Nenhum lote vinculado → pode excluir
+    await db.request()
+      .input('id', Number(id))
+      .query('DELETE FROM eventos WHERE id = @id');
 
     res.status(200).json({ mensagem: 'Evento excluído com sucesso' });
   } catch (error) {
@@ -167,3 +190,4 @@ export async function deleteEvento(req: Request, res: Response): Promise<void> {
     res.status(500).json({ mensagem: 'Erro interno ao deletar evento' });
   }
 }
+

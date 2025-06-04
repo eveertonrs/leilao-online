@@ -1,10 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
-import {
-  Box, Typography, Button, Paper, TextField, List, ListItem, ListItemText, Divider, Alert
-} from '@mui/material';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { AuthContext } from '../contexts/AuthContext';
@@ -62,74 +58,89 @@ const DetalhesLote = () => {
     .catch(() => setErro('Erro ao enviar o lance.'));
   };
 
-  if (!lote) return <Typography align="center" mt={4}>Carregando...</Typography>;
+  if (!lote) return <div className="text-center mt-4">Carregando...</div>;
 
   const imagens = lote.imagens?.map((url: string) => ({ original: url, thumbnail: url })) || [];
 
   return (
-    <Box sx={{ maxWidth: 1000, margin: 'auto', padding: 4 }}>
-      <Paper sx={{ padding: 4, borderRadius: 2, boxShadow: 3 }}>
-        <Button variant="outlined" onClick={() => navigate(-1)} sx={{ mb: 3 }}>← Voltar</Button>
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold' }}>{lote.nome}</Typography>
-        <Typography variant="subtitle1" sx={{ mb: 2 }}>{lote.descricao}</Typography>
-        <Typography sx={{ mb: 1 }}><strong>Lance mínimo:</strong> R$ {lote.lance_minimo}</Typography>
-        <Typography sx={{ mb: 1 }}><strong>Início:</strong> {new Date(lote.data_inicio).toLocaleString()}</Typography>
-        <Typography sx={{ mb: 2 }}><strong>Fim:</strong> {new Date(lote.data_fim).toLocaleString()}</Typography>
+    <div className="flex justify-center">
+      <div className="w-full max-w-3xl p-4 bg-gray-100">
+        <button onClick={() => navigate(-1)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-3">Voltar</button>
+        <h2 className="text-2xl font-bold text-center mt-4 border-b-2 border-blue-500 inline-block pb-1">
+          {lote.nome}
+        </h2>
 
-        {imagens.length > 0 && (
-          <Box sx={{ mt: 3 }}>
-            <ImageGallery items={imagens} showThumbnails showFullscreenButton showPlayButton={false} slideDuration={450} additionalClass="custom-gallery" />
-          </Box>
-        )}
+        <div className="text-center mb-3">
+          <img
+            src={`http://localhost:3333${lote.imagens[0]}`}
+            alt={lote.nome}
+            className="max-w-full rounded-xl shadow-md"
+          />
+        </div>
 
-        <Divider sx={{ my: 4 }} />
-        <Typography variant="h6" gutterBottom>📢 Lances</Typography>
-        <Typography sx={{ mb: 2 }}><strong>Maior lance atual:</strong> R$ {maiorLance}</Typography>
-        {erro && <Alert severity="error" sx={{ mb: 2 }}>{erro}</Alert>}
-        {sucesso && <Alert severity="success" sx={{ mb: 2 }}>{sucesso}</Alert>}
+        <p className="text-gray-700 mb-2 text-lg">
+          {lote.descricao}
+        </p>
 
-        <List sx={{ maxHeight: 300, overflow: 'auto', mb: 2 }}>
+        <div className="flex justify-between mb-3 flex-wrap gap-2">
+          <div>
+            <div className="text-gray-600">Início:</div>
+            <div>{new Date(lote.data_inicio).toLocaleString()}</div>
+          </div>
+          <div>
+            <div className="text-gray-600">Fim:</div>
+            <div>{new Date(lote.data_fim).toLocaleString()}</div>
+          </div>
+        </div>
+
+        <hr className="my-4" />
+
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+          📢 Lances
+        </h3>
+        <div className="text-gray-700 mb-2"><strong>Maior lance atual:</strong> R$ {maiorLance}</div>
+        {erro && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-2" role="alert">
+          <span className="block sm:inline">{erro}</span>
+        </div>}
+        {sucesso && <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-2" role="alert">
+          <span className="block sm:inline">{sucesso}</span>
+        </div>}
+
+        <ul className="max-h-72 overflow-auto mb-2">
           {lances.map((lance, index) => (
-            <ListItem
+            <li
               key={index}
-              divider
-              sx={{
-                bgcolor: lance.valor === maiorLance ? 'primary.main' : 'transparent',
-                color: lance.valor === maiorLance ? 'white' : 'inherit',
-                borderRadius: 1
-              }}
+              className={`py-2 ${lance.valor === maiorLance ? 'bg-blue-100 text-blue-700' : ''}`}
             >
-              <ListItemText
-                primary={
-                  <>
-                    {lance.valor === maiorLance && <EmojiEventsIcon fontSize="small" sx={{ mr: 1 }} />}
-                    R$ {lance.valor}
-                  </>
-                }
-                secondary={`Usuário: ${lance.usuario} - ${new Date(lance.data_lance).toLocaleString()}`}
-              />
-            </ListItem>
+              <div className="flex justify-between">
+                <div>
+                  {lance.valor === maiorLance && <span>🏆</span>}
+                  R$ {lance.valor}
+                </div>
+                <div className="text-gray-500">
+                  Usuário: {lance.usuario} - {new Date(lance.data_lance).toLocaleString()}
+                </div>
+              </div>
+            </li>
           ))}
-        </List>
+        </ul>
 
         {usuario ? (
-          <Box sx={{ display: 'flex', gap: 2 }}>
-            <TextField
-              label="Seu lance"
+          <div className="flex gap-2">
+            <input
               type="number"
+              placeholder="Seu lance"
               value={novoLance}
               onChange={e => setNovoLance(e.target.value)}
-              fullWidth
-              variant="outlined"
-              size="small"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
-            <Button variant="contained" onClick={enviarLance}>Enviar</Button>
-          </Box>
+            <button onClick={enviarLance} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
+          </div>
         ) : (
-          <Typography color="text.secondary">Faça login para dar um lance.</Typography>
+          <div className="text-gray-600">Faça login para dar um lance.</div>
         )}
-      </Paper>
-    </Box>
+      </div>
+    </div>
   );
 };
 

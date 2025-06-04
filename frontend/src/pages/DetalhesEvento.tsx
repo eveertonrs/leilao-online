@@ -1,9 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import {
-  Box, Typography, Paper, Divider, CardMedia, CardContent, Button
-} from '@mui/material';
 
 const DetalhesEvento = () => {
   const { id } = useParams();
@@ -23,129 +20,89 @@ const DetalhesEvento = () => {
     }
   }, [id]);
 
-  if (!evento) return <Typography align="center" mt={4}>Carregando...</Typography>;
+  if (!evento) return <div className="text-center mt-4">Carregando...</div>;
 
   return (
-    <Box sx={{ maxWidth: 1200, margin: 'auto', padding: 4, backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
-      <Paper elevation={4} sx={{ padding: 4, borderRadius: 4, backgroundColor: '#fff' }}>
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', textAlign: 'center', color: '#1976d2' }}>
+    <div className="flex justify-center">
+      <div className="w-full max-w-3xl p-4 bg-gray-100">
+        <h2 className="text-2xl font-bold text-center mt-4 border-b-2 border-blue-500 inline-block pb-1">
           {evento.nome}
-        </Typography>
+        </h2>
 
-        <Box sx={{ textAlign: 'center', mb: 3 }}>
+        <div className="text-center mb-3">
           <img
             src={`http://localhost:3333/uploads/${evento.foto_capa}`}
             alt={evento.nome}
-            style={{ maxWidth: '100%', borderRadius: 12, boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}
+            className="max-w-full rounded-xl shadow-md"
           />
-        </Box>
+        </div>
 
-        <Typography variant="body1" sx={{ mb: 2, fontSize: '1.1rem', color: '#444' }}>
+        <p className="text-gray-700 mb-2 text-lg">
           {evento.descricao}
-        </Typography>
+        </p>
 
-        <Divider sx={{ my: 3 }} />
+        <div className="flex justify-between mb-3 flex-wrap gap-2">
+          <div>
+            <div className="text-gray-600">Início:</div>
+            <div>{new Date(evento.data_inicio).toLocaleString()}</div>
+          </div>
+          <div>
+            <div className="text-gray-600">Fim:</div>
+            <div>{new Date(evento.data_fim).toLocaleString()}</div>
+          </div>
+        </div>
 
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 3, flexWrap: 'wrap', gap: 2 }}>
-          <Box>
-            <Typography variant="subtitle2" color="text.secondary">Início:</Typography>
-            <Typography variant="body1">{new Date(evento.data_inicio).toLocaleString()}</Typography>
-          </Box>
-          <Box>
-            <Typography variant="subtitle2" color="text.secondary">Fim:</Typography>
-            <Typography variant="body1">{new Date(evento.data_fim).toLocaleString()}</Typography>
-          </Box>
-        </Box>
+        <hr className="my-4" />
 
-        <Divider sx={{ my: 4 }} />
-
-        <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: '#333' }}>
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">
           🔨 Lotes Disponíveis
-        </Typography>
+        </h3>
 
         {lotes.length === 0 ? (
-          <Typography variant="body2" color="text.secondary">
-            Nenhum lote cadastrado para este evento.
-          </Typography>
+          <div className="text-gray-600">Nenhum lote cadastrado para este evento.</div>
         ) : (
-          <Box
-            sx={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: 3,
-              justifyContent: 'center',
-            }}
-          >
+          <div className="flex flex-wrap justify-center gap-4">
             {lotes.map((lote) => (
-              <Paper
-                key={lote.id}
-                sx={{
-                  width: {
-                    xs: '100%',
-                    sm: 'calc(50% - 24px)',
-                    md: 'calc(33.33% - 24px)',
-                  },
-                  p: 2,
-                  borderRadius: 2,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center'
-                }}
-              >
-                {lote.imagens?.length > 0 && (
-                  <CardMedia
-                    component="img"
-                    height="160"
-                    image={`http://localhost:3333${lote.imagens[0]}`}
-                    alt={lote.nome}
-                    sx={{ borderRadius: 1, mb: 1, objectFit: 'cover', width: '100%' }}
-                  />
-                )}
-                <CardContent sx={{ padding: 0, width: '100%' }}>
-                  <Typography variant="h6" gutterBottom>{lote.nome}</Typography>
-                  <Typography variant="body2" sx={{ mb: 1 }}>{lote.descricao}</Typography>
-                  <Typography variant="body2">Lance mínimo: R$ {lote.lance_minimo}</Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Início: {new Date(lote.data_inicio).toLocaleString()}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Fim: {new Date(lote.data_fim).toLocaleString()}
-                  </Typography>
-                  <Button variant="outlined" fullWidth sx={{ mt: 2 }} onClick={() => navigate(`/lotes/${lote.id}`)}>
-                    Ver Detalhes
-                  </Button>
-                </CardContent>
-              </Paper>
+              <div key={lote.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+                <div className="bg-white rounded-md shadow-md hover:shadow-lg transition-shadow duration-300">
+                  {lote.imagens?.length > 0 && (
+                    <img
+                      src={`http://localhost:3333${lote.imagens[0]}`}
+                      alt={lote.nome}
+                      className="w-full h-40 object-cover rounded-t-md"
+                    />
+                  )}
+                  <div className="p-4">
+                    <h4 className="text-lg font-semibold text-gray-800">{lote.nome}</h4>
+                    <p className="text-gray-600">{lote.descricao}</p>
+                    <p className="text-gray-700">Lance mínimo: R$ {lote.lance_minimo}</p>
+                    <p className="text-gray-500">Início: {new Date(lote.data_inicio).toLocaleString()}</p>
+                    <p className="text-gray-500">Fim: {new Date(lote.data_fim).toLocaleString()}</p>
+                    <button onClick={() => navigate(`/lotes/${lote.id}`)} className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      Ver Detalhes
+                    </button>
+                  </div>
+                </div>
+              </div>
             ))}
-          </Box>
+          </div>
         )}
 
-        <Divider sx={{ my: 4 }} />
+        <hr className="my-4" />
 
-        <Box textAlign="center">
-          <Typography variant="body2" sx={{ color: '#888', mb: 2 }}>
+        <div className="text-center">
+          <p className="text-gray-600 mb-2">
             Participe do leilão e aproveite oportunidades exclusivas!
-          </Typography>
-          <Box>
-            <button
-              style={{
-                backgroundColor: '#1976d2',
-                color: '#fff',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontWeight: 'bold',
-                transition: 'background 0.3s',
-              }}
-              onClick={() => alert('Funcionalidade futura: participação no leilão')}
-            >
-              Participe do Leilão
-            </button>
-          </Box>
-        </Box>
-      </Paper>
-    </Box>
+          </p>
+          <button
+            onClick={() => alert('Funcionalidade futura: participação no leilão')}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Participe do Leilão
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
