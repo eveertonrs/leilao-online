@@ -18,7 +18,7 @@ const LoginAdmin = () => {
       setUsuario(usuario);
 
       alert(`Bem-vindo, ${usuario.nome}!`);
-      navigate('/admin');
+      navigate('/admin/dashboard');
     } catch (error) {
       alert('Email ou senha inválidos');
     }
