@@ -1,5 +1,7 @@
 import React from 'react';
 
+console.log("Deploy test")
+
 const DashboardAdmin = () => {
   return (
     <div className="bg-gray-800 rounded-lg shadow-md p-6">
