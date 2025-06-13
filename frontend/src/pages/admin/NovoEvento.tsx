@@ -1,3 +1,4 @@
+// src/pages/NovoEvento.tsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -8,6 +9,7 @@ const NovoEvento = () => {
   const [descricao, setDescricao] = useState('');
   const [dataInicio, setDataInicio] = useState('');
   const [dataFim, setDataFim] = useState('');
+  const [videoAoVivo, setVideoAoVivo] = useState('');
   const [imagem, setImagem] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
 
@@ -31,6 +33,7 @@ const NovoEvento = () => {
     formData.append('descricao', descricao);
     formData.append('data_inicio', dataInicio);
     formData.append('data_fim', dataFim);
+    formData.append('link_video', videoAoVivo);
     formData.append('foto_capa', imagem);
 
     try {
@@ -43,14 +46,8 @@ const NovoEvento = () => {
       });
 
       alert('Evento criado com sucesso!');
-      setNome('');
-      setDescricao('');
-      setDataInicio('');
-      setDataFim('');
-      setImagem(null);
-      setPreview(null);
+      navigate('/admin/eventos');
     } catch (error: any) {
-      console.error('Erro ao criar evento:', error);
       const mensagem = error.response?.data?.mensagem || 'Erro ao criar evento';
       alert(`Erro ao criar evento: ${mensagem}`);
     }
@@ -75,7 +72,7 @@ const NovoEvento = () => {
               type="text"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
             />
           </div>
 
@@ -84,29 +81,41 @@ const NovoEvento = () => {
             <textarea
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
               rows={3}
             />
           </div>
 
           <div>
-            <label className="block mb-1 text-sm">Data Início</label>
+            <label className="block mb-1 text-sm">Link do Vídeo Ao Vivo (iframe embed ou YouTube)</label>
             <input
-              type="datetime-local"
-              value={dataInicio}
-              onChange={(e) => setDataInicio(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              placeholder='Ex: https://www.youtube.com/embed/xxxxxxxxx'
+              value={videoAoVivo}
+              onChange={(e) => setVideoAoVivo(e.target.value)}
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
             />
           </div>
 
-          <div>
-            <label className="block mb-1 text-sm">Data Fim</label>
-            <input
-              type="datetime-local"
-              value={dataFim}
-              onChange={(e) => setDataFim(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block mb-1 text-sm">Data Início</label>
+              <input
+                type="datetime-local"
+                value={dataInicio}
+                onChange={(e) => setDataInicio(e.target.value)}
+                className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 text-sm">Data Fim</label>
+              <input
+                type="datetime-local"
+                value={dataFim}
+                onChange={(e) => setDataFim(e.target.value)}
+                className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
+              />
+            </div>
           </div>
 
           <div>

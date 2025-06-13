@@ -37,26 +37,34 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
 const dotenv = __importStar(require("dotenv"));
+const path_1 = __importDefault(require("path"));
 const eventosRoutes_1 = __importDefault(require("./routes/eventosRoutes"));
 const usuariosRoutes_1 = __importDefault(require("./routes/usuariosRoutes"));
 const categoriasRoutes_1 = __importDefault(require("./routes/categoriasRoutes"));
 const lotesRoutes_1 = __importDefault(require("./routes/lotesRoutes"));
 const lancesRoutes_1 = __importDefault(require("./routes/lancesRoutes"));
 const imagensRoutes_1 = __importDefault(require("./routes/imagensRoutes"));
+const authRoutes_1 = __importDefault(require("./routes/authRoutes"));
 dotenv.config();
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)());
 app.use(express_1.default.json());
+// Servir imagens estaticamente
+app.use('/uploads', express_1.default.static(path_1.default.join(__dirname, '..', 'uploads')));
+// Rotas da aplicação
 app.use('/eventos', eventosRoutes_1.default);
 app.use('/usuarios', usuariosRoutes_1.default);
 app.use('/categorias', categoriasRoutes_1.default);
 app.use('/lotes', lotesRoutes_1.default);
 app.use('/lances', lancesRoutes_1.default);
 app.use('/imagens', imagensRoutes_1.default);
+app.use('/auth', authRoutes_1.default);
 app.get('/', (req, res) => {
     res.send('🚀 API de Leilão está funcionando!');
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 app.listen(PORT, () => {
-    console.log(`✅ Servidor rodando em http://localhost:${PORT}`);
+    console.log(`✅ Backend rodando em http://localhost:${PORT}`);
 });

@@ -4,6 +4,7 @@ import axios from 'axios';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { AuthContext } from '../contexts/AuthContext';
+import { CalendarDays, Clock, Gavel, Trophy, FileText, FileCheck2 } from "lucide-react";
 
 const DetalhesLote = () => {
   const { id } = useParams();
@@ -16,6 +17,7 @@ const DetalhesLote = () => {
   const [novoLance, setNovoLance] = useState('');
   const [erro, setErro] = useState<string | null>(null);
   const [sucesso, setSucesso] = useState<string | null>(null);
+  const [aba, setAba] = useState<'descricao' | 'documentos' | 'lances'>('descricao');
 
   useEffect(() => {
     if (!id) return;
@@ -58,87 +60,114 @@ const DetalhesLote = () => {
     .catch(() => setErro('Erro ao enviar o lance.'));
   };
 
-  if (!lote) return <div className="text-center mt-4">Carregando...</div>;
+  if (!lote) return <div className="text-center mt-4 text-white">Carregando...</div>;
 
-  const imagens = lote.imagens?.map((url: string) => ({ original: url, thumbnail: url })) || [];
+  const imagens = lote.imagens?.map((url: string) => ({
+    original: url,
+    thumbnail: url
+  })) || [];
 
   return (
-    <div className="flex justify-center">
-      <div className="w-full max-w-3xl p-4 bg-gray-100">
-        <button onClick={() => navigate(-1)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-3">Voltar</button>
-        <h2 className="text-2xl font-bold text-center mt-4 border-b-2 border-blue-500 inline-block pb-1">
-          {lote.nome}
-        </h2>
+    <div className="flex justify-center p-4 bg-zinc-900 min-h-screen text-black">
+      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl p-4">
+        <button
+          onClick={() => navigate(-1)}
+          className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Voltar
+        </button>
 
-        <div className="text-center mb-3">
-          <img
-            src={`http://localhost:3333${lote.imagens[0]}`}
-            alt={lote.nome}
-            className="max-w-full rounded-xl shadow-md"
+        <div className="rounded-lg overflow-hidden">
+          <ImageGallery
+            items={imagens}
+            showFullscreenButton={true}
+            showPlayButton={false}
+            showNav={true}
+            thumbnailPosition="bottom"
+            additionalClass="rounded-md"
           />
         </div>
 
-        <p className="text-gray-700 mb-2 text-lg">
-          {lote.descricao}
-        </p>
-
-        <div className="flex justify-between mb-3 flex-wrap gap-2">
-          <div>
-            <div className="text-gray-600">Início:</div>
-            <div>{new Date(lote.data_inicio).toLocaleString()}</div>
-          </div>
-          <div>
-            <div className="text-gray-600">Fim:</div>
-            <div>{new Date(lote.data_fim).toLocaleString()}</div>
-          </div>
+        {/* Abas */}
+        <div className="border-b mt-4 flex space-x-6 justify-center text-gray-600 font-medium">
+          <button className={`pb-2 ${aba === 'descricao' ? 'border-b-2 border-blue-500 text-blue-600' : ''}`} onClick={() => setAba('descricao')}>
+            <FileText className="inline-block mr-1" size={18}/> Descrição
+          </button>
+          <button className={`pb-2 ${aba === 'documentos' ? 'border-b-2 border-blue-500 text-blue-600' : ''}`} onClick={() => setAba('documentos')}>
+            <FileCheck2 className="inline-block mr-1" size={18}/> Documentos
+          </button>
+          <button className={`pb-2 ${aba === 'lances' ? 'border-b-2 border-blue-500 text-blue-600' : ''}`} onClick={() => setAba('lances')}>
+            <Gavel className="inline-block mr-1" size={18}/> Lances
+          </button>
         </div>
 
-        <hr className="my-4" />
-
-        <h3 className="text-xl font-semibold mb-2 text-gray-800">
-          📢 Lances
-        </h3>
-        <div className="text-gray-700 mb-2"><strong>Maior lance atual:</strong> R$ {maiorLance}</div>
-        {erro && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-2" role="alert">
-          <span className="block sm:inline">{erro}</span>
-        </div>}
-        {sucesso && <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-2" role="alert">
-          <span className="block sm:inline">{sucesso}</span>
-        </div>}
-
-        <ul className="max-h-72 overflow-auto mb-2">
-          {lances.map((lance, index) => (
-            <li
-              key={index}
-              className={`py-2 ${lance.valor === maiorLance ? 'bg-blue-100 text-blue-700' : ''}`}
-            >
-              <div className="flex justify-between">
-                <div>
-                  {lance.valor === maiorLance && <span>🏆</span>}
-                  R$ {lance.valor}
-                </div>
-                <div className="text-gray-500">
-                  Usuário: {lance.usuario} - {new Date(lance.data_lance).toLocaleString()}
-                </div>
+        {/* Conteúdo das Abas */}
+        <div className="mt-4">
+          {aba === 'descricao' && (
+            <div>
+              <h2 className="text-xl font-bold text-gray-800">{lote.nome}</h2>
+              <p className="text-gray-600 mb-3">{lote.descricao}</p>
+              <div className="flex justify-between text-sm text-gray-600">
+                <span><CalendarDays size={16} className="inline mr-1"/> <strong>Início:</strong> {new Date(lote.data_inicio).toLocaleString()}</span>
+                <span><Clock size={16} className="inline mr-1"/> <strong>Fim:</strong> {new Date(lote.data_fim).toLocaleString()}</span>
               </div>
-            </li>
-          ))}
-        </ul>
+            </div>
+          )}
 
-        {usuario ? (
-          <div className="flex gap-2">
-            <input
-              type="number"
-              placeholder="Seu lance"
-              value={novoLance}
-              onChange={e => setNovoLance(e.target.value)}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-            <button onClick={enviarLance} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
-          </div>
-        ) : (
-          <div className="text-gray-600">Faça login para dar um lance.</div>
-        )}
+          {aba === 'documentos' && (
+            <div className="text-gray-700">
+              {lote.documentos?.length > 0 ? (
+                <ul className="list-disc pl-5">
+                  {lote.documentos.map((doc: any, idx: number) => (
+                    <li key={idx}>
+                      <a href={doc.url} target="_blank" rel="noreferrer" className="text-blue-600 underline">{doc.nome}</a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>Nenhum documento disponível.</p>
+              )}
+            </div>
+          )}
+
+          {aba === 'lances' && (
+            <div>
+              <div className="text-gray-700 text-base font-semibold mb-2">
+                <Gavel size={18} className="inline mr-1"/> Maior lance atual: <span className="text-blue-600">R$ {maiorLance}</span>
+              </div>
+              <ul className="max-h-48 overflow-y-auto text-sm text-gray-600 mb-2">
+                {lances.length === 0 ? (
+                  <li className="italic">Nenhum lance ainda</li>
+                ) : (
+                  lances.map((lance, i) => (
+                    <li key={i} className={`py-1 ${lance.valor === maiorLance ? 'text-blue-700 font-bold' : ''}`}>
+                      R$ {lance.valor.toFixed(2)} - {lance.usuario} ({new Date(lance.data_lance).toLocaleString()})
+                    </li>
+                  ))
+                )}
+              </ul>
+
+              {erro && <div className="text-red-600 text-sm mb-2">{erro}</div>}
+              {sucesso && <div className="text-green-600 text-sm mb-2">{sucesso}</div>}
+
+              {usuario && (
+                <div className="flex gap-2">
+                  <input
+                    type="number"
+                    placeholder="Digite seu lance"
+                    value={novoLance}
+                    onChange={e => setNovoLance(e.target.value)}
+                    className="flex-grow border border-gray-300 rounded px-3 py-2"
+                  />
+                  <button
+                    onClick={enviarLance}
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 rounded"
+                  >Confirmar</button>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

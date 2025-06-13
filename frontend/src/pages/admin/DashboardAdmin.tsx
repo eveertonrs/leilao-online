@@ -1,23 +1,59 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { CalendarDays, Layers, Users } from 'lucide-react';
+import AdminDashboardCharts from '../../components/AdminDashboardCharts';
 
 const DashboardAdmin = () => {
+  const navigate = useNavigate();
+
+  const cards = [
+    {
+      titulo: 'TOTAL DE EVENTOS',
+      valor: 10,
+      cor: 'bg-blue-600',
+      icone: <CalendarDays size={28} />,
+      rota: '/admin/eventos'
+    },
+    {
+      titulo: 'TOTAL DE LOTES',
+      valor: 50,
+      cor: 'bg-green-600',
+      icone: <Layers size={28} />,
+      rota: '/admin/lotes'
+    },
+    {
+      titulo: 'TOTAL DE USUÁRIOS',
+      valor: 100,
+      cor: 'bg-yellow-600',
+      icone: <Users size={28} />,
+      rota: '/admin/usuarios' // ajuste conforme necessário
+    }
+  ];
+
   return (
-    <div className="bg-gray-800 rounded-lg shadow-md p-6">
-      <h1 className="text-2xl font-semibold text-blue-300 mb-4">Dashboard Admin</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-gray-700 rounded-lg p-4">
-          <h2 className="text-lg font-semibold text-gray-300">Total Events</h2>
-          <p className="text-2xl text-white">10</p>
-        </div>
-        <div className="bg-gray-700 rounded-lg p-4">
-          <h2 className="text-lg font-semibold text-gray-300">Total Lotes</h2>
-          <p className="text-2xl text-white">50</p>
-        </div>
-        <div className="bg-gray-700 rounded-lg p-4">
-          <h2 className="text-lg font-semibold text-gray-300">Total Users</h2>
-          <p className="text-2xl text-white">100</p>
-        </div>
+    <div className="p-6">
+      <h1 className="text-3xl font-semibold text-blue-300 mb-6">Painel Administrativo</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {cards.map((card, idx) => (
+          <div
+            key={idx}
+            onClick={() => navigate(card.rota)}
+            className={`cursor-pointer ${card.cor} hover:brightness-110 text-white rounded-xl p-6 shadow-lg flex justify-between items-center transition`}
+          >
+            <div>
+              <p className="text-sm uppercase text-gray-200">{card.titulo}</p>
+              <p className="text-3xl font-bold">{card.valor}</p>
+            </div>
+            <div className="opacity-50">
+              {card.icone}
+            </div>
+          </div>
+        ))}
       </div>
+
+      {/* Gráficos do Dashboard */}
+      <AdminDashboardCharts />
     </div>
   );
 };

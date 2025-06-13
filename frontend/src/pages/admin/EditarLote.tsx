@@ -1,4 +1,3 @@
-// src/pages/EditarLote.tsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -15,9 +14,9 @@ const EditarLote = () => {
   const [comissao, setComissao] = useState('');
   const [imagens, setImagens] = useState<File[]>([]);
   const [preview, setPreview] = useState<string[]>([]);
+  const [imagensExistentes, setImagensExistentes] = useState<any[]>([]);
   const [eventos, setEventos] = useState<any[]>([]);
   const [categorias, setCategorias] = useState<any[]>([]);
-  const [imagensExistentes, setImagensExistentes] = useState<any[]>([]);
 
   const navigate = useNavigate();
 
@@ -91,51 +90,150 @@ const EditarLote = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto mt-10 p-6 bg-gray-800 text-white rounded-xl shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-center border-b pb-2">✏️ Editar Lote</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input className="w-full p-3 bg-gray-700 rounded" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)} required />
-        <textarea className="w-full p-3 bg-gray-700 rounded" placeholder="Descrição" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
+    <div className="max-w-4xl mx-auto mt-10 p-8 bg-gray-800 text-white rounded-lg shadow-lg">
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold border-b border-gray-600 pb-1">✏️ Editar Lote</h2>
+        <button
+          onClick={() => navigate('/admin/lotes')}
+          className="text-sm bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded"
+        >
+          ⬅ Voltar
+        </button>
+      </div>
 
-        <input type="number" className="w-full p-3 bg-gray-700 rounded" placeholder="Lance Mínimo" value={lanceMinimo} onChange={(e) => setLanceMinimo(e.target.value)} required />
-
-        <div className="flex gap-4">
-          <input type="datetime-local" className="w-full p-3 bg-gray-700 rounded" value={dataInicio} onChange={(e) => setDataInicio(e.target.value)} required />
-          <input type="datetime-local" className="w-full p-3 bg-gray-700 rounded" value={dataFim} onChange={(e) => setDataFim(e.target.value)} required />
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            placeholder="Nome do Lote"
+            className="p-3 bg-gray-700 rounded w-full"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            required
+          />
+          <input
+            type="number"
+            placeholder="Lance Mínimo"
+            className="p-3 bg-gray-700 rounded w-full"
+            value={lanceMinimo}
+            onChange={(e) => setLanceMinimo(e.target.value)}
+            required
+          />
         </div>
 
-        <select className="w-full p-3 bg-gray-700 rounded" value={eventoId} onChange={(e) => setEventoId(e.target.value)} required>
-          <option value="">Selecione um evento</option>
-          {eventos.map(ev => <option key={ev.id} value={ev.id}>{ev.nome}</option>)}
-        </select>
+        <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <label className="text-sm mb-1 block">Descrição (HTML)</label>
+            <textarea
+              placeholder="Insira aqui a descrição com tags HTML ou texto comum"
+              className="w-full p-3 bg-gray-700 rounded resize-y"
+              value={descricao}
+              onChange={(e) => setDescricao(e.target.value)}
+              rows={5}
+              required
+            />
+          </div>
+          <div>
+            <label className="text-sm mb-1 block">Preview</label>
+            <div
+              className="w-full h-full p-3 bg-gray-900 rounded text-sm overflow-y-auto"
+              dangerouslySetInnerHTML={{ __html: descricao }}
+            />
+          </div>
+        </div>
 
-        <select className="w-full p-3 bg-gray-700 rounded" value={categoriaId} onChange={(e) => setCategoriaId(e.target.value)} required>
-          <option value="">Selecione uma categoria</option>
-          {categorias.map(cat => <option key={cat.id} value={cat.id}>{cat.nome}</option>)}
-        </select>
+        <div className="grid md:grid-cols-2 gap-4">
+          <input
+            type="datetime-local"
+            className="p-3 bg-gray-700 rounded w-full"
+            value={dataInicio}
+            onChange={(e) => setDataInicio(e.target.value)}
+            required
+          />
+          <input
+            type="datetime-local"
+            className="p-3 bg-gray-700 rounded w-full"
+            value={dataFim}
+            onChange={(e) => setDataFim(e.target.value)}
+            required
+          />
+        </div>
 
-        <input type="number" className="w-full p-3 bg-gray-700 rounded" placeholder="Comissão (%)" value={comissao} onChange={(e) => setComissao(e.target.value)} required />
+        <div className="grid md:grid-cols-2 gap-4">
+          <select
+            className="p-3 bg-gray-700 rounded w-full"
+            value={eventoId}
+            onChange={(e) => setEventoId(e.target.value)}
+            required
+          >
+            <option value="">Selecione um evento</option>
+            {eventos.map(ev => <option key={ev.id} value={ev.id}>{ev.nome}</option>)}
+          </select>
+
+          <select
+            className="p-3 bg-gray-700 rounded w-full"
+            value={categoriaId}
+            onChange={(e) => setCategoriaId(e.target.value)}
+            required
+          >
+            <option value="">Selecione uma categoria</option>
+            {categorias.map(cat => <option key={cat.id} value={cat.id}>{cat.nome}</option>)}
+          </select>
+        </div>
+
+        <input
+          type="number"
+          placeholder="Comissão (%)"
+          className="p-3 bg-gray-700 rounded w-full"
+          value={comissao}
+          onChange={(e) => setComissao(e.target.value)}
+          required
+        />
 
         <div>
-          <label className="block mb-2 text-sm">Imagens</label>
-          <input type="file" multiple accept="image/*" onChange={handleFileChange} className="w-full bg-gray-700 p-2 rounded" />
+          <label className="block mb-1 text-sm">Imagens do Lote</label>
+          <input
+            type="file"
+            multiple
+            accept="image/*"
+            onChange={handleFileChange}
+            className="w-full bg-gray-700 p-2 rounded"
+          />
         </div>
 
         {(imagensExistentes.length > 0 || preview.length > 0) && (
-          <div className="flex flex-wrap gap-2 mt-2">
+          <div className="flex flex-wrap gap-3 mt-4">
             {imagensExistentes.map((img) => (
               <div key={img.id} className="relative">
-                <img src={`http://localhost:3333/uploads/${img.url}`} alt="Preview" className="w-24 h-20 object-cover rounded shadow" />
-                <button type="button" onClick={() => removerImagemExistente(img.id)} className="absolute top-0 right-0 bg-red-600 text-white rounded-full w-5 h-5 text-xs">X</button>
+                <img
+                  src={`http://localhost:3333/uploads/${img.url}`}
+                  alt="Imagem"
+                  className="w-28 h-20 object-cover rounded border border-gray-600 shadow"
+                />
+                <button
+                  type="button"
+                  onClick={() => removerImagemExistente(img.id)}
+                  className="absolute top-1 right-1 bg-red-600 text-white rounded-full w-5 h-5 text-xs"
+                >
+                  X
+                </button>
               </div>
             ))}
             {preview.map((src, idx) => (
-              <img key={idx} src={src} alt="Preview" className="w-24 h-20 object-cover rounded shadow" />
+              <img
+                key={idx}
+                src={src}
+                alt={`Preview ${idx}`}
+                className="w-28 h-20 object-cover rounded border border-gray-600 shadow"
+              />
             ))}
           </div>
         )}
 
-        <button type="submit" className="w-full bg-green-600 hover:bg-green-700 py-3 rounded font-semibold">
+        <button
+          type="submit"
+          className="w-full bg-green-600 hover:bg-green-700 py-3 rounded font-semibold text-white transition"
+        >
           Atualizar Lote
         </button>
       </form>

@@ -1,3 +1,4 @@
+// src/pages/EditarEvento.tsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -10,6 +11,7 @@ const EditarEvento = () => {
   const [descricao, setDescricao] = useState('');
   const [dataInicio, setDataInicio] = useState('');
   const [dataFim, setDataFim] = useState('');
+  const [videoAoVivo, setVideoAoVivo] = useState('');
   const [imagem, setImagem] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
 
@@ -23,8 +25,9 @@ const EditarEvento = () => {
       const evento = res.data;
       setNome(evento.nome);
       setDescricao(evento.descricao);
-      setDataInicio(evento.data_inicio.slice(0, 16)); // datetime-local exige formato específico
+      setDataInicio(evento.data_inicio.slice(0, 16));
       setDataFim(evento.data_fim.slice(0, 16));
+      setVideoAoVivo(evento.link_video || '');
       if (evento.foto_capa) {
         setPreview(`http://localhost:3333/uploads/${evento.foto_capa}`);
       }
@@ -52,6 +55,7 @@ const EditarEvento = () => {
     formData.append('descricao', descricao);
     formData.append('data_inicio', dataInicio);
     formData.append('data_fim', dataFim);
+    formData.append('link_video', videoAoVivo);
     if (imagem) {
       formData.append('foto_capa', imagem);
     }
@@ -66,7 +70,6 @@ const EditarEvento = () => {
       alert('Evento atualizado com sucesso!');
       navigate('/admin/eventos');
     } catch (error: any) {
-      console.error('Erro ao atualizar evento:', error);
       const msg = error.response?.data?.mensagem || 'Erro ao atualizar evento';
       alert(msg);
     }
@@ -91,7 +94,7 @@ const EditarEvento = () => {
               type="text"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
             />
           </div>
 
@@ -100,29 +103,41 @@ const EditarEvento = () => {
             <textarea
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
               rows={3}
             />
           </div>
 
           <div>
-            <label className="block mb-1 text-sm">Data Início</label>
+            <label className="block mb-1 text-sm">Link do Vídeo Ao Vivo (iframe embed ou YouTube)</label>
             <input
-              type="datetime-local"
-              value={dataInicio}
-              onChange={(e) => setDataInicio(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              value={videoAoVivo}
+              onChange={(e) => setVideoAoVivo(e.target.value)}
+              placeholder="https://www.youtube.com/embed/XXXX"
+              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
             />
           </div>
 
-          <div>
-            <label className="block mb-1 text-sm">Data Fim</label>
-            <input
-              type="datetime-local"
-              value={dataFim}
-              onChange={(e) => setDataFim(e.target.value)}
-              className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block mb-1 text-sm">Data Início</label>
+              <input
+                type="datetime-local"
+                value={dataInicio}
+                onChange={(e) => setDataInicio(e.target.value)}
+                className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 text-sm">Data Fim</label>
+              <input
+                type="datetime-local"
+                value={dataFim}
+                onChange={(e) => setDataFim(e.target.value)}
+                className="w-full p-2 rounded-md bg-gray-700 border border-gray-600"
+              />
+            </div>
           </div>
 
           <div>
